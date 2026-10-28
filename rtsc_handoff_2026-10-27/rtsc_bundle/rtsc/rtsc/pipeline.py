@@ -486,14 +486,45 @@ def trust_base() -> str:
 _TAG_MASS = re.compile(r"^A-(DROP-NONPOS|NEG-CLIP)\(([-+0-9.eE]+)K\)")
 
 
+_EXCL_ITEM = re.compile(r"sigma(\d+):lam=([-+0-9.eE]+):A=([-+0-9.eE]+)K")
+
+
+def _sigma_exclusion_directions(tag: str, spectra: Sequence[Spectrum]) -> tuple[bool, bool]:
+    """(blocks REJECTED, blocks CERTIFIED) for an A-SIGMA-EXCLUDED tag.
+
+    The excluded smearings violate alpha^2F_nu >= 0, so they are not admissible alternatives; the
+    question is only whether they point outside what the admitted alternatives already cover. Each
+    admitted alternative s is treated by the engine as the box (1 +- e_s) w_j, so its lambda and A
+    range over [(1-e_s) X_s, (1+e_s) X_s]. An excluded smearing whose lambda or A lies ABOVE the
+    union of these ranges blocks REJECTED (it might be harder to reject); BELOW blocks CERTIFIED.
+    This is a moment-level comparison (lambda, A), not a pointwise one: inside the range the
+    exclusion is recorded but not blocking. A malformed tag blocks both."""
+    items = _EXCL_ITEM.findall(tag)
+    if not items or not spectra:
+        return True, True
+    rng = {}
+    for name, fn in (("lam", lambda s: s.lambda_()), ("A", lambda s: s.A())):
+        rng[name] = (min((1 - s.rel_envelope) * fn(s) for s in spectra),
+                     max((1 + s.rel_envelope) * fn(s) for s in spectra))
+    above = below = False
+    for _, lam, A in items:
+        for name, x in (("lam", float(lam)), ("A", float(A))):
+            above |= x > rng[name][1]
+            below |= x < rng[name][0]
+    return above, below
+
+
 def blocking_tags(spectra: Sequence[Spectrum]) -> tuple[list[str], list[str]]:
     """Input-quality tags (team DFT, Spectrum.provenance['assumptions']) that make one
     direction of proof unsafe.  Returns (tags blocking REJECTED, tags blocking CERTIFIED):
       REJECTED : A-FILE-COMPLETE(unverified), A-FILE-INCOMPLETE..., A-DROP-NONPOS(m K) with m > 0
                  (missing weight lowers A, which is anti-conservative for an upper bound);
       CERTIFIED: A-NEG-CLIP(m K) with m > 0 (clipping raises A), A-FILE-INCOMPLETE...
+      either   : A-SIGMA-EXCLUDED(...) (smearings excluded by smearing_admission='mode_positive'):
+                 see _sigma_exclusion_directions
     """
     rej, cert = [], []
+    seen_excl: set[str] = set()
     for s in spectra:
         for a in s.provenance.get("assumptions", []) or []:
             a = str(a)
@@ -509,6 +540,13 @@ def blocking_tags(spectra: Sequence[Spectrum]) -> tuple[list[str], list[str]]:
                 rej.append(tag)
             elif m and m.group(1) == "NEG-CLIP" and mass > 0:
                 cert.append(tag)
+            elif a.startswith("A-SIGMA-EXCLUDED(") and a not in seen_excl:
+                seen_excl.add(a)
+                r, c = _sigma_exclusion_directions(a, spectra)
+                if r:
+                    rej.append(tag)
+                if c:
+                    cert.append(tag)
     return rej, cert
 
 
@@ -734,7 +772,7 @@ def _compute_material(c: Candidate, rec: dict[str, Any], cfg: dict[str, Any], ma
         flags.append(Flag(str(f), "reported by rtsc.dfpt"))
     if (stages.get("dfpt") or {}).get("smearings_subset"):
         flags.append(Flag("SMEARINGS_SUBSET", "only a subset of the DFPT smearings was used as "
-                          "alternative spectra (explicit use_smearings)"))
+                          "alternative spectra (explicit use_smearings or smearing_admission)"))
     warn = [w for s in spectra for w in s.provenance.get("warnings", [])]
     if warn:
         flags.append(Flag("SPECTRUM_WARNINGS", f"{len(warn)} input warnings (see record)",

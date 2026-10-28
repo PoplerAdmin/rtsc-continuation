@@ -20,12 +20,13 @@ from .grids import EPhGrids, grid_from_spacing, select_grids
 from .launcher import Launcher, RunRecord, run_command
 from .parsers import (EPWA2F, IncompleteFileError, QEA2FDos, QELambdaEntry, atoms_to_spectrum, epw_a2f_to_spectra,
                       grid_to_atoms, parse_epw_a2f, parse_qe_a2f_dos, parse_qe_lambda_file,
-                      qe_a2f_dos_to_spectrum, read_two_column, spectrum_lambda,
+                      mode_negative_fractions, qe_a2f_dos_to_spectrum, read_two_column, spectrum_lambda,
                       spectrum_omega_log)
 from .pseudo import PseudoTable, read_upf_header
 from .structure import CellData, parse_pw_final_structure, to_celldata
 from .units import to_kelvin_factor
-from .workflow import (STEPS, EPhResult, EPhSettings, EPhWorkflow, WorkflowError,
+from .workflow import (SMEARING_ADMISSION, STEPS, EPhResult, EPhSettings, EPhWorkflow, WorkflowError,
+                       admit_smearings,
                        build_fortify_shim, collect_qe_eph, min_frequency_cm1,
                        workflow_from_config)
 
@@ -43,4 +44,5 @@ __all__ = [
     "PseudoTable", "read_upf_header", "CellData", "parse_pw_final_structure", "to_celldata",
     "to_kelvin_factor", "STEPS", "EPhResult", "EPhSettings", "EPhWorkflow", "WorkflowError",
     "build_fortify_shim", "collect_qe_eph", "min_frequency_cm1", "workflow_from_config",
+    "SMEARING_ADMISSION", "admit_smearings", "mode_negative_fractions",
 ]

@@ -442,6 +442,23 @@ def atoms_to_spectrum(pos: np.ndarray, mass: np.ndarray, *, unit: str, label: st
                     rel_envelope, label, prov)
 
 
+def mode_negative_fractions(tab: QEA2FDos) -> list[float]:
+    """Negative alpha^2F mass of each phonon mode at omega > 0, as a fraction of the total positive
+    mass (uniform matdyn bins, so Delta cancels).
+
+    alpha^2F_nu(omega) = (1/N_F) sum_q gamma_qnu/(pi omega_qnu) delta(omega - omega_qnu) with
+    gamma_qnu = sum_k |g|^2 x (non-negative double-delta weights) is non-negative mode by mode, so
+    any negative value is numerical: a double-delta smearing the k grid does not resolve, made
+    visible by the Fourier interpolation of gamma near Gamma. Checking modes, not only the total,
+    catches ringing hidden by cancellation between branches.
+    """
+    pos = tab.E_Ry > 0
+    A = float(np.sum(np.clip(tab.a2f_total[pos], 0.0, None)))
+    modes = tab.a2f_modes[pos]
+    return [float(-np.sum(np.clip(modes[:, k], None, 0.0))) / max(A, 1e-300)
+            for k in range(modes.shape[1])]
+
+
 def qe_a2f_dos_to_spectrum(tab: QEA2FDos, *, label: str = "", broadening_Ry: float | None = None,
                            extra_provenance: dict | None = None, **kw: Any) -> "Spectrum":
     """QE a2F.dos -> Spectrum with QE's own bin rule (atom at E_n, mass a2F_n * Delta)."""

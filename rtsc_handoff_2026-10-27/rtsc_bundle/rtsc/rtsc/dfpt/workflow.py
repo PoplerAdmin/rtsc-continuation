@@ -36,11 +36,11 @@ from . import qe_inputs as qi
 from .checks import Tolerances, check_qe_spectrum, spread_report
 from .grids import EPhGrids, select_grids
 from .launcher import Launcher, RunRecord, run_command
-from .parsers import (parse_qe_a2f_dos, parse_qe_lambda_file, parse_qe_version,
-                      qe_a2f_dos_to_spectrum)
+from .parsers import (QEA2FDos, mode_negative_fractions, parse_qe_a2f_dos, parse_qe_lambda_file,
+                      parse_qe_version, qe_a2f_dos_to_spectrum)
 from .pseudo import PseudoTable
 from .structure import CellData, parse_pw_final_structure, to_celldata
-from .units import GPA_TO_KBAR
+from .units import GPA_TO_KBAR, to_kelvin_factor
 
 STEPS = ("relax", "scf_fit", "scf", "ph", "q2r", "matdyn")
 CODES = {"relax": "pw.x", "scf_fit": "pw.x", "scf": "pw.x", "ph": "ph.x", "q2r": "q2r.x",
@@ -88,6 +88,9 @@ class EPhSettings:
     el_ph_sigma_Ry: float = 0.005            # broadenings are isig * el_ph_sigma, isig=1..nsigma
     el_ph_nsigma: int = 10
     use_smearings: list[int] | None = None   # None: every smearing is an alternative spectrum
+    # "mode_positive": admit only the contiguous block of smearings, starting at the smallest one
+    # whose per-mode alpha^2F is non-negative (see admit_smearings); "all": no admission rule
+    smearing_admission: str = "all"
     tr2_ph: float = 1e-14
     alpha_mix: float | None = None
     fildvscf: str | None = "dvscf"
@@ -191,6 +194,10 @@ class EPhWorkflow:
             bad = [i for i in settings.use_smearings if not 1 <= i <= settings.el_ph_nsigma]
             if bad:
                 raise ValueError(f"use_smearings {bad} outside 1..{settings.el_ph_nsigma}")
+        if settings.smearing_admission not in SMEARING_ADMISSION:
+            raise ValueError(f"smearing_admission must be one of {SMEARING_ADMISSION}")
+        if settings.smearing_admission != "all" and settings.use_smearings is not None:
+            raise ValueError("use_smearings and smearing_admission are mutually exclusive")
         self._grids: EPhGrids | None = None
 
     # ------------------------------------------------------------------ helpers
@@ -489,7 +496,8 @@ class EPhWorkflow:
                                                               s.press_kbar)
             prov["relax_summary"] = self.state["relax_summary"]
         res = collect_qe_eph(self.workdir, self.material_id, el_ph_nsigma=s.el_ph_nsigma,
-                             use_smearings=s.use_smearings, tol=tol, base_provenance=prov)
+                             use_smearings=s.use_smearings, tol=tol, base_provenance=prov,
+                             smearing_admission=s.smearing_admission)
         for wmsg in (self.state.get("relax_summary") or {}).get("warnings", []):
             res.warnings.append("relax: " + wmsg)
         ps_warn = (self.state.get("pseudopotentials") or {}).get("_warnings", [])
@@ -500,10 +508,67 @@ class EPhWorkflow:
         return res
 
 
+SMEARING_ADMISSION = ("all", "mode_positive")
+#: per-mode negative mass tolerated as print/rounding noise (same scale as atoms_to_spectrum's)
+MODE_NEGATIVE_TOL_REL = 1e-6
+
+
+def admit_smearings(tabs: dict[int, QEA2FDos], tol_rel: float = MODE_NEGATIVE_TOL_REL
+                    ) -> tuple[list[int], dict[str, Any], str | None]:
+    """Rule 'mode_positive': smearing i passes iff every mode's alpha^2F_nu is non-negative at
+    omega > 0 (within tol_rel of the total mass; see parsers.mode_negative_fractions). The admitted
+    set is the contiguous block from the smallest passing smearing upwards (as in protocol P3).
+
+    Failing smearings below that block are excluded: they are too narrow for the k grid, which is
+    the only way per-mode negativity arises from a monotone ladder. A failure ABOVE a passing
+    smearing has no such explanation, so it is an error, as is no smearing passing at all.
+    Returns (admitted, report, error); error is None on success.
+    """
+    order = sorted(tabs)
+    neg = {i: mode_negative_fractions(tabs[i]) for i in order}
+    passing = [i for i in order if max(neg[i], default=0.0) <= tol_rel]
+    report: dict[str, Any] = {
+        "rule": "mode_positive", "tol_rel": tol_rel,
+        "max_mode_negative_fraction": {str(i): max(neg[i], default=0.0) for i in order},
+        "lambda_footer": {str(i): tabs[i].lambda_reported for i in order}}
+    if not passing:
+        report.update(admitted=[], excluded=order)
+        return [], report, ("smearing admission: no smearing has non-negative per-mode alpha^2F "
+                            f"(max negative fraction per smearing {report['max_mode_negative_fraction']})")
+    block = [i for i in order if i >= passing[0]]
+    holes = [i for i in block if i not in passing]
+    excluded = [i for i in order if i < passing[0]]
+    report.update(admitted=block, excluded=excluded)
+    if holes:
+        return [], report, (f"smearing admission: smearings {holes} fail per-mode positivity above "
+                            f"the passing smearing {passing[0]} (non-contiguous; not explained by "
+                            "under-resolved smearing)")
+    return block, report, None
+
+
+def _exclusion_tag(report: dict[str, Any], tabs: dict[int, QEA2FDos]) -> str | None:
+    """Assumption carried by every admitted spectrum when smearings were excluded:
+    'A-SIGMA-EXCLUDED(sigma1:lam=<l>:A=<a>K,...)' with the excluded spectra's own (signed) lambda
+    and A. rtsc.pipeline.blocking_tags compares them with the admitted alternatives' envelope
+    boxes and blocks the proof direction(s) they fall outside of."""
+    ex = report.get("excluded") or []
+    if not ex:
+        return None
+    f = to_kelvin_factor("Ry")
+    parts = []
+    for i in ex:
+        t = tabs[i]
+        pos = t.E_Ry > 0
+        lam = float(2.0 * np.sum(t.a2f_total[pos] / t.E_Ry[pos]) * t.delta_Ry)
+        A = float(np.sum(t.a2f_total[pos]) * t.delta_Ry * f)
+        parts.append(f"sigma{i}:lam={lam!r}:A={A!r}K")
+    return f"A-SIGMA-EXCLUDED({','.join(parts)})"
+
+
 def collect_qe_eph(workdir: str | Path, material_id: str, *, el_ph_nsigma: int | None = None,
                    use_smearings: list[int] | None = None, tol: Tolerances | None = None,
                    base_provenance: dict | None = None, imaginary_tol_cm1: float = 1.0,
-                   **spectrum_kw: Any) -> EPhResult:
+                   smearing_admission: str = "all", **spectrum_kw: Any) -> EPhResult:
     """Parse a finished QE matdyn directory (a2F.dos*, lambda, freq.dos) into an EPhResult.
 
     Usable on runs made outside this workflow (``base_provenance`` then documents them).
@@ -520,6 +585,33 @@ def collect_qe_eph(workdir: str | Path, material_id: str, *, el_ph_nsigma: int |
     spectra, checks = [], []
     base = dict(base_provenance or {})
     errors: list[str] = []
+    excl_tag = None
+    if smearing_admission not in SMEARING_ADMISSION:
+        raise ValueError(f"smearing_admission must be one of {SMEARING_ADMISSION}")
+    if smearing_admission == "mode_positive":
+        if use_smearings is not None:
+            raise ValueError("use_smearings and smearing_admission are mutually exclusive")
+        tabs = {}
+        for isig in idx:
+            try:
+                tabs[isig] = parse_qe_a2f_dos(w / f"a2F.dos{isig}")
+            except (ValueError, OSError):
+                pass        # reported as DFPT_SPECTRUM_ERROR by the main loop below
+        admitted, report, err = admit_smearings(tabs)
+        base["smearing_admission"] = report
+        if err:
+            errors.append(err)
+            flags.append("SMEARING_ADMISSION_FAIL")
+            idx = []
+        else:
+            unparsed = [i for i in idx if i not in tabs]
+            idx = sorted(set(admitted) | set(unparsed))
+            if report["excluded"]:
+                warnings.append(
+                    f"only smearing indices {idx} of 1..{el_ph_nsigma} kept (smearing_admission="
+                    f"mode_positive: {['sigma%d' % i for i in report['excluded']]} have negative "
+                    "per-mode alpha^2F, i.e. are not resolved by the k grid)")
+                excl_tag = _exclusion_tag(report, tabs)
     fmin = None
     fq = w / "freq.dos"
     if fq.exists():
@@ -532,6 +624,8 @@ def collect_qe_eph(workdir: str | Path, material_id: str, *, el_ph_nsigma: int |
         b = entry.broadening_Ry if entry else None
         prov = dict(base)
         prov["qe_lambda_file"] = asdict(entry) if entry else None
+        if excl_tag:
+            prov["assumptions"] = list(prov.get("assumptions", [])) + [excl_tag]
         try:
             tab = parse_qe_a2f_dos(w / f"a2F.dos{isig}")
             sp = qe_a2f_dos_to_spectrum(tab, label=f"{material_id}:qe:sigma{isig}"

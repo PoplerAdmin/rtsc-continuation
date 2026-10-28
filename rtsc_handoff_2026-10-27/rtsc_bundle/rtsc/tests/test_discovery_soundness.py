@@ -212,9 +212,14 @@ def test_accounting_every_structure_one_status_per_goal(tmp_path):
     for m in loop.ledger.materials():
         for g in ("G-RT", "G-AMB"):
             assert loop.ledger.current_one(m["material_id"], g) is not None
-    dup_rows = loop.ledger.q("SELECT d.material_id, d.fingerprint, m.fingerprint AS mfp FROM duplicates d "
+    dup_rows = loop.ledger.q("SELECT d.material_id, d.fingerprint, d.how, m.fingerprint AS mfp, "
+                             "m.fingerprint_relaxed AS mfr FROM duplicates d "
                              "JOIN materials m ON m.material_id=d.material_id")
-    assert all(r["fingerprint"] == r["mfp"] for r in dup_rows if not r["fingerprint"].startswith("invalid"))
+    assert {r["how"] for r in dup_rows} <= {"fingerprint+confirmed", "structure_matcher",
+                                            "invalid (identical raw output)"}
+    # a fingerprint link must be a real fingerprint hit; a StructureMatcher-confirmed duplicate may have a
+    # different fingerprint (the fingerprint is only a candidate key)
+    assert all(r["fingerprint"] in (r["mfp"], r["mfr"]) for r in dup_rows if r["how"] != "structure_matcher")
 
 
 # ------------------------------------------------------------------------------- (4) goal semantics
