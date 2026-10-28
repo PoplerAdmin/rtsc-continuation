@@ -1,0 +1,22 @@
+........................................................................ [ 16%]
+........................................................................ [ 32%]
+........................................................................ [ 48%]
+........................................................................ [ 64%]
+........................s................ss............................. [ 80%]
+.......s...s....s..sssss................................................ [ 96%]
+..............                                                           [100%]
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_mlff_mattersim_real.py:8: could not import 'mattersim': No module named 'mattersim'
+SKIPPED [1] tests/test_mlff_prescreen.py:10: could not import 'ase': No module named 'ase'
+SKIPPED [1] tests/test_dfpt_qe_real.py:42: set RTSC_RUN_QE=1 with QE binaries + Al.pz-vbc.UPF
+SKIPPED [1] tests/test_dfpt_workflow.py:241: could not import 'ase.build': No module named 'ase'
+SKIPPED [1] tests/test_dfpt_workflow.py:249: could not import 'pymatgen.core': No module named 'pymatgen'
+SKIPPED [1] tests/test_generate_finetune.py:40: could not import 'yaml': No module named 'yaml'
+SKIPPED [1] tests/test_generate_mattergen.py:101: could not import 'yaml': No module named 'yaml'
+SKIPPED [1] tests/test_generate_mattergen.py:167: could not import 'ase.io': No module named 'ase'
+SKIPPED [1] tests/test_pipeline_optional.py:25: could not import 'pymatgen': No module named 'pymatgen'
+SKIPPED [1] tests/test_pipeline_optional.py:39: could not import 'pymatgen': No module named 'pymatgen'
+SKIPPED [1] tests/test_pipeline_optional.py:55: could not import 'pymatgen': No module named 'pymatgen'
+SKIPPED [1] tests/test_pipeline_optional.py:55: could not import 'ase': No module named 'ase'
+SKIPPED [1] tests/test_pipeline_optional.py:63: could not import 'spglib': No module named 'spglib'
+435 passed, 13 skipped in 199.82s (0:03:19)

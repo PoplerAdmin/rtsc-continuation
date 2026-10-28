@@ -1,0 +1,21 @@
+⚠ [1036/1056] Replayed TcR1.Basic
+warning: TcR1/Basic.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: TcR1/Basic.lean: imports `Mathlib.Algebra.Order.BigOperators.Group.Finset` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: TcR1/Basic.lean: imports `Mathlib.Algebra.BigOperators.Ring.Finset` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: TcR1/Basic.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: TcR1/Basic.lean: imports `Mathlib.Tactic.Positivity` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: TcR1/Basic.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: TcR1/Basic.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [1048/1056] Built MultiBand.Defs (10s)
+✔ [1049/1056] Built MultiBand.Algebra (12s)
+✔ [1050/1056] Built MultiBand.Faithful (19s)
+✔ [1051/1056] Built MultiBand.Identities (26s)
+✔ [1052/1056] Built MultiBand.Odd (15s)
+✔ [1053/1056] Built MultiBand.Main (32s)
+✔ [1054/1056] Built MultiBand.Pipeline (11s)
+✔ [1055/1056] Built MultiBand (7.9s)
+Build completed successfully (1056 jobs).
+
+real	2m6.360s
+user	0m33.975s
+sys	0m5.610s

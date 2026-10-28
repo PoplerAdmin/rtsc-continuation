@@ -1,0 +1,5 @@
+tailsum test 0.10423083683230294 0.10423075324230555
+B=1  reduced a*=3.5114985090   full-line nonsymmetric a*(Nh=60,100)=['3.5115005710', '3.5114987276']
+B=2  reduced a*=2.0947142227   full-line nonsymmetric a*(Nh=60,100)=['2.0947155936', '2.0947143681']
+B=3  reduced a*=3.6888646422   full-line nonsymmetric a*(Nh=60,100)=['3.6888658613', '3.6888647722']
+single band w=7.5748661: reduced a* = 4.331481488413059

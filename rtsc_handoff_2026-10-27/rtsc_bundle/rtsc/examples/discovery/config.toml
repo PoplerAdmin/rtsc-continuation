@@ -1,0 +1,61 @@
+# Discovery loop demo: SYNTHETIC spectra (invented; NOT data for any material), no DFT, no ML.
+# Structures are hypothetical prototype substitutions (examples/discovery/prototypes).
+# Run:      rtsc discover run -c examples/discovery/config.toml
+# Continue: rtsc discover continue -c examples/discovery/config.toml --certified-per-goal 1
+#
+# For production: remove [discovery.synthetic_spectra], enable [dfpt] (see README section 5) and
+# add generator / pre-screen adapters, e.g.
+#   [discovery.generators.mattergen]   type = "python", class = "rtsc.generate.mattergen:..."
+#   [discovery.prescreen]              type = "python", class = "rtsc.mlff.mattersim:..."
+
+[run]
+name = "discovery demo (SYNTHETIC)"
+
+[spectra]
+rel_envelope = 0.05
+
+[certify]
+mu_hi = 0.15
+omega_c_factor = 10.0
+cutoff_rule = "block"
+mode = "decide"            # stop refining once decided (faster demo)
+
+[discovery]
+workdir = "../../runs/discovery_demo"
+seed = 7
+executor = "local"         # or "slurm" (see [discovery.slurm])
+
+[discovery.goals.G-RT]
+T_star_K = 300.0
+P_max_GPa = 200.0
+pressures_GPa = [0.0, 100.0, 200.0]
+
+[discovery.goals.G-AMB]
+T_star_K = 77.0            # configurable up to 300 K; pressure fixed to ambient (<= 1e-4 GPa)
+pressures_GPa = [0.0]
+
+[discovery.search]
+chemical_systems = [["H", "La"], ["H", "Y"], ["Ca", "H"], ["H", "S"], ["B", "Mg"], ["B", "C"]]
+policy = "thompson"        # or "ucb"
+requests_per_round = 4
+structures_per_request = 3
+exploration_floor = 0.25
+
+[discovery.generators.prototypes]
+type = "prototype_substitution"
+prototypes = "prototypes"
+
+[discovery.prescreen]
+type = "null"              # no ML in the demo
+defer_if_ml_unstable = true
+max_e_above_hull_ml_eV = 0.2
+
+[discovery.budget]
+dft_per_round = 4
+
+[discovery.stop]
+certified_per_goal = 1
+max_rounds = 8
+
+[discovery.synthetic_spectra]
+enabled = true             # DEMO ONLY: attach invented alpha^2F to every generated structure

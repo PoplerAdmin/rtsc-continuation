@@ -1,0 +1,6 @@
+{"seed": 11, "B": 2, "nat": 1, "trials": 80, "min_ratio": {"avg": 0.00515, "maxdiag": 0.0, "kappa": 1.00701, "thmA": 1.00701, "rowmax": 1.00701, "trace_half": 1.00701}}
+{"seed": 12, "B": 2, "nat": 3, "trials": 60, "min_ratio": {"avg": 0.01059, "maxdiag": 0.04955, "kappa": 1.07467, "thmA": 1.08573, "rowmax": 1.22267, "trace_half": 1.24627}}
+{"seed": 13, "B": 3, "nat": 1, "trials": 60, "min_ratio": {"avg": 0.00144, "maxdiag": 0.0, "kappa": 1.01521, "thmA": 1.02329, "rowmax": 1.08501, "trace_half": 1.2506}}
+{"seed": 14, "B": 3, "nat": 2, "trials": 40, "min_ratio": {"avg": 0.01585, "maxdiag": 0.0, "kappa": 1.14435, "thmA": 1.23149, "rowmax": 1.37673, "trace_half": 2.03702}}
+{"seed": 15, "B": 4, "nat": 1, "trials": 40, "min_ratio": {"avg": 0.03964, "maxdiag": 0.0, "kappa": 1.1065, "thmA": 1.30604, "rowmax": 1.83841, "trace_half": 2.38821}}
+{"seed": 16, "B": 4, "nat": 3, "trials": 25, "min_ratio": {"avg": 0.04191, "maxdiag": 0.40172, "kappa": 1.36865, "thmA": 1.59306, "rowmax": 2.29265, "trace_half": 3.41545}}

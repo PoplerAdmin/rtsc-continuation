@@ -1,0 +1,11 @@
+rtsc bundle assembled 2026-10-27T18:04:27Z on Linux 6.18.44-fc-v165 x86_64
+sources: RTSC_SRC=/home/claude/rtsc  TC_SRC=/home/claude/tc
+rtsc version (pyproject): 0.1.0
+lean-toolchain: leanprover/lean4:v4.35.0
+mathlib rev (lake-manifest): 56a005855ea17e0b0958f73ec801ae140b0a1679
+python used to assemble: Python 3.13.17
+newest source file mtime per component:
+  rtsc: 2026-10-27 18:02  rtsc/tests/test_discovery_soundness.py
+  lean: 2026-10-27 17:59  lean/README.md
+  proof: 2026-10-27 14:51  proof/audits/audit_MB/REPORT_SUMMARY.md
+  certificates: 2026-10-27 13:53  certificates/wMB/PROOF.md

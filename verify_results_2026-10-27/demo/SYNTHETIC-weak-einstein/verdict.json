@@ -1,0 +1,119 @@
+{
+ "material_id": "SYNTHETIC-weak-einstein",
+ "status": "REJECTED_PROVEN",
+ "T_low_K": null,
+ "T_up_K": 48.482257727318675,
+ "reasons": [
+  "alt 0 (SYNTHETIC weak): REJECTED_PROVEN; bracket [None, 48.482257727318675] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}"
+ ],
+ "rule_ids": [
+  "R-UNIV",
+  "CLASSIFY-S5"
+ ],
+ "assumptions": [
+  "M-ISO-MIGDAL (isotropic Migdal-Eliashberg, linearised gap equation, given a2F)",
+  "H(a0=4.33148145, eta=1e-09) [PROOF.md Prop. 6, wE1]",
+  "TRUST: Arb/FLINT (python-flint 0.9.0) ball arithmetic and exact conversions",
+  "TARGET(T*=300.0 K)",
+  "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=5862.5, row_check=mhat, rejection_model=isotropic)",
+  "E-ENV(0.05) weights only (ERRATA F5) [SYNTHETIC weak]",
+  "U-MU[0,0.15]",
+  "REJECTED holds for every mu*>=0 and every cutoff (Lean D2)",
+  "M-ISO-SINGLEBAND (rejection uses the DOS-averaged single-band A)",
+  "TRUST: python-flint 0.9.0 / FLINT 3.6.0"
+ ],
+ "flags": [
+  "MULTIBAND_RISK",
+  "SYNTHETIC_DATA"
+ ],
+ "certificate": {
+  "version": "rtsc-certify-1",
+  "a0": "86629629/20000000",
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.15,
+   "omega_c": 5862.5,
+   "row_check": "mhat",
+   "rel_tol": 0.0001,
+   "mode": "decide"
+  },
+  "alternatives": [
+   {
+    "index": 0,
+    "label": "SYNTHETIC weak",
+    "spectrum_sha256": "954f36507e13baa8832bfd744e1431d72cb81661c69caa588f877be8ae5bbb96",
+    "rel_envelope": 0.05,
+    "A_hi": "136297792536539224322985445254653539/649037107316853453566312041152512",
+    "cells": {
+     "t_end": "0x1.83dba9f0789dbp+5",
+     "T_up": "0x1.83dba9f0789dbp+5",
+     "cells": []
+    },
+    "seconds": 0.00011849403381347656,
+    "evidence": {
+     "univFires": true,
+     "cellsBelowTarget": false,
+     "rayleighAtOrAboveTarget": false
+    },
+    "classifyAlt": "REJECTED_PROVEN",
+    "checks": [
+     "R-UNIV: A_hi=210 K, a0*T*=1299.444435 K -> True",
+     "D1 A_hi <= a0*t_end: True",
+     "no cells (bound t_end via univ_stable only)"
+    ]
+   }
+  ],
+  "lean": {
+   "R-UNIV": [
+    "PipelineLogic.R_UNIV",
+    "PipelineLogic.univ_stable",
+    "PipelineLogic.stable_of_A_le",
+    "TcR1.stable_of_ge"
+   ],
+   "R-CELLS": [
+    "PipelineLogic.R_CELLS",
+    "PipelineLogic.cells_stable",
+    "PipelineLogic.cell_stable",
+    "PipelineLogic.envelope_form_bound",
+    "PipelineLogic.schur_row_test_inf",
+    "PipelineLogic.rows_of_eventually",
+    "PipelineLogic.lam_box",
+    "PipelineLogic.cover"
+   ],
+   "R-MU": [
+    "PipelineLogic.R_MU",
+    "PipelineLogic.stable_of_even_bound"
+   ],
+   "R-ODD": [
+    "TcR1.L6 via PipelineLogic.stable_of_even_bound"
+   ],
+   "C-RAYLEIGH": [
+    "PipelineLogic.rayleigh_cert",
+    "PipelineLogic.boxMin_le",
+    "PipelineLogic.boxMin_attained",
+    "PipelineLogic.sel_mul_eq_min",
+    "PipelineLogic.Qp_anti_mu"
+   ],
+   "CLASSIFY": [
+    "PipelineLogic.classify_rejected_sound",
+    "PipelineLogic.classify_certified_sound",
+    "PipelineLogic.classify_eq_rejected_iff",
+    "PipelineLogic.classify_eq_certified_iff",
+    "PipelineLogic.classify_cases"
+   ],
+   "R-MULTI": [
+    "MultiBand.R_UNIV_MB",
+    "MultiBand.R_UNIV_MB_eig",
+    "MultiBand.R_UNIV_MB_rowsum",
+    "MultiBand.sub_of_K",
+    "MultiBand.sub_env",
+    "MultiBand.thm1_even",
+    "MultiBand.thm3_odd"
+   ]
+  },
+  "rejection_model": "isotropic",
+  "multiband": [],
+  "status_single_band": "REJECTED_PROVEN",
+  "seconds": 0.0002162456512451172
+ }
+}

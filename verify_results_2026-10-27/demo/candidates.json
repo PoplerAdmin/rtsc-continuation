@@ -1,0 +1,298 @@
+[
+ {
+  "material_id": "SYNTHETIC-strong-coupling",
+  "formula": "(synthetic)",
+  "source": "synthetic_demo",
+  "synthetic": true,
+  "status": "CERTIFIED_CANDIDATE",
+  "T_low_K": 413.5845207080677,
+  "T_up_K": 727.2338659097802,
+  "bracket_model": "single-band (DOS-averaged)",
+  "T_target_K": 300.0,
+  "mu_hi": 0.15,
+  "rel_envelope": 0.05,
+  "cutoff": "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=24525.0, row_check=mhat, rejection_model=isotropic)",
+  "n_spectra": 2,
+  "A_max_K": 3000.0,
+  "lambda_min": 2.8422858002862275,
+  "lambda_max": 3.0106224700484785,
+  "dropped_nonpos_mass_K": null,
+  "pressure_GPa": null,
+  "priority": 0.7151763803990177,
+  "proof_basis": "Arb + Lean",
+  "rule_ids": [
+   "C-RAYLEIGH",
+   "CLASSIFY-S5"
+  ],
+  "assumptions": [
+   "M-ISO-MIGDAL (isotropic Migdal-Eliashberg, linearised gap equation, given a2F)",
+   "H(a0=4.33148145, eta=1e-09) [PROOF.md Prop. 6, wE1]",
+   "TRUST: Arb/FLINT (python-flint 0.9.0) ball arithmetic and exact conversions",
+   "TARGET(T*=300.0 K)",
+   "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=24525.0, row_check=mhat, rejection_model=isotropic)",
+   "E-ENV(0.05) weights only (ERRATA F5) [SYNTHETIC strong, smearing a]",
+   "E-ENV(0.05) weights only (ERRATA F5) [SYNTHETIC strong, smearing b]",
+   "U-MU[0,0.15]",
+   "CUTOFF-BLOCK(N_c(T)=#{n>=0:(2n+1)piT<=omega_c}, omega_c=24525.0 K) (ERRATA F3: lower bounds / CERTIFIED hold for this cutoff rule)",
+   "M-ISO-SINGLEBAND (the bracket [T_low, T_up] is the single-band DOS-averaged one)",
+   "TRUST: python-flint 0.9.0 / FLINT 3.6.0"
+  ],
+  "flags": [
+   "SYNTHETIC_DATA",
+   "MAGNETIC_PROXIMITY",
+   "STRONG_COUPLING"
+  ],
+  "reasons": [
+   "alt 0 (SYNTHETIC strong, smearing a): CERTIFIED_CANDIDATE; bracket [422.04080588006696, 727.2338659097802] K; evidence {'univFires': False, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': True}",
+   "alt 1 (SYNTHETIC strong, smearing b): CERTIFIED_CANDIDATE; bracket [413.5845207080677, 702.9927370461209] K; evidence {'univFires': False, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': True}"
+  ],
+  "verdict_origin": "rtsc.certify.classify",
+  "record": "/home/user/rtsc_work/verify_py/demo/SYNTHETIC-strong-coupling/record.json"
+ },
+ {
+  "material_id": "SYNTHETIC-borderline",
+  "formula": "(synthetic)",
+  "source": "synthetic_demo",
+  "synthetic": true,
+  "status": "UNDECIDED",
+  "T_low_K": null,
+  "T_up_K": 412.09919068220876,
+  "bracket_model": "single-band (DOS-averaged)",
+  "T_target_K": 300.0,
+  "mu_hi": 0.15,
+  "rel_envelope": 0.05,
+  "cutoff": "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=45750.0, row_check=mhat, rejection_model=isotropic)",
+  "n_spectra": 1,
+  "A_max_K": 1700.0,
+  "lambda_min": 0.8520836333239835,
+  "lambda_max": 0.8520836333239835,
+  "dropped_nonpos_mass_K": null,
+  "pressure_GPa": null,
+  "priority": 0.6000699729952194,
+  "proof_basis": "Arb + Lean",
+  "rule_ids": [
+   "CLASSIFY-S5"
+  ],
+  "assumptions": [
+   "M-ISO-MIGDAL (isotropic Migdal-Eliashberg, linearised gap equation, given a2F)",
+   "H(a0=4.33148145, eta=1e-09) [PROOF.md Prop. 6, wE1]",
+   "TRUST: Arb/FLINT (python-flint 0.9.0) ball arithmetic and exact conversions",
+   "TARGET(T*=300.0 K)",
+   "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=45750.0, row_check=mhat, rejection_model=isotropic)",
+   "E-ENV(0.05) weights only (ERRATA F5) [SYNTHETIC borderline]",
+   "U-MU[0,0.15]",
+   "M-ISO-SINGLEBAND (the bracket [T_low, T_up] is the single-band DOS-averaged one)",
+   "TRUST: python-flint 0.9.0 / FLINT 3.6.0"
+  ],
+  "flags": [
+   "SYNTHETIC_DATA"
+  ],
+  "reasons": [
+   "alt 0 (SYNTHETIC borderline): UNDECIDED; bracket [None, 412.09919068220876] K; evidence {'univFires': False, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}"
+  ],
+  "verdict_origin": "rtsc.certify.classify",
+  "record": "/home/user/rtsc_work/verify_py/demo/SYNTHETIC-borderline/record.json"
+ },
+ {
+  "material_id": "SYNTHETIC-high-freq-moderate-coupling",
+  "formula": "(synthetic)",
+  "source": "synthetic_demo",
+  "synthetic": true,
+  "status": "REJECTED_PROVEN",
+  "T_low_K": null,
+  "T_up_K": 299.9999997206032,
+  "bracket_model": "single-band (DOS-averaged)",
+  "T_target_K": 300.0,
+  "mu_hi": 0.15,
+  "rel_envelope": 0.05,
+  "cutoff": "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=68625.0, row_check=mhat, rejection_model=isotropic)",
+  "n_spectra": 1,
+  "A_max_K": 1400.0,
+  "lambda_min": 0.46781062221708897,
+  "lambda_max": 0.46781062221708897,
+  "dropped_nonpos_mass_K": null,
+  "pressure_GPa": null,
+  "priority": 0.5275683373805923,
+  "proof_basis": "Arb + Lean",
+  "rule_ids": [
+   "R-CELLS",
+   "R-MU",
+   "R-ODD",
+   "CLASSIFY-S5"
+  ],
+  "assumptions": [
+   "M-ISO-MIGDAL (isotropic Migdal-Eliashberg, linearised gap equation, given a2F)",
+   "H(a0=4.33148145, eta=1e-09) [PROOF.md Prop. 6, wE1]",
+   "TRUST: Arb/FLINT (python-flint 0.9.0) ball arithmetic and exact conversions",
+   "TARGET(T*=300.0 K)",
+   "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=68625.0, row_check=mhat, rejection_model=isotropic)",
+   "E-ENV(0.05) weights only (ERRATA F5) [SYNTHETIC high-freq]",
+   "U-MU[0,0.15]",
+   "REJECTED holds for every mu*>=0 and every cutoff (Lean D2)",
+   "M-ISO-SINGLEBAND (rejection uses the DOS-averaged single-band A)",
+   "TRUST: python-flint 0.9.0 / FLINT 3.6.0"
+  ],
+  "flags": [
+   "MULTIBAND_RISK",
+   "SYNTHETIC_DATA"
+  ],
+  "reasons": [
+   "alt 0 (SYNTHETIC high-freq): REJECTED_PROVEN; bracket [None, 299.9999997206032] K; evidence {'univFires': False, 'cellsBelowTarget': True, 'rayleighAtOrAboveTarget': False}"
+  ],
+  "verdict_origin": "rtsc.certify.classify",
+  "record": "/home/user/rtsc_work/verify_py/demo/SYNTHETIC-high-freq-moderate-coupling/record.json"
+ },
+ {
+  "material_id": "SYNTHETIC-weak-einstein",
+  "formula": "(synthetic)",
+  "source": "synthetic_demo",
+  "synthetic": true,
+  "status": "REJECTED_PROVEN",
+  "T_low_K": null,
+  "T_up_K": 48.482257727318675,
+  "bracket_model": "single-band (DOS-averaged)",
+  "T_target_K": 300.0,
+  "mu_hi": 0.15,
+  "rel_envelope": 0.05,
+  "cutoff": "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=5862.5, row_check=mhat, rejection_model=isotropic)",
+  "n_spectra": 1,
+  "A_max_K": 200.0,
+  "lambda_min": 0.8028326586795943,
+  "lambda_max": 0.8028326586795943,
+  "dropped_nonpos_mass_K": null,
+  "pressure_GPa": null,
+  "priority": 0.25558849012412166,
+  "proof_basis": "Arb + Lean",
+  "rule_ids": [
+   "R-UNIV",
+   "CLASSIFY-S5"
+  ],
+  "assumptions": [
+   "M-ISO-MIGDAL (isotropic Migdal-Eliashberg, linearised gap equation, given a2F)",
+   "H(a0=4.33148145, eta=1e-09) [PROOF.md Prop. 6, wE1]",
+   "TRUST: Arb/FLINT (python-flint 0.9.0) ball arithmetic and exact conversions",
+   "TARGET(T*=300.0 K)",
+   "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=5862.5, row_check=mhat, rejection_model=isotropic)",
+   "E-ENV(0.05) weights only (ERRATA F5) [SYNTHETIC weak]",
+   "U-MU[0,0.15]",
+   "REJECTED holds for every mu*>=0 and every cutoff (Lean D2)",
+   "M-ISO-SINGLEBAND (rejection uses the DOS-averaged single-band A)",
+   "TRUST: python-flint 0.9.0 / FLINT 3.6.0"
+  ],
+  "flags": [
+   "MULTIBAND_RISK",
+   "SYNTHETIC_DATA"
+  ],
+  "reasons": [
+   "alt 0 (SYNTHETIC weak): REJECTED_PROVEN; bracket [None, 48.482257727318675] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}"
+  ],
+  "verdict_origin": "rtsc.certify.classify",
+  "record": "/home/user/rtsc_work/verify_py/demo/SYNTHETIC-weak-einstein/record.json"
+ },
+ {
+  "material_id": "SYNTHETIC-above-hull",
+  "formula": "(synthetic)",
+  "source": "synthetic_demo",
+  "synthetic": true,
+  "status": "EXCLUDED_ASSUMPTION",
+  "T_low_K": null,
+  "T_up_K": null,
+  "bracket_model": "-",
+  "T_target_K": 300.0,
+  "mu_hi": 0.15,
+  "rel_envelope": null,
+  "cutoff": "",
+  "n_spectra": 0,
+  "A_max_K": null,
+  "lambda_min": null,
+  "lambda_max": null,
+  "dropped_nonpos_mass_K": null,
+  "pressure_GPa": null,
+  "priority": null,
+  "proof_basis": "physical criterion (not proved)",
+  "rule_ids": [
+   "X-HULL"
+  ],
+  "assumptions": [
+   "X-HULL: e_above_hull <= 0.1 eV/atom",
+   "X-METAL: band_gap <= 0.0 eV (or is_metal == True when no gap is known)"
+  ],
+  "flags": [
+   "SYNTHETIC_DATA"
+  ],
+  "reasons": [
+   "excluded by physical (non-proved) existence criterion: X-HULL: e_above_hull <= 0.1 eV/atom [value=0.35; FAILED; source=stored energy_above_hull (synthetic_demo, 0.0 GPa)]"
+  ],
+  "verdict_origin": "rtsc.stability",
+  "record": "/home/user/rtsc_work/verify_py/demo/SYNTHETIC-above-hull/record.json"
+ },
+ {
+  "material_id": "SYNTHETIC-insulator",
+  "formula": "(synthetic)",
+  "source": "synthetic_demo",
+  "synthetic": true,
+  "status": "EXCLUDED_ASSUMPTION",
+  "T_low_K": null,
+  "T_up_K": null,
+  "bracket_model": "-",
+  "T_target_K": 300.0,
+  "mu_hi": 0.15,
+  "rel_envelope": null,
+  "cutoff": "",
+  "n_spectra": 0,
+  "A_max_K": null,
+  "lambda_min": null,
+  "lambda_max": null,
+  "dropped_nonpos_mass_K": null,
+  "pressure_GPa": null,
+  "priority": null,
+  "proof_basis": "physical criterion (not proved)",
+  "rule_ids": [
+   "X-METAL"
+  ],
+  "assumptions": [
+   "X-HULL: e_above_hull <= 0.1 eV/atom",
+   "X-METAL: band_gap <= 0.0 eV (or is_metal == True when no gap is known)"
+  ],
+  "flags": [
+   "SYNTHETIC_DATA"
+  ],
+  "reasons": [
+   "excluded by physical (non-proved) existence criterion: X-METAL: band_gap <= 0.0 eV (or is_metal == True when no gap is known) [value=1.2; FAILED; source=band_gap from synthetic_demo]"
+  ],
+  "verdict_origin": "rtsc.stability",
+  "record": "/home/user/rtsc_work/verify_py/demo/SYNTHETIC-insulator/record.json"
+ },
+ {
+  "material_id": "SYNTHETIC-low-priority",
+  "formula": "(synthetic)",
+  "source": "synthetic_demo",
+  "synthetic": true,
+  "status": "DEFERRED",
+  "T_low_K": null,
+  "T_up_K": null,
+  "bracket_model": "-",
+  "T_target_K": 300.0,
+  "mu_hi": 0.15,
+  "rel_envelope": null,
+  "cutoff": "",
+  "n_spectra": 0,
+  "A_max_K": null,
+  "lambda_min": null,
+  "lambda_max": null,
+  "dropped_nonpos_mass_K": null,
+  "pressure_GPa": null,
+  "priority": 0.1315793663041995,
+  "proof_basis": "-",
+  "rule_ids": [],
+  "assumptions": [],
+  "flags": [
+   "SYNTHETIC_DATA"
+  ],
+  "reasons": [
+   "budget: max_materials=4 reached at priority 0.1316; not computed (S2)"
+  ],
+  "verdict_origin": "pipeline.budget",
+  "record": "/home/user/rtsc_work/verify_py/demo/SYNTHETIC-low-priority/record.json"
+ }
+]

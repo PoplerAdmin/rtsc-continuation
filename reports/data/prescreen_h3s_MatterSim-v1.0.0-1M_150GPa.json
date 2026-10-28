@@ -1,0 +1,67 @@
+{
+ "HEURISTIC": "ARCH S2: ordering / DEFERRED only",
+ "provenance": {
+  "prescreener": "mattersim",
+  "model": "MatterSim-v1.0.0-1M",
+  "mattersim_version": "1.2.5",
+  "relax": {
+   "fmax": 0.02,
+   "max_steps": 400,
+   "optimizer": "FIRE",
+   "cell_filter": "FrechetCellFilter",
+   "constrain_symmetry": false
+  },
+  "phonon": {
+   "supercell": "auto",
+   "min_supercell_length": 7.0,
+   "max_supercell_atoms": 160,
+   "displacement": 0.01,
+   "mesh": [
+    8,
+    8,
+    8
+   ],
+   "imaginary_tol_cm1": 15.0,
+   "projected_dos": true,
+   "light_elements": [
+    "H",
+    "Li",
+    "Be",
+    "B",
+    "C",
+    "N",
+    "O",
+    "F"
+   ],
+   "hf_threshold_cm1": 500.0,
+   "dos_bins": 200
+  }
+ },
+ "wall_s": 5.9467668533325195,
+ "rows": [
+  {
+   "label": "H3S-Im-3m(KNOWN)",
+   "formula_in": "H3S",
+   "sg_in": "Im-3m",
+   "sg_relaxed": "Im-3m",
+   "e_above_hull_ml_eV": 0.0,
+   "min_freq_cm1": -450.9687273945741,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.669359144298789,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-1M",
+    "pressure_GPa=150",
+    "relax: energy_eV_per_atom=-2.063, volume_A3_per_atom=3.57, pressure_from_stress_GPa=149.4, steps=6, converged=True, max_force_eV_A=4.76e-06",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:dimer-sc', 'fallback:fcc(covalent radius)']",
+    "ml_phonons: min -451.0 cm^-1 at q=[-0.5, -0.5, 0.5], supercell [[2, 0, 0], [0, 3, 0], [0, 0, 3]], 3 displacements",
+    "supercell shortest length 6.11 A < 7.0 A (capped by max_supercell_atoms); instabilities at q not commensurate with it may be missed",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -451.0 cm^-1 < -15.0 cm^-1)"
+   ],
+   "a": 3.056591681611327,
+   "c": 3.0565916301892635,
+   "volume_per_atom": 3.5696223914198413
+  }
+ ]
+}

@@ -1,0 +1,444 @@
+{
+ "schema": "rtsc.record/1",
+ "material_id": "SYNTHETIC-high-freq-moderate-coupling",
+ "config_hash": "199c23fdf2fd77ea",
+ "input_digest": "e9a31d3a7224c3a0fe9d3be405a6bbb9f96e00a1677104cd94b1de62fcb9d52c",
+ "candidate": {
+  "material_id": "SYNTHETIC-high-freq-moderate-coupling",
+  "composition": {},
+  "source": "synthetic_demo",
+  "formula": "(synthetic)",
+  "lattice": null,
+  "species": null,
+  "frac_coords": null,
+  "spacegroup": null,
+  "pressure_GPa": null,
+  "enthalpy_eV_per_atom": null,
+  "properties": {
+   "is_metal": true,
+   "energy_above_hull": 0.0,
+   "dos_at_fermi": 0.6
+  },
+  "provenance": {
+   "source": "synthetic_demo",
+   "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+   "purpose": "A above a0*T* but lambda ~ 0.47: per-material upper bound (R-CELLS) should reject",
+   "source_entry": 0
+  },
+  "spectra_files": [],
+  "spectra": [
+   {
+    "omega_K": [
+     5137.5,
+     5212.5,
+     5287.5,
+     5362.5,
+     5437.5,
+     5512.5,
+     5587.5,
+     5662.5,
+     5737.5,
+     5812.5,
+     5887.5,
+     5962.5,
+     6037.5,
+     6112.5,
+     6187.5,
+     6262.5,
+     6337.5,
+     6412.5,
+     6487.5,
+     6562.5,
+     6637.5,
+     6712.5,
+     6787.5,
+     6862.5
+    ],
+    "weight_K": [
+     2.245250045381534,
+     4.465212893831598,
+     8.34211593797512,
+     14.640869425845963,
+     24.13871284393541,
+     37.38676982271606,
+     54.39742911235872,
+     74.35247001308394,
+     95.4704612903129,
+     115.15935833455023,
+     130.4926487529639,
+     138.9087015270446,
+     138.9087015270446,
+     130.4926487529639,
+     115.15935833455023,
+     95.4704612903129,
+     74.35247001308394,
+     54.39742911235872,
+     37.38676982271606,
+     24.13871284393541,
+     14.640869425845963,
+     8.34211593797512,
+     4.465212893831598,
+     2.245250045381534
+    ],
+    "rel_envelope": 0.0,
+    "label": "SYNTHETIC high-freq",
+    "provenance": {
+     "synthetic": true,
+     "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+     "shape": "gaussian(center=6000.0 K, width=300.0 K, A=1400.0 K, n=24)"
+    }
+   }
+  ],
+  "band_coupling_files": [],
+  "synthetic": true
+ },
+ "stages": {
+  "filters": [
+   {
+    "criterion": "X-HULL",
+    "passed": true,
+    "value": 0.0,
+    "threshold": 0.1,
+    "comparison": "e_above_hull <= 0.1 eV/atom",
+    "reason": "",
+    "data_source": "stored energy_above_hull (synthetic_demo, 0.0 GPa)",
+    "details": {}
+   },
+   {
+    "criterion": "X-METAL",
+    "passed": true,
+    "value": true,
+    "threshold": true,
+    "comparison": "band_gap <= 0.0 eV (or is_metal == True when no gap is known)",
+    "reason": "",
+    "data_source": "is_metal from synthetic_demo",
+    "details": {}
+   },
+   {
+    "criterion": "X-MAGNETIC",
+    "passed": null,
+    "value": null,
+    "threshold": 0.05,
+    "comparison": "ordering not in ['FM', 'AFM', 'FiM'] and |m| <= 0.05 mu_B/atom",
+    "reason": "no magnetic ordering / magnetisation data",
+    "data_source": "",
+    "details": {}
+   },
+   {
+    "criterion": "X-DYNAMIC",
+    "passed": null,
+    "value": null,
+    "threshold": -0.25,
+    "comparison": "min phonon frequency >= -0.25 THz (acoustic modes at Gamma ignored)",
+    "reason": "no first-principles phonon data",
+    "data_source": "",
+    "details": {}
+   }
+  ],
+  "priority": {
+   "material_id": "SYNTHETIC-high-freq-moderate-coupling",
+   "total": 0.5275683373805923,
+   "components": {
+    "dos": 0.5454545454545454,
+    "spectrum": 0.5186252333436157
+   },
+   "use": "ordering only (S2)",
+   "rank": 2
+  },
+  "spectra": {
+   "sources": [
+    "attached (1)"
+   ],
+   "n_spectra": 1,
+   "rel_envelope_applied": 0.05,
+   "summary": [
+    "Spectrum(SYNTHETIC high-freq: 24 atoms, A=1400 K, lambda=0.4678, omega_log=5978 K, e=0.05)"
+   ]
+  },
+  "certify": {
+   "params": {
+    "T_target_K": 300.0,
+    "mu_hi": 0.15,
+    "omega_c_factor": 10.0,
+    "cutoff_rule": "block",
+    "mode": "decide"
+   },
+   "started_utc": "2026-10-27T18:27:59+00:00",
+   "finished_utc": "2026-10-27T18:27:59+00:00"
+  },
+  "validity": {
+   "flags": [
+    {
+     "code": "SYNTHETIC_DATA",
+     "detail": "invented demo spectra; not data for any material",
+     "values": {}
+    }
+   ],
+   "unchecked": [
+    "NONADIABATIC (no electronic energy scale fermi_energy_eV)",
+    "MULTIBAND_ANISOTROPY (no structure / Fermi-surface data)"
+   ]
+  }
+ },
+ "spectra": [
+  {
+   "omega_K": [
+    5137.5,
+    5212.5,
+    5287.5,
+    5362.5,
+    5437.5,
+    5512.5,
+    5587.5,
+    5662.5,
+    5737.5,
+    5812.5,
+    5887.5,
+    5962.5,
+    6037.5,
+    6112.5,
+    6187.5,
+    6262.5,
+    6337.5,
+    6412.5,
+    6487.5,
+    6562.5,
+    6637.5,
+    6712.5,
+    6787.5,
+    6862.5
+   ],
+   "weight_K": [
+    2.245250045381534,
+    4.465212893831598,
+    8.34211593797512,
+    14.640869425845963,
+    24.13871284393541,
+    37.38676982271606,
+    54.39742911235872,
+    74.35247001308394,
+    95.4704612903129,
+    115.15935833455023,
+    130.4926487529639,
+    138.9087015270446,
+    138.9087015270446,
+    130.4926487529639,
+    115.15935833455023,
+    95.4704612903129,
+    74.35247001308394,
+    54.39742911235872,
+    37.38676982271606,
+    24.13871284393541,
+    14.640869425845963,
+    8.34211593797512,
+    4.465212893831598,
+    2.245250045381534
+   ],
+   "rel_envelope": 0.05,
+   "label": "SYNTHETIC high-freq",
+   "provenance": {
+    "synthetic": true,
+    "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+    "shape": "gaussian(center=6000.0 K, width=300.0 K, A=1400.0 K, n=24)"
+   }
+  }
+ ],
+ "verdict": {
+  "material_id": "SYNTHETIC-high-freq-moderate-coupling",
+  "status": "REJECTED_PROVEN",
+  "T_low_K": null,
+  "T_up_K": 299.9999997206032,
+  "reasons": [
+   "alt 0 (SYNTHETIC high-freq): REJECTED_PROVEN; bracket [None, 299.9999997206032] K; evidence {'univFires': False, 'cellsBelowTarget': True, 'rayleighAtOrAboveTarget': False}"
+  ],
+  "rule_ids": [
+   "R-CELLS",
+   "R-MU",
+   "R-ODD",
+   "CLASSIFY-S5"
+  ],
+  "assumptions": [
+   "M-ISO-MIGDAL (isotropic Migdal-Eliashberg, linearised gap equation, given a2F)",
+   "H(a0=4.33148145, eta=1e-09) [PROOF.md Prop. 6, wE1]",
+   "TRUST: Arb/FLINT (python-flint 0.9.0) ball arithmetic and exact conversions",
+   "TARGET(T*=300.0 K)",
+   "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=68625.0, row_check=mhat, rejection_model=isotropic)",
+   "E-ENV(0.05) weights only (ERRATA F5) [SYNTHETIC high-freq]",
+   "U-MU[0,0.15]",
+   "REJECTED holds for every mu*>=0 and every cutoff (Lean D2)",
+   "M-ISO-SINGLEBAND (rejection uses the DOS-averaged single-band A)",
+   "TRUST: python-flint 0.9.0 / FLINT 3.6.0"
+  ],
+  "flags": [
+   "MULTIBAND_RISK",
+   "SYNTHETIC_DATA"
+  ],
+  "certificate": {
+   "version": "rtsc-certify-1",
+   "a0": "86629629/20000000",
+   "params": {
+    "T_star": 300.0,
+    "mu_hi": 0.15,
+    "omega_c": 68625.0,
+    "row_check": "mhat",
+    "rel_tol": 0.0001,
+    "mode": "decide"
+   },
+   "alternatives": [
+    {
+     "index": 0,
+     "label": "SYNTHETIC high-freq",
+     "spectrum_sha256": "8747d871c18093df94aa0702b5bd5369240756c540e504c2c53ed281bdf841c1",
+     "rel_envelope": 0.05,
+     "A_hi": "119260568469471819759945230583857145/81129638414606681695789005144064",
+     "cells": {
+      "t_end": "0x1.536034b2698a0p+8",
+      "T_up": "0x1.2bfffffb50000p+8",
+      "cells": [
+       {
+        "T1": "0x1.2bfffffb50000p+8",
+        "T2": "0x1.536034b2698a0p+8",
+        "variant": "mhat",
+        "p": 3,
+        "N": 48,
+        "u": [
+         1.1574359598864581e-06,
+         3.5015653568073903e-07,
+         1.8116566226578807e-07,
+         1.0805711212924076e-07,
+         6.94689387981036e-08,
+         4.7120993818407465e-08,
+         3.338046654204715e-08,
+         2.4538319758979575e-08,
+         1.8631422594625287e-08,
+         1.4557777268037654e-08,
+         1.1669900812100815e-08,
+         9.572731658413785e-09,
+         8.01729794677777e-09,
+         6.842185459534772e-09,
+         5.940079932423751e-09,
+         5.238011108340959e-09,
+         4.685349457786263e-09,
+         4.246325144453276e-09,
+         3.895257397167138e-09,
+         3.6134486516346083e-09,
+         3.3871244064560565e-09,
+         3.2060437601721483e-09,
+         3.062548662361595e-09,
+         2.950905713416714e-09,
+         2.8668469194935605e-09,
+         2.807248705586138e-09,
+         2.7699095367698812e-09,
+         2.7534003228837698e-09,
+         2.756971197005901e-09,
+         2.7805050371355304e-09,
+         2.824513435559329e-09,
+         2.89017560739587e-09,
+         2.979425774619006e-09,
+         3.0951007677154307e-09,
+         3.2411681800575946e-09,
+         3.4230682726517986e-09,
+         3.64822304765746e-09,
+         3.9267987142828785e-09,
+         4.272862057907406e-09,
+         4.706161758472598e-09,
+         5.254914719897189e-09,
+         5.9602077530693274e-09,
+         6.8829072102840716e-09,
+         8.113966070697077e-09,
+         9.787020681849704e-09,
+         1.2081444975469933e-08,
+         1.5166353315664577e-08,
+         1.8974685243938714e-08
+        ],
+        "C": 1.0,
+        "eta": 0.03915737750175485,
+        "N_e": 96,
+        "M_v": 702,
+        "float_rho_N": -0.1566295100070194,
+        "check": {
+         "worst_rel": -0.03916067978479217,
+         "G_tail": 0.053387735240947504,
+         "seconds": 0.00821828842163086
+        }
+       }
+      ]
+     },
+     "search_upper": {
+      "tc_float_hi": null,
+      "seconds": 0.009563922882080078,
+      "attempts": 1
+     },
+     "seconds": 0.009701728820800781,
+     "evidence": {
+      "univFires": false,
+      "cellsBelowTarget": true,
+      "rayleighAtOrAboveTarget": false
+     },
+     "classifyAlt": "REJECTED_PROVEN",
+     "checks": [
+      "R-UNIV: A_hi=1470 K, a0*T*=1299.444435 K -> False",
+      "D1 A_hi <= a0*t_end: True",
+      "Tiles(T_up, t_end, 1 cells): True",
+      "all 1 cells certified: True"
+     ]
+    }
+   ],
+   "lean": {
+    "R-UNIV": [
+     "PipelineLogic.R_UNIV",
+     "PipelineLogic.univ_stable",
+     "PipelineLogic.stable_of_A_le",
+     "TcR1.stable_of_ge"
+    ],
+    "R-CELLS": [
+     "PipelineLogic.R_CELLS",
+     "PipelineLogic.cells_stable",
+     "PipelineLogic.cell_stable",
+     "PipelineLogic.envelope_form_bound",
+     "PipelineLogic.schur_row_test_inf",
+     "PipelineLogic.rows_of_eventually",
+     "PipelineLogic.lam_box",
+     "PipelineLogic.cover"
+    ],
+    "R-MU": [
+     "PipelineLogic.R_MU",
+     "PipelineLogic.stable_of_even_bound"
+    ],
+    "R-ODD": [
+     "TcR1.L6 via PipelineLogic.stable_of_even_bound"
+    ],
+    "C-RAYLEIGH": [
+     "PipelineLogic.rayleigh_cert",
+     "PipelineLogic.boxMin_le",
+     "PipelineLogic.boxMin_attained",
+     "PipelineLogic.sel_mul_eq_min",
+     "PipelineLogic.Qp_anti_mu"
+    ],
+    "CLASSIFY": [
+     "PipelineLogic.classify_rejected_sound",
+     "PipelineLogic.classify_certified_sound",
+     "PipelineLogic.classify_eq_rejected_iff",
+     "PipelineLogic.classify_eq_certified_iff",
+     "PipelineLogic.classify_cases"
+    ],
+    "R-MULTI": [
+     "MultiBand.R_UNIV_MB",
+     "MultiBand.R_UNIV_MB_eig",
+     "MultiBand.R_UNIV_MB_rowsum",
+     "MultiBand.sub_of_K",
+     "MultiBand.sub_env",
+     "MultiBand.thm1_even",
+     "MultiBand.thm3_odd"
+    ]
+   },
+   "rejection_model": "isotropic",
+   "multiband": [],
+   "status_single_band": "REJECTED_PROVEN",
+   "seconds": 0.009901285171508789
+  }
+ },
+ "verdict_origin": "rtsc.certify.classify",
+ "created_utc": "2026-10-27T18:27:59+00:00",
+ "finished_utc": "2026-10-27T18:27:59+00:00"
+}

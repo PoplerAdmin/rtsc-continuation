@@ -1,0 +1,133 @@
+{
+ "material_id": "SYNTHETIC-insulator",
+ "verdict": {
+  "material_id": "SYNTHETIC-insulator",
+  "status": "EXCLUDED_ASSUMPTION",
+  "T_low_K": null,
+  "T_up_K": null,
+  "reasons": [
+   "excluded by physical (non-proved) existence criterion: X-METAL: band_gap <= 0.0 eV (or is_metal == True when no gap is known) [value=1.2; FAILED; source=band_gap from synthetic_demo]"
+  ],
+  "rule_ids": [
+   "X-METAL"
+  ],
+  "assumptions": [
+   "X-HULL: e_above_hull <= 0.1 eV/atom",
+   "X-METAL: band_gap <= 0.0 eV (or is_metal == True when no gap is known)"
+  ],
+  "flags": [
+   "SYNTHETIC_DATA"
+  ],
+  "certificate": {
+   "kind": "existence_filters",
+   "proved": false,
+   "filter_results": [
+    {
+     "criterion": "X-HULL",
+     "passed": true,
+     "value": 0.0,
+     "threshold": 0.1,
+     "comparison": "e_above_hull <= 0.1 eV/atom",
+     "reason": "",
+     "data_source": "stored energy_above_hull (synthetic_demo, 0.0 GPa)",
+     "details": {}
+    },
+    {
+     "criterion": "X-METAL",
+     "passed": false,
+     "value": 1.2,
+     "threshold": 0.0,
+     "comparison": "band_gap <= 0.0 eV (or is_metal == True when no gap is known)",
+     "reason": "",
+     "data_source": "band_gap from synthetic_demo",
+     "details": {}
+    },
+    {
+     "criterion": "X-MAGNETIC",
+     "passed": null,
+     "value": null,
+     "threshold": 0.05,
+     "comparison": "ordering not in ['FM', 'AFM', 'FiM'] and |m| <= 0.05 mu_B/atom",
+     "reason": "no magnetic ordering / magnetisation data",
+     "data_source": "",
+     "details": {}
+    },
+    {
+     "criterion": "X-DYNAMIC",
+     "passed": null,
+     "value": null,
+     "threshold": -0.25,
+     "comparison": "min phonon frequency >= -0.25 THz (acoustic modes at Gamma ignored)",
+     "reason": "no first-principles phonon data",
+     "data_source": "",
+     "details": {}
+    }
+   ]
+  }
+ },
+ "verdict_origin": "rtsc.stability",
+ "synthetic": true,
+ "candidate": {
+  "formula": "(synthetic)",
+  "composition": {},
+  "source": "synthetic_demo",
+  "pressure_GPa": null,
+  "spacegroup": null,
+  "provenance": {
+   "source": "synthetic_demo",
+   "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+   "purpose": "synthetic band gap 1.2 eV: metallicity filter should exclude",
+   "source_entry": 0
+  },
+  "band_coupling_files": []
+ },
+ "spectra": [],
+ "pipeline_context": {
+  "config_hash": "199c23fdf2fd77ea",
+  "stages": {
+   "filters": [
+    {
+     "criterion": "X-HULL",
+     "passed": true,
+     "value": 0.0,
+     "threshold": 0.1,
+     "comparison": "e_above_hull <= 0.1 eV/atom",
+     "reason": "",
+     "data_source": "stored energy_above_hull (synthetic_demo, 0.0 GPa)",
+     "details": {}
+    },
+    {
+     "criterion": "X-METAL",
+     "passed": false,
+     "value": 1.2,
+     "threshold": 0.0,
+     "comparison": "band_gap <= 0.0 eV (or is_metal == True when no gap is known)",
+     "reason": "",
+     "data_source": "band_gap from synthetic_demo",
+     "details": {}
+    },
+    {
+     "criterion": "X-MAGNETIC",
+     "passed": null,
+     "value": null,
+     "threshold": 0.05,
+     "comparison": "ordering not in ['FM', 'AFM', 'FiM'] and |m| <= 0.05 mu_B/atom",
+     "reason": "no magnetic ordering / magnetisation data",
+     "data_source": "",
+     "details": {}
+    },
+    {
+     "criterion": "X-DYNAMIC",
+     "passed": null,
+     "value": null,
+     "threshold": -0.25,
+     "comparison": "min phonon frequency >= -0.25 THz (acoustic modes at Gamma ignored)",
+     "reason": "no first-principles phonon data",
+     "data_source": "",
+     "details": {}
+    }
+   ]
+  }
+ },
+ "recheck": "rtsc recheck /home/user/rtsc_work/verify_py/demo/SYNTHETIC-insulator/verdict.json"
+}

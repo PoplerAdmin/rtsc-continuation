@@ -1,0 +1,1 @@
+/home/user/rtsc_work/.venv/bin/python -I /mnt/g/ClaudeWorkspace/RTSC_Project/run_scripts/scratchpad_2026-10-27/notes.py "/home/user/rtsc_work/mattergen_test/prescreen_MatterSim*0GPa.json" H3S; ls ~/rtsc_work/mattergen_test/hull_cache; head -c 1500 ~/rtsc_work/mattergen_test/hull_cache/H_P150*1M.json

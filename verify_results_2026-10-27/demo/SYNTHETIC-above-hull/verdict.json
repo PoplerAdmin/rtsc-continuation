@@ -1,0 +1,65 @@
+{
+ "material_id": "SYNTHETIC-above-hull",
+ "status": "EXCLUDED_ASSUMPTION",
+ "T_low_K": null,
+ "T_up_K": null,
+ "reasons": [
+  "excluded by physical (non-proved) existence criterion: X-HULL: e_above_hull <= 0.1 eV/atom [value=0.35; FAILED; source=stored energy_above_hull (synthetic_demo, 0.0 GPa)]"
+ ],
+ "rule_ids": [
+  "X-HULL"
+ ],
+ "assumptions": [
+  "X-HULL: e_above_hull <= 0.1 eV/atom",
+  "X-METAL: band_gap <= 0.0 eV (or is_metal == True when no gap is known)"
+ ],
+ "flags": [
+  "SYNTHETIC_DATA"
+ ],
+ "certificate": {
+  "kind": "existence_filters",
+  "proved": false,
+  "filter_results": [
+   {
+    "criterion": "X-HULL",
+    "passed": false,
+    "value": 0.35,
+    "threshold": 0.1,
+    "comparison": "e_above_hull <= 0.1 eV/atom",
+    "reason": "",
+    "data_source": "stored energy_above_hull (synthetic_demo, 0.0 GPa)",
+    "details": {}
+   },
+   {
+    "criterion": "X-METAL",
+    "passed": true,
+    "value": true,
+    "threshold": true,
+    "comparison": "band_gap <= 0.0 eV (or is_metal == True when no gap is known)",
+    "reason": "",
+    "data_source": "is_metal from synthetic_demo",
+    "details": {}
+   },
+   {
+    "criterion": "X-MAGNETIC",
+    "passed": null,
+    "value": null,
+    "threshold": 0.05,
+    "comparison": "ordering not in ['FM', 'AFM', 'FiM'] and |m| <= 0.05 mu_B/atom",
+    "reason": "no magnetic ordering / magnetisation data",
+    "data_source": "",
+    "details": {}
+   },
+   {
+    "criterion": "X-DYNAMIC",
+    "passed": null,
+    "value": null,
+    "threshold": -0.25,
+    "comparison": "min phonon frequency >= -0.25 THz (acoustic modes at Gamma ignored)",
+    "reason": "no first-principles phonon data",
+    "data_source": "",
+    "details": {}
+   }
+  ]
+ }
+}

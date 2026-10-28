@@ -1,0 +1,6 @@
+ph
+&inputph
+ prefix='t', outdir='./tmp/', tr2_ph=1e-14, fildyn='dyn', fildvscf='dvscf',
+ electron_phonon='interpolated', el_ph_sigma=0.005, el_ph_nsigma=10,
+ trans=.true., ldisp=.true., nq1=1, nq2=1, nq3=1
+/

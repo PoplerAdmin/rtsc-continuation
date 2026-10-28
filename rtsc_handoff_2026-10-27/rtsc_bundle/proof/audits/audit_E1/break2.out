@@ -1,0 +1,2 @@
+D2 diag5 += 1e-4 (true top eig becomes ~+1.0e-8)           a=4.33148145 eta=1e-9 cell=[7.57470703125,7.5751953125] -> FAIL {'ev_min_float_+1': -2.371752227591316e-08} (0.9s)  [as expected]
+A5 a=4.3314816 initial cell [7.5,8]                        a=4.3314816 eta=1e-9 cell=[7.5,8.0] -> FAIL {'ev_min_float_+1': -0.0007622057301117646} (0.5s)  [as expected]

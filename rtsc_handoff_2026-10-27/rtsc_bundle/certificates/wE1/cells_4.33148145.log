@@ -1,0 +1,158 @@
+# even-sector cells a0=4.33148145 eta=1e-9 N=150 K=1500 range=[1.0,400.0]
+OK   [1, 1.5]  scaled-margin>=2.50e-01  rem0=3.16e-03 d0=5.06e-11  t=2.12s
+OK   [1.5, 2]  scaled-margin>=2.15e-01  rem0=3.84e-03 d0=9.00e-11  t=1.61s
+OK   [2, 2.5]  scaled-margin>=1.70e-01  rem0=4.22e-03 d0=1.41e-10  t=2.10s
+OK   [2.5, 3]  scaled-margin>=1.70e-01  rem0=4.33e-03 d0=2.03e-10  t=1.19s
+OK   [3, 3.5]  scaled-margin>=1.92e-01  rem0=4.22e-03 d0=2.76e-10  t=1.65s
+OK   [3.5, 4]  scaled-margin>=1.44e-01  rem0=3.94e-03 d0=3.60e-10  t=1.36s
+OK   [4, 4.5]  scaled-margin>=1.00e-01  rem0=3.57e-03 d0=4.56e-10  t=1.55s
+OK   [4.5, 5]  scaled-margin>=6.46e-02  rem0=3.16e-03 d0=5.63e-10  t=1.39s
+OK   [5, 5.5]  scaled-margin>=3.77e-02  rem0=2.74e-03 d0=6.81e-10  t=1.56s
+OK   [5.5, 6]  scaled-margin>=1.87e-02  rem0=2.36e-03 d0=8.10e-10  t=1.81s
+OK   [6, 6.5]  scaled-margin>=6.66e-03  rem0=2.01e-03 d0=9.51e-10  t=1.90s
+OK   [6.5, 7]  scaled-margin>=2.16e-04  rem0=1.70e-03 d0=1.10e-09  t=1.24s
+split [7, 7.5]  {'ev_min_float_+1': -0.003571948789837464}
+OK   [7, 7.25]  scaled-margin>=2.88e-04  rem0=3.45e-04 d0=1.18e-09  t=2.04s
+split [7.25, 7.5]  {'ev_min_float_+1': -0.0007477374089147892}
+OK   [7.25, 7.375]  scaled-margin>=1.71e-04  rem0=7.81e-05 d0=1.22e-09  t=1.97s
+split [7.375, 7.5]  {'ev_min_float_+1': -0.00012070966567441209}
+OK   [7.375, 7.4375]  scaled-margin>=1.04e-04  rem0=1.86e-05 d0=1.25e-09  t=1.51s
+OK   [7.4375, 7.5]  scaled-margin>=1.35e-05  rem0=1.82e-05 d0=1.27e-09  t=1.96s
+split [7.5, 8]  {'ev_min_float_+1': -0.0007621344922153495}
+split [7.5, 7.75]  {'ev_min_float_+1': -0.00035085337890137033}
+split [7.5, 7.625]  {'ev_min_float_+1': -0.0001535150468217756}
+split [7.5, 7.5625]  {'ev_min_float_+1': -4.46635427206279e-05}
+OK   [7.5, 7.53125]  scaled-margin>=6.73e-06  rem0=4.45e-06 d0=1.28e-09  t=2.93s
+split [7.53125, 7.5625]  {'ev_min_float_+1': -9.496895668550539e-06}
+OK   [7.53125, 7.546875]  scaled-margin>=3.71e-06  rem0=1.10e-06 d0=1.28e-09  t=2.10s
+split [7.546875, 7.5625]  {'ev_min_float_+1': -8.229839941514244e-07}
+OK   [7.546875, 7.5546875]  scaled-margin>=2.32e-06  rem0=2.73e-07 d0=1.28e-09  t=2.61s
+OK   [7.5546875, 7.5625]  scaled-margin>=6.29e-07  rem0=2.72e-07 d0=1.29e-09  t=2.40s
+split [7.5625, 7.625]  {'ev_min_float_+1': -1.2525986057666362e-05}
+split [7.5625, 7.59375]  {'ev_min_float_+1': -6.6742444495722235e-06}
+split [7.5625, 7.578125]  {'ev_min_float_+1': -2.696863044044288e-06}
+split [7.5625, 7.5703125]  {'ev_min_float_+1': -4.240398179694598e-07}
+OK   [7.5625, 7.56640625]  scaled-margin>=3.75e-07  rem0=6.78e-08 d0=1.29e-09  t=1.80s
+OK   [7.56640625, 7.5703125]  scaled-margin>=3.72e-08  rem0=6.78e-08 d0=1.29e-09  t=2.22s
+split [7.5703125, 7.578125]  {'ev_min_float_+1': -5.562531229033647e-07}
+split [7.5703125, 7.57421875]  {'ev_min_float_+1': -1.5835948126437118e-07}
+OK   [7.5703125, 7.572265625]  scaled-margin>=2.04e-08  rem0=1.69e-08 d0=1.29e-09  t=1.90s
+split [7.572265625, 7.57421875]  {'ev_min_float_+1': -2.5033932852958183e-08}
+OK   [7.572265625, 7.573242188]  scaled-margin>=1.43e-08  rem0=4.23e-09 d0=1.29e-09  t=1.83s
+split [7.573242188, 7.57421875]  {'ev_min_float_+1': 8.26906656849951e-09}
+OK   [7.573242188, 7.573730469]  scaled-margin>=1.18e-08  rem0=1.06e-09 d0=1.29e-09  t=2.21s
+OK   [7.573730469, 7.57421875]  scaled-margin>=6.02e-09  rem0=1.06e-09 d0=1.29e-09  t=1.89s
+split [7.57421875, 7.578125]  {'ev_min_float_+1': -2.2887502782703448e-08}
+split [7.57421875, 7.576171875]  {'ev_min_float_+1': -7.949076019636975e-09}
+split [7.57421875, 7.575195312]  {'ev_min_float_+1': 4.154762634007136e-09}
+OK   [7.57421875, 7.574707031]  scaled-margin>=3.40e-09  rem0=1.06e-09 d0=1.29e-09  t=2.59s
+OK   [7.574707031, 7.575195312]  scaled-margin>=3.40e-09  rem0=1.06e-09 d0=1.29e-09  t=2.07s
+split [7.575195312, 7.576171875]  {'ev_min_float_+1': 2.532798329488824e-08, 'ev_min_float_-1': 4.1550973225917114e-09}
+OK   [7.575195312, 7.575683594]  scaled-margin>=3.96e-09  rem0=1.06e-09 d0=1.29e-09  t=1.89s
+OK   [7.575683594, 7.576171875]  scaled-margin>=7.67e-09  rem0=1.06e-09 d0=1.29e-09  t=2.32s
+split [7.576171875, 7.578125]  {'ev_min_float_+1': 1.1023047762054961e-07, 'ev_min_float_-1': -7.927687575592576e-09}
+OK   [7.576171875, 7.577148438]  scaled-margin>=8.10e-09  rem0=4.22e-09 d0=1.29e-09  t=2.72s
+OK   [7.577148438, 7.578125]  scaled-margin>=3.13e-08  rem0=4.22e-09 d0=1.29e-09  t=2.33s
+split [7.578125, 7.59375]  {'ev_min_float_+1': 1.8921649932493841e-06, 'ev_min_float_-1': -2.682731059161794e-06}
+split [7.578125, 7.5859375]  {'ev_min_float_+1': 9.272733765687801e-07, 'ev_min_float_-1': -5.545088732341952e-07}
+split [7.578125, 7.58203125]  {'ev_min_float_+1': 5.165202362204244e-07, 'ev_min_float_-1': -2.267903960226795e-08}
+OK   [7.578125, 7.580078125]  scaled-margin>=4.60e-08  rem0=1.69e-08 d0=1.29e-09  t=1.87s
+OK   [7.580078125, 7.58203125]  scaled-margin>=1.56e-07  rem0=1.69e-08 d0=1.29e-09  t=3.27s
+OK   [7.58203125, 7.5859375]  scaled-margin>=2.40e-07  rem0=6.74e-08 d0=1.30e-09  t=2.44s
+OK   [7.5859375, 7.59375]  scaled-margin>=4.28e-07  rem0=2.69e-07 d0=1.30e-09  t=2.71s
+split [7.59375, 7.625]  {'ev_min_float_+1': 2.1773163166216025e-05, 'ev_min_float_-1': -6.561122647187352e-06}
+OK   [7.59375, 7.609375]  scaled-margin>=8.80e-07  rem0=1.08e-06 d0=1.30e-09  t=3.33s
+OK   [7.609375, 7.625]  scaled-margin>=6.38e-06  rem0=1.07e-06 d0=1.31e-09  t=2.74s
+split [7.625, 7.75]  {'ev_min_float_+1': 0.00021622285455770706, 'ev_min_float_-1': -0.00014617668614414587}
+split [7.625, 7.6875]  {'ev_min_float_+1': 0.00012030386687897796, 'ev_min_float_-1': -1.1624085801446542e-05}
+OK   [7.625, 7.65625]  scaled-margin>=1.08e-05  rem0=4.27e-06 d0=1.32e-09  t=2.27s
+OK   [7.65625, 7.6875]  scaled-margin>=3.76e-05  rem0=4.23e-06 d0=1.33e-09  t=2.90s
+OK   [7.6875, 7.75]  scaled-margin>=6.03e-05  rem0=1.68e-05 d0=1.35e-09  t=2.94s
+split [7.75, 8]  {'ev_min_float_+1': 0.0015407834947300802, 'ev_min_float_-1': -0.0002929899338612197}
+OK   [7.75, 7.875]  scaled-margin>=1.11e-04  rem0=6.65e-05 d0=1.40e-09  t=3.03s
+OK   [7.875, 8]  scaled-margin>=4.83e-04  rem0=6.39e-05 d0=1.44e-09  t=3.60s
+split [8, 8.5]  {'ev_min_float_+1': 0.0071282418685893745, 'ev_min_float_-1': -0.0003106040785892661}
+OK   [8, 8.25]  scaled-margin>=7.95e-04  rem0=2.50e-04 d0=1.53e-09  t=3.98s
+OK   [8.25, 8.5]  scaled-margin>=2.38e-03  rem0=2.31e-04 d0=1.63e-09  t=3.69s
+OK   [8.5, 9]  scaled-margin>=3.74e-03  rem0=8.82e-04 d0=1.82e-09  t=2.44s
+OK   [9, 9.5]  scaled-margin>=9.49e-03  rem0=7.54e-04 d0=2.03e-09  t=2.34s
+OK   [9.5, 10]  scaled-margin>=1.65e-02  rem0=6.47e-04 d0=2.25e-09  t=3.66s
+OK   [10, 10.5]  scaled-margin>=2.44e-02  rem0=5.58e-04 d0=2.48e-09  t=2.14s
+OK   [10.5, 11]  scaled-margin>=3.27e-02  rem0=4.84e-04 d0=2.72e-09  t=1.77s
+OK   [11, 11.5]  scaled-margin>=4.12e-02  rem0=4.71e-04 d0=2.98e-09  t=2.59s
+OK   [11.5, 12]  scaled-margin>=4.98e-02  rem0=4.71e-04 d0=3.24e-09  t=3.02s
+OK   [12, 12.5]  scaled-margin>=5.83e-02  rem0=4.65e-04 d0=3.52e-09  t=2.62s
+OK   [12.5, 13]  scaled-margin>=6.66e-02  rem0=4.55e-04 d0=3.80e-09  t=1.92s
+OK   [13, 13.5]  scaled-margin>=7.47e-02  rem0=4.41e-04 d0=4.10e-09  t=2.28s
+OK   [13.5, 14]  scaled-margin>=8.24e-02  rem0=4.26e-04 d0=4.41e-09  t=2.18s
+OK   [14, 14.5]  scaled-margin>=8.98e-02  rem0=4.09e-04 d0=4.73e-09  t=1.98s
+OK   [14.5, 15]  scaled-margin>=5.98e-02  rem0=3.92e-04 d0=5.06e-09  t=1.96s
+OK   [15, 15.5]  scaled-margin>=5.98e-02  rem0=3.74e-04 d0=5.41e-09  t=1.93s
+OK   [15.5, 16]  scaled-margin>=6.45e-02  rem0=3.56e-04 d0=5.76e-09  t=2.10s
+OK   [16, 18]  scaled-margin>=6.68e-02  rem0=6.98e-03 d0=7.29e-09  t=2.42s
+OK   [18, 20]  scaled-margin>=8.46e-02  rem0=5.45e-03 d0=9.00e-09  t=2.89s
+OK   [20, 22]  scaled-margin>=1.01e-01  rem0=4.28e-03 d0=1.09e-08  t=1.71s
+OK   [22, 24]  scaled-margin>=1.15e-01  rem0=3.58e-03 d0=1.30e-08  t=1.70s
+OK   [24, 26]  scaled-margin>=1.27e-01  rem0=3.08e-03 d0=1.52e-08  t=1.77s
+OK   [26, 28]  scaled-margin>=1.38e-01  rem0=2.65e-03 d0=1.76e-08  t=1.80s
+OK   [28, 30]  scaled-margin>=1.48e-01  rem0=2.28e-03 d0=2.03e-08  t=2.05s
+OK   [30, 32]  scaled-margin>=1.56e-01  rem0=1.97e-03 d0=2.31e-08  t=1.87s
+OK   [32, 34]  scaled-margin>=1.64e-01  rem0=1.71e-03 d0=2.60e-08  t=1.78s
+OK   [34, 36]  scaled-margin>=1.70e-01  rem0=1.54e-03 d0=2.92e-08  t=2.32s
+OK   [36, 38]  scaled-margin>=1.76e-01  rem0=1.38e-03 d0=3.25e-08  t=2.47s
+OK   [38, 40]  scaled-margin>=1.82e-01  rem0=1.24e-03 d0=3.60e-08  t=2.53s
+OK   [40, 42]  scaled-margin>=1.87e-01  rem0=1.11e-03 d0=3.97e-08  t=2.65s
+OK   [42, 44]  scaled-margin>=1.91e-01  rem0=1.00e-03 d0=4.36e-08  t=2.86s
+OK   [44, 46]  scaled-margin>=2.25e-01  rem0=9.18e-04 d0=4.76e-08  t=3.02s
+OK   [46, 48]  scaled-margin>=2.30e-01  rem0=8.44e-04 d0=5.19e-08  t=2.55s
+OK   [48, 50]  scaled-margin>=2.34e-01  rem0=7.76e-04 d0=5.63e-08  t=2.57s
+OK   [50, 52]  scaled-margin>=2.38e-01  rem0=7.15e-04 d0=6.09e-08  t=3.11s
+OK   [52, 54]  scaled-margin>=2.42e-01  rem0=6.59e-04 d0=6.56e-08  t=2.37s
+OK   [54, 56]  scaled-margin>=2.45e-01  rem0=6.09e-04 d0=7.06e-08  t=2.55s
+OK   [56, 58]  scaled-margin>=2.47e-01  rem0=5.69e-04 d0=7.57e-08  t=2.79s
+OK   [58, 60]  scaled-margin>=2.49e-01  rem0=5.32e-04 d0=8.10e-08  t=2.50s
+OK   [60, 62]  scaled-margin>=2.51e-01  rem0=4.97e-04 d0=8.65e-08  t=2.32s
+OK   [62, 64]  scaled-margin>=2.51e-01  rem0=4.64e-04 d0=9.22e-08  t=2.12s
+OK   [64, 72]  scaled-margin>=2.51e-01  rem0=9.38e-03 d0=1.17e-07  t=2.05s
+OK   [72, 80]  scaled-margin>=2.51e-01  rem0=7.08e-03 d0=1.44e-07  t=2.13s
+OK   [80, 88]  scaled-margin>=2.51e-01  rem0=5.57e-03 d0=1.74e-07  t=2.74s
+OK   [88, 96]  scaled-margin>=2.51e-01  rem0=4.49e-03 d0=2.07e-07  t=2.02s
+OK   [96, 104]  scaled-margin>=2.51e-01  rem0=3.70e-03 d0=2.43e-07  t=2.22s
+OK   [104, 112]  scaled-margin>=2.51e-01  rem0=3.10e-03 d0=2.82e-07  t=2.55s
+OK   [112, 120]  scaled-margin>=2.51e-01  rem0=2.64e-03 d0=3.24e-07  t=2.44s
+OK   [120, 128]  scaled-margin>=2.51e-01  rem0=2.27e-03 d0=3.69e-07  t=2.38s
+OK   [128, 136]  scaled-margin>=2.51e-01  rem0=1.97e-03 d0=4.16e-07  t=2.03s
+OK   [136, 144]  scaled-margin>=2.51e-01  rem0=1.73e-03 d0=4.67e-07  t=2.07s
+OK   [144, 152]  scaled-margin>=2.50e-01  rem0=1.53e-03 d0=5.20e-07  t=3.30s
+OK   [152, 160]  scaled-margin>=2.50e-01  rem0=1.37e-03 d0=5.76e-07  t=1.81s
+OK   [160, 168]  scaled-margin>=2.50e-01  rem0=1.22e-03 d0=6.35e-07  t=2.15s
+OK   [168, 176]  scaled-margin>=2.50e-01  rem0=1.10e-03 d0=6.97e-07  t=2.24s
+OK   [176, 184]  scaled-margin>=2.50e-01  rem0=1.00e-03 d0=7.62e-07  t=1.59s
+OK   [184, 192]  scaled-margin>=2.50e-01  rem0=9.10e-04 d0=8.30e-07  t=1.34s
+OK   [192, 200]  scaled-margin>=2.50e-01  rem0=8.31e-04 d0=9.00e-07  t=1.73s
+OK   [200, 208]  scaled-margin>=2.51e-01  rem0=7.63e-04 d0=9.74e-07  t=1.27s
+OK   [208, 216]  scaled-margin>=2.50e-01  rem0=7.02e-04 d0=1.05e-06  t=1.46s
+OK   [216, 224]  scaled-margin>=2.50e-01  rem0=6.48e-04 d0=1.13e-06  t=2.02s
+OK   [224, 232]  scaled-margin>=2.50e-01  rem0=6.00e-04 d0=1.21e-06  t=1.50s
+OK   [232, 240]  scaled-margin>=2.50e-01  rem0=5.57e-04 d0=1.30e-06  t=1.51s
+OK   [240, 248]  scaled-margin>=2.50e-01  rem0=5.18e-04 d0=1.38e-06  t=1.42s
+OK   [248, 256]  scaled-margin>=2.53e-01  rem0=4.83e-04 d0=1.47e-06  t=1.33s
+OK   [256, 264]  scaled-margin>=2.53e-01  rem0=4.51e-04 d0=1.57e-06  t=1.13s
+OK   [264, 272]  scaled-margin>=2.53e-01  rem0=4.23e-04 d0=1.66e-06  t=1.19s
+OK   [272, 280]  scaled-margin>=2.53e-01  rem0=3.96e-04 d0=1.76e-06  t=1.49s
+OK   [280, 288]  scaled-margin>=2.53e-01  rem0=3.72e-04 d0=1.87e-06  t=1.40s
+OK   [288, 296]  scaled-margin>=2.53e-01  rem0=3.51e-04 d0=1.97e-06  t=1.58s
+OK   [296, 304]  scaled-margin>=2.53e-01  rem0=3.31e-04 d0=2.08e-06  t=1.06s
+OK   [304, 312]  scaled-margin>=2.53e-01  rem0=3.12e-04 d0=2.19e-06  t=1.14s
+OK   [312, 320]  scaled-margin>=2.53e-01  rem0=2.95e-04 d0=2.30e-06  t=1.38s
+OK   [320, 328]  scaled-margin>=2.53e-01  rem0=2.79e-04 d0=2.42e-06  t=1.63s
+OK   [328, 336]  scaled-margin>=2.53e-01  rem0=2.64e-04 d0=2.54e-06  t=1.45s
+OK   [336, 344]  scaled-margin>=2.53e-01  rem0=2.51e-04 d0=2.66e-06  t=1.05s
+OK   [344, 352]  scaled-margin>=2.53e-01  rem0=2.38e-04 d0=2.79e-06  t=1.14s
+OK   [352, 360]  scaled-margin>=2.52e-01  rem0=2.26e-04 d0=2.91e-06  t=0.83s
+OK   [360, 368]  scaled-margin>=2.52e-01  rem0=2.16e-04 d0=3.05e-06  t=1.00s
+OK   [368, 376]  scaled-margin>=2.52e-01  rem0=2.05e-04 d0=3.18e-06  t=1.71s
+OK   [376, 384]  scaled-margin>=2.52e-01  rem0=1.96e-04 d0=3.32e-06  t=1.86s
+OK   [384, 392]  scaled-margin>=2.52e-01  rem0=1.87e-04 d0=3.46e-06  t=0.95s
+OK   [392, 400]  scaled-margin>=2.52e-01  rem0=1.78e-04 d0=3.60e-06  t=0.98s
+VERDICT cells: CERTIFIED  (126 cells, 0 failed, tiled=True, 342.6s)

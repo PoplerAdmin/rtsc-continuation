@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rtsc"
+version = "0.1.0"
+description = "Rigorous screening of phonon-mediated superconductors against a target Tc (isotropic Migdal-Eliashberg model; Lean-backed rules, ball-arithmetic checks)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "python-flint==0.9.0",     # trusted base verified with this version (audit G5)
+]
+
+[project.optional-dependencies]
+# Quantum ESPRESSO workflow helpers (QE binaries themselves are installed separately)
+dft = ["pymatgen>=2024.1.1", "ase>=3.23", "phonopy>=2.20", "pyyaml>=6", "spglib>=2.0"]
+# Materials Project source
+mp = ["mp-api>=0.41", "pymatgen>=2024.1.1"]
+# ML-potential pre-checks (heuristic ordering only); CHGNet is the alternative: rtsc[ml-chgnet]
+ml = ["ase>=3.23", "phonopy>=2.20", "mace-torch>=0.3"]
+ml-chgnet = ["ase>=3.23", "phonopy>=2.20", "chgnet>=0.3"]
+# MatterSim pre-screen used by the discovery loop (needs Python >= 3.12). MatterGen is NOT a
+# dependency: it runs in its own Python 3.10 + CUDA environment and is called as a subprocess.
+mattersim = ["ase>=3.23", "phonopy>=2.20", "mattersim>=1.2"]
+test = ["pytest>=7"]
+all = ["rtsc[dft,mp,ml,test]"]
+
+[project.scripts]
+rtsc = "rtsc.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["rtsc*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

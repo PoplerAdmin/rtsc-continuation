@@ -1,0 +1,6 @@
+--- a/PHonon/PH/elphon.f90
++++ b/PHonon/PH/elphon.f90
+@@ (qe-7.6, SUBROUTINE elphel, ~line 550) @@
+            IF (isolv==1) THEN
+-              call adddvscf (ipert, ik)
++              call adddvscf (ipert, ik, .FALSE.)

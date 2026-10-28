@@ -1,0 +1,47 @@
+# Conda environment for rtsc: Python stack + Quantum ESPRESSO 7.x (with EPW) from conda-forge.
+#
+#   conda env create -f env/environment.yml        (or: mamba / micromamba create -f ...)
+#   conda activate rtsc
+#   pip install --no-deps ./rtsc                   (the package itself; deps come from conda)
+#   pip install --no-deps -e ./rtsc                (editable, for development)
+#
+# Notes
+# * qe: the conda-forge build ships pw.x, ph.x, q2r.x, matdyn.x and epw.x (checked in the
+#   qe-7.6 mpi_openmpi linux-64 package). Its executables do not import glibc's
+#   __snprintf_chk, so the start-up abort of Ubuntu 24.04's QE 6.7 package (FORTIFY, see
+#   rtsc/rtsc/dfpt/contrib/snprintf_chk_shim.c) cannot occur and no LD_PRELOAD shim is needed.
+#   This was checked statically (nm -D); the conda-forge binaries were NOT run in our tests.
+# * The conda-forge QE is a generic x86-64 build (OpenBLAS, FFTW). On a cluster, a site build
+#   tuned for the hardware (MKL/AOCL, vendor MPI, possibly GPU) is usually 1.5-3x faster for
+#   DFPT. To use it, delete the "qe" and "openmpi" lines and point [dfpt.launcher] bin_dir at
+#   the site installation.
+# * MPI: the qe line pins the OpenMPI variant. Use "*mpi_mpich*" for MPICH, which is more
+#   convenient with some Slurm `srun` setups.
+# * phonopy is optional (ML pre-check / phonon helpers). Remove it if it does not solve.
+# * ML pre-check (heuristic ordering only): pip install 'mace-torch>=0.3' or 'chgnet>=0.3'.
+name: rtsc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  # core: enough for `rtsc certify`, `rtsc demo`, `rtsc recheck` and the certificates
+  - numpy>=1.24
+  - scipy>=1.10
+  - python-flint>=0.6
+  # [dft]
+  - pymatgen>=2024.1.1
+  - ase>=3.23
+  - spglib>=2.0
+  - pyyaml>=6
+  - phonopy>=2.20          # optional
+  # [mp]
+  - mp-api>=0.41
+  # [test]
+  - pytest>=7
+  # build helper for `pip install ./rtsc`
+  - setuptools>=68
+  - wheel
+  # Quantum ESPRESSO 7.x incl. EPW, OpenMPI variant
+  - qe>=7.4 *mpi_openmpi*
+  - openmpi

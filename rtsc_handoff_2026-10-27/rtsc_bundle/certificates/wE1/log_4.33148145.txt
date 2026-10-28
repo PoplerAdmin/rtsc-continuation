@@ -1,0 +1,11 @@
+=== certificate run Tue Oct 27 12:37:56 UTC 2026  a0=4.33148145 eta=1e-9 a1=4.3314815 N=150 K=1500
+small w <= 1.00000000000000 : sup Q/|x|^2 <= [-0.28983882972685 +/- 4.01e-15]
+large w >= 400.000000000000 : R0 <= [-0.423371531968750 +/- 2.94e-17], R1 <= [-1.10714260635000 +/- 8.27e-16], Rn(n>=2) <= [-0.300342626750000 +/- 2.36e-16]
+odd sector: Q-(x) <= -sum (2n+1) x_n^2 <= -|x|^2 for all a>0, w>0 (analytic)
+VERDICT ends: CERTIFIED
+VERDICT cells: CERTIFIED  (126 cells, 0 failed, tiled=True, 342.6s)
+a1 = 4.3314815, w = 7.57486629486084 (dyadic), N = 300, float top eig = 3.173e-09
+max |arb block - SPEC float matrix| = 1.14e-13
+Q+(x) = [3.1734963594613352627262836706e-9 +/- 3.16e-38] ;  Q+(x)/|x|^2 = [3.1734963594613935161837683884e-9 +/- 5.81e-38]
+VERDICT sharpness: CERTIFIED  (rho+(a1,w) > 0)
+FINAL VERDICT: CERTIFIED  R(a0=4.33148145, eta=1e-9) for all w>0 (both sectors);  rho+(a1=4.3314815, w) > 0 for some w

@@ -1,0 +1,20 @@
+I'm continuing a project from another Claude session. The folder I've given you access to contains
+the handoff bundle for a rigorous room-temperature-superconductor screening pipeline: a proved Tc
+bound, a Python program with proof-carrying verdicts, Lean 4 proofs of its decision logic, and an
+autonomous MatterGen/MatterSim discovery loop.
+
+Please:
+1. Read HANDOFF.md completely before doing anything else, then README.md, rtsc/ARCH.md (especially
+   the soundness contract in section 3) and rtsc/DISCOVERY.md.
+2. Treat the rules in HANDOFF.md section 3 as binding. In particular, only rtsc.certify.classify
+   may reject or certify a material, and heuristics (MatterGen, MatterSim, policy) may only reorder
+   or defer. Any proof-relevant change must keep the Lean mirror and tests/test_correspondence.py
+   in sync and get an independent adversarial review.
+3. Use virtual environments only; do not modify my system Python. MatterGen needs its own
+   Python 3.10 + CUDA environment, and the main pipeline needs Python >= 3.12 (HANDOFF.md section 4).
+4. This machine has an NVIDIA GPU. Start with HANDOFF.md section 5, step 1 (verify the bundle with
+   ./verify_all.sh --cert), and tell me the results before moving on. Then propose a plan for step 2
+   (benchmarking against known superconductors) and step 3 (first real MatterGen run).
+
+Ask me before anything expensive (long DFT runs or large downloads) or anything that installs
+system-wide software.

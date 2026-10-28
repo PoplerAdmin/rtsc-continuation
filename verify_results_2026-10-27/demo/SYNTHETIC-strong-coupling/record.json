@@ -1,0 +1,710 @@
+{
+ "schema": "rtsc.record/1",
+ "material_id": "SYNTHETIC-strong-coupling",
+ "config_hash": "199c23fdf2fd77ea",
+ "input_digest": "3eb9d20cf4270dfbefd9c4f72ff8cee6a18d3295fd4af85bff9fed1d869bcbdb",
+ "candidate": {
+  "material_id": "SYNTHETIC-strong-coupling",
+  "composition": {},
+  "source": "synthetic_demo",
+  "formula": "(synthetic)",
+  "lattice": null,
+  "species": null,
+  "frac_coords": null,
+  "spacegroup": null,
+  "pressure_GPa": null,
+  "enthalpy_eV_per_atom": null,
+  "properties": {
+   "is_metal": true,
+   "energy_above_hull": 0.0,
+   "dos_at_fermi": 1.5
+  },
+  "provenance": {
+   "source": "synthetic_demo",
+   "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+   "purpose": "lambda ~ 3 at 2000 K: expected certifiable; two alternative spectra (S5)",
+   "source_entry": 0
+  },
+  "spectra_files": [],
+  "spectra": [
+   {
+    "omega_K": [
+     1655.0,
+     1685.0,
+     1715.0,
+     1745.0,
+     1775.0,
+     1805.0,
+     1835.0,
+     1865.0,
+     1895.0,
+     1925.0,
+     1955.0,
+     1985.0,
+     2015.0,
+     2045.0,
+     2075.0,
+     2105.0,
+     2135.0,
+     2165.0,
+     2195.0,
+     2225.0,
+     2255.0,
+     2285.0,
+     2315.0,
+     2345.0
+    ],
+    "weight_K": [
+     4.811250097246145,
+     9.568313343924855,
+     17.875962724232398,
+     31.373291626812776,
+     51.72581323700445,
+     80.114506762963,
+     116.565919526483,
+     159.32672145660845,
+     204.57955990781338,
+     246.7700535740362,
+     279.627104470637,
+     297.6615032722384,
+     297.6615032722384,
+     279.627104470637,
+     246.7700535740362,
+     204.57955990781338,
+     159.32672145660845,
+     116.565919526483,
+     80.114506762963,
+     51.72581323700445,
+     31.373291626812776,
+     17.875962724232398,
+     9.568313343924855,
+     4.811250097246145
+    ],
+    "rel_envelope": 0.0,
+    "label": "SYNTHETIC strong, smearing a",
+    "provenance": {
+     "synthetic": true,
+     "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+     "shape": "gaussian(center=2000.0 K, width=120.0 K, A=3000.0 K, n=24)"
+    }
+   },
+   {
+    "omega_K": [
+     1647.5,
+     1682.5,
+     1717.5,
+     1752.5,
+     1787.5,
+     1822.5,
+     1857.5,
+     1892.5,
+     1927.5,
+     1962.5,
+     1997.5,
+     2032.5,
+     2067.5,
+     2102.5,
+     2137.5,
+     2172.5,
+     2207.5,
+     2242.5,
+     2277.5,
+     2312.5,
+     2347.5,
+     2382.5,
+     2417.5,
+     2452.5
+    ],
+    "weight_K": [
+     4.650875094004607,
+     9.249369565794026,
+     17.280097300091317,
+     30.32751523925235,
+     50.00161946243764,
+     77.44402320419756,
+     112.68038887560023,
+     154.01583074138816,
+     197.7602412442196,
+     238.54438512156833,
+     270.30620098828234,
+     287.73945316316383,
+     287.73945316316383,
+     270.30620098828234,
+     238.54438512156833,
+     197.7602412442196,
+     154.01583074138816,
+     112.68038887560023,
+     77.44402320419756,
+     50.00161946243764,
+     30.32751523925235,
+     17.280097300091317,
+     9.249369565794026,
+     4.650875094004607
+    ],
+    "rel_envelope": 0.0,
+    "label": "SYNTHETIC strong, smearing b",
+    "provenance": {
+     "synthetic": true,
+     "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+     "shape": "gaussian(center=2050.0 K, width=140.0 K, A=2900.0 K, n=24)"
+    }
+   }
+  ],
+  "band_coupling_files": [],
+  "synthetic": true
+ },
+ "stages": {
+  "filters": [
+   {
+    "criterion": "X-HULL",
+    "passed": true,
+    "value": 0.0,
+    "threshold": 0.1,
+    "comparison": "e_above_hull <= 0.1 eV/atom",
+    "reason": "",
+    "data_source": "stored energy_above_hull (synthetic_demo, 0.0 GPa)",
+    "details": {}
+   },
+   {
+    "criterion": "X-METAL",
+    "passed": true,
+    "value": true,
+    "threshold": true,
+    "comparison": "band_gap <= 0.0 eV (or is_metal == True when no gap is known)",
+    "reason": "",
+    "data_source": "is_metal from synthetic_demo",
+    "details": {}
+   },
+   {
+    "criterion": "X-MAGNETIC",
+    "passed": null,
+    "value": null,
+    "threshold": 0.05,
+    "comparison": "ordering not in ['FM', 'AFM', 'FiM'] and |m| <= 0.05 mu_B/atom",
+    "reason": "no magnetic ordering / magnetisation data",
+    "data_source": "",
+    "details": {}
+   },
+   {
+    "criterion": "X-DYNAMIC",
+    "passed": null,
+    "value": null,
+    "threshold": -0.25,
+    "comparison": "min phonon frequency >= -0.25 THz (acoustic modes at Gamma ignored)",
+    "reason": "no first-principles phonon data",
+    "data_source": "",
+    "details": {}
+   }
+  ],
+  "priority": {
+   "material_id": "SYNTHETIC-strong-coupling",
+   "total": 0.7151763803990177,
+   "components": {
+    "dos": 0.75,
+    "spectrum": 0.6977645705985266
+   },
+   "use": "ordering only (S2)",
+   "rank": 0
+  },
+  "spectra": {
+   "sources": [
+    "attached (2)"
+   ],
+   "n_spectra": 2,
+   "rel_envelope_applied": 0.05,
+   "summary": [
+    "Spectrum(SYNTHETIC strong, smearing a: 24 atoms, A=3000 K, lambda=3.011, omega_log=1989 K, e=0.05)",
+    "Spectrum(SYNTHETIC strong, smearing b: 24 atoms, A=2900 K, lambda=2.842, omega_log=2036 K, e=0.05)"
+   ]
+  },
+  "certify": {
+   "params": {
+    "T_target_K": 300.0,
+    "mu_hi": 0.15,
+    "omega_c_factor": 10.0,
+    "cutoff_rule": "block",
+    "mode": "decide"
+   },
+   "started_utc": "2026-10-27T18:27:59+00:00",
+   "finished_utc": "2026-10-27T18:27:59+00:00"
+  },
+  "validity": {
+   "flags": [
+    {
+     "code": "SYNTHETIC_DATA",
+     "detail": "invented demo spectra; not data for any material",
+     "values": {}
+    },
+    {
+     "code": "MAGNETIC_PROXIMITY",
+     "detail": "N(E_F) = 1.5 >= 1.5 (Stoner proxy)",
+     "values": {
+      "magnetic_elements": [],
+      "m_per_atom": null,
+      "dos_at_fermi": 1.5
+     }
+    },
+    {
+     "code": "STRONG_COUPLING",
+     "detail": "lambda = 3.01 > 3.0",
+     "values": {
+      "lambda": 3.0106224700484785
+     }
+    }
+   ],
+   "unchecked": [
+    "NONADIABATIC (no electronic energy scale fermi_energy_eV)",
+    "MULTIBAND_ANISOTROPY (no structure / Fermi-surface data)"
+   ]
+  }
+ },
+ "spectra": [
+  {
+   "omega_K": [
+    1655.0,
+    1685.0,
+    1715.0,
+    1745.0,
+    1775.0,
+    1805.0,
+    1835.0,
+    1865.0,
+    1895.0,
+    1925.0,
+    1955.0,
+    1985.0,
+    2015.0,
+    2045.0,
+    2075.0,
+    2105.0,
+    2135.0,
+    2165.0,
+    2195.0,
+    2225.0,
+    2255.0,
+    2285.0,
+    2315.0,
+    2345.0
+   ],
+   "weight_K": [
+    4.811250097246145,
+    9.568313343924855,
+    17.875962724232398,
+    31.373291626812776,
+    51.72581323700445,
+    80.114506762963,
+    116.565919526483,
+    159.32672145660845,
+    204.57955990781338,
+    246.7700535740362,
+    279.627104470637,
+    297.6615032722384,
+    297.6615032722384,
+    279.627104470637,
+    246.7700535740362,
+    204.57955990781338,
+    159.32672145660845,
+    116.565919526483,
+    80.114506762963,
+    51.72581323700445,
+    31.373291626812776,
+    17.875962724232398,
+    9.568313343924855,
+    4.811250097246145
+   ],
+   "rel_envelope": 0.05,
+   "label": "SYNTHETIC strong, smearing a",
+   "provenance": {
+    "synthetic": true,
+    "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+    "shape": "gaussian(center=2000.0 K, width=120.0 K, A=3000.0 K, n=24)"
+   }
+  },
+  {
+   "omega_K": [
+    1647.5,
+    1682.5,
+    1717.5,
+    1752.5,
+    1787.5,
+    1822.5,
+    1857.5,
+    1892.5,
+    1927.5,
+    1962.5,
+    1997.5,
+    2032.5,
+    2067.5,
+    2102.5,
+    2137.5,
+    2172.5,
+    2207.5,
+    2242.5,
+    2277.5,
+    2312.5,
+    2347.5,
+    2382.5,
+    2417.5,
+    2452.5
+   ],
+   "weight_K": [
+    4.650875094004607,
+    9.249369565794026,
+    17.280097300091317,
+    30.32751523925235,
+    50.00161946243764,
+    77.44402320419756,
+    112.68038887560023,
+    154.01583074138816,
+    197.7602412442196,
+    238.54438512156833,
+    270.30620098828234,
+    287.73945316316383,
+    287.73945316316383,
+    270.30620098828234,
+    238.54438512156833,
+    197.7602412442196,
+    154.01583074138816,
+    112.68038887560023,
+    77.44402320419756,
+    50.00161946243764,
+    30.32751523925235,
+    17.280097300091317,
+    9.249369565794026,
+    4.650875094004607
+   ],
+   "rel_envelope": 0.05,
+   "label": "SYNTHETIC strong, smearing b",
+   "provenance": {
+    "synthetic": true,
+    "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+    "shape": "gaussian(center=2050.0 K, width=140.0 K, A=2900.0 K, n=24)"
+   }
+  }
+ ],
+ "verdict": {
+  "material_id": "SYNTHETIC-strong-coupling",
+  "status": "CERTIFIED_CANDIDATE",
+  "T_low_K": 413.5845207080677,
+  "T_up_K": 727.2338659097802,
+  "reasons": [
+   "alt 0 (SYNTHETIC strong, smearing a): CERTIFIED_CANDIDATE; bracket [422.04080588006696, 727.2338659097802] K; evidence {'univFires': False, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': True}",
+   "alt 1 (SYNTHETIC strong, smearing b): CERTIFIED_CANDIDATE; bracket [413.5845207080677, 702.9927370461209] K; evidence {'univFires': False, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': True}"
+  ],
+  "rule_ids": [
+   "C-RAYLEIGH",
+   "CLASSIFY-S5"
+  ],
+  "assumptions": [
+   "M-ISO-MIGDAL (isotropic Migdal-Eliashberg, linearised gap equation, given a2F)",
+   "H(a0=4.33148145, eta=1e-09) [PROOF.md Prop. 6, wE1]",
+   "TRUST: Arb/FLINT (python-flint 0.9.0) ball arithmetic and exact conversions",
+   "TARGET(T*=300.0 K)",
+   "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=24525.0, row_check=mhat, rejection_model=isotropic)",
+   "E-ENV(0.05) weights only (ERRATA F5) [SYNTHETIC strong, smearing a]",
+   "E-ENV(0.05) weights only (ERRATA F5) [SYNTHETIC strong, smearing b]",
+   "U-MU[0,0.15]",
+   "CUTOFF-BLOCK(N_c(T)=#{n>=0:(2n+1)piT<=omega_c}, omega_c=24525.0 K) (ERRATA F3: lower bounds / CERTIFIED hold for this cutoff rule)",
+   "M-ISO-SINGLEBAND (the bracket [T_low, T_up] is the single-band DOS-averaged one)",
+   "TRUST: python-flint 0.9.0 / FLINT 3.6.0"
+  ],
+  "flags": [
+   "SYNTHETIC_DATA",
+   "MAGNETIC_PROXIMITY",
+   "STRONG_COUPLING"
+  ],
+  "certificate": {
+   "version": "rtsc-certify-1",
+   "a0": "86629629/20000000",
+   "params": {
+    "T_star": 300.0,
+    "mu_hi": 0.15,
+    "omega_c": 24525.0,
+    "row_check": "mhat",
+    "rel_tol": 0.0001,
+    "mode": "decide"
+   },
+   "alternatives": [
+    {
+     "index": 0,
+     "label": "SYNTHETIC strong, smearing a",
+     "spectrum_sha256": "2712d707b0b7b9a3e97f199bafac1d18bee668b61f2379c240f7bad5957d60dd",
+     "rel_envelope": 0.05,
+     "A_hi": "63889590251502764955077303430492987/20282409603651670423947251286016",
+     "cells": {
+      "t_end": "0x1.6b9def517113ep+9",
+      "T_up": "0x1.6b9def517113ep+9",
+      "cells": []
+     },
+     "search_upper": {
+      "tc_float_hi": 574.9705018615513,
+      "seconds": 0.2037041187286377,
+      "attempts": 1
+     },
+     "rayleigh": {
+      "T": "0x1.a60a7241105f4p+8",
+      "mu_hi": 0.15,
+      "omega_c": 24525.0,
+      "N_c": 9,
+      "x": [
+       1.0,
+       0.2206464783407435,
+       0.05257973315866389,
+       0.003102904771432065,
+       -0.01269672973406858,
+       -0.017452428892200837,
+       -0.018251606451567367,
+       -0.017499944150893457,
+       -0.015842056209770087,
+       0.0008899397779117443,
+       0.0011472637782596825,
+       0.001029880220197772,
+       0.0008657136736927982,
+       0.0007172937975038721,
+       0.0005945147386049733,
+       0.000495427629625132,
+       0.0004158301806437203,
+       0.0003516948639344075,
+       0.0002996991918407616,
+       0.00025723376116759065,
+       0.00022228353783564563,
+       0.00019329822785596178,
+       0.00016908228978768818,
+       0.00014870889415054934,
+       0.0001314547337230324,
+       0.00011675122673663893,
+       0.00010414809168541731,
+       9.32861022138971e-05,
+       8.387661526279207e-05,
+       7.568609729569977e-05,
+       6.852435083017238e-05,
+       6.223549432869089e-05,
+       5.669100318286392e-05,
+       5.1784303641560596e-05,
+       4.742654469350499e-05,
+       4.354326951127777e-05,
+       4.007177845649916e-05,
+       3.695902722387197e-05,
+       3.415994171997303e-05,
+       3.163605947064844e-05,
+       2.9354428397748825e-05,
+       2.7286709614536913e-05,
+       2.5408442837262602e-05,
+       2.369844209582464e-05,
+       2.2138296376043743e-05,
+       2.0711955172216883e-05,
+       1.9405383063558495e-05,
+       1.820627064228835e-05,
+       1.7103791630420835e-05,
+       1.6088397987388087e-05,
+       1.5151646350363632e-05,
+       1.4286050349193456e-05,
+       1.348495425449263e-05,
+       1.2742424075421634e-05,
+       1.2053152601109957e-05,
+       1.141237486540319e-05,
+       1.0815789786297433e-05,
+       1.0259481401241403e-05,
+       9.739826590390638e-06,
+       9.253357007424421e-06,
+       8.796479334078184e-06,
+       8.36470471049467e-06,
+       7.949738147805864e-06,
+       7.523972586920564e-06
+      ],
+      "float_rho": 0.000203682876343511,
+      "check": {
+       "Q_over_x2": 0.00020368287634077757,
+       "seconds": 0.0016825199127197266
+      }
+     },
+     "search_lower": {
+      "tc_float_lo": 422.0830141814851,
+      "seconds": 0.009831428527832031,
+      "attempts": 1
+     },
+     "seconds": 0.2138657569885254,
+     "evidence": {
+      "univFires": false,
+      "cellsBelowTarget": false,
+      "rayleighAtOrAboveTarget": true
+     },
+     "classifyAlt": "CERTIFIED_CANDIDATE",
+     "checks": [
+      "R-UNIV: A_hi=3150 K, a0*T*=1299.444435 K -> False",
+      "D1 A_hi <= a0*t_end: True",
+      "no cells (bound t_end via univ_stable only)",
+      "C-RAYLEIGH at T=422.0408059: True (Q/|x|^2=0.00020368287634077757)"
+     ]
+    },
+    {
+     "index": 1,
+     "label": "SYNTHETIC strong, smearing b",
+     "spectrum_sha256": "3ebea98b24dd58c931fd2e682939f6653769e7529c8a99935790d6e35113d68d",
+     "rel_envelope": 0.05,
+     "A_hi": "123519874486238671922121679739184739/40564819207303340847894502572032",
+     "cells": {
+      "t_end": "0x1.5f7f1201ed4efp+9",
+      "T_up": "0x1.5f7f1201ed4efp+9",
+      "cells": []
+     },
+     "search_upper": {
+      "tc_float_hi": 567.6012008578118,
+      "seconds": 0.20868539810180664,
+      "attempts": 1
+     },
+     "rayleigh": {
+      "T": "0x1.9d95a3262cfc5p+8",
+      "mu_hi": 0.15,
+      "omega_c": 24525.0,
+      "N_c": 9,
+      "x": [
+       1.0,
+       0.22204118067500114,
+       0.05413540168756682,
+       0.004109793502069263,
+       -0.01210862791898455,
+       -0.017115796354919856,
+       -0.01805804904720431,
+       -0.017386918869593038,
+       -0.015782228624525642,
+       0.0009639845548330319,
+       0.0011984264928713785,
+       0.001070827380064374,
+       0.0008989436743101178,
+       0.0007444395634771075,
+       0.0006168598571436404,
+       0.0005139764154024298,
+       0.0004313601200492609,
+       0.0003648062197747256,
+       0.0003108567351145796,
+       0.0002667995012287616,
+       0.00023054155825345468,
+       0.00020047327757061594,
+       0.0001753536521311383,
+       0.00015422075410176128,
+       0.00013632396620749857,
+       0.00012107328596444692,
+       0.00010800149734294047,
+       9.673588311580537e-05,
+       8.697697323268792e-05,
+       7.848248359876672e-05,
+       7.105509674814982e-05,
+       6.453310081199687e-05,
+       5.878316789774169e-05,
+       5.3694744285920145e-05,
+       4.917566315698699e-05,
+       4.514869086880054e-05,
+       4.154879089177275e-05,
+       3.832094305413758e-05,
+       3.541839521445889e-05,
+       3.280125374735471e-05,
+       3.0435341073187176e-05,
+       2.829126486961522e-05,
+       2.6343656002823675e-05,
+       2.457054164489545e-05,
+       2.295282725561308e-05,
+       2.1473866654654697e-05,
+       2.011910370076961e-05,
+       1.8875772429546606e-05,
+       1.773264510481636e-05,
+       1.6679819677315938e-05,
+       1.570853974113436e-05,
+       1.4811041322463615e-05,
+       1.398042178421602e-05,
+       1.3210526809208789e-05,
+       1.2495851809527534e-05,
+       1.1831454081962228e-05,
+       1.1212871247509701e-05,
+       1.0636039039331234e-05,
+       1.0097194605340106e-05,
+       9.592731320541454e-06,
+       9.1189045730152e-06,
+       8.67102558700961e-06,
+       8.240459242566976e-06,
+       7.799295561478894e-06
+      ],
+      "float_rho": 0.00019866060298220933,
+      "check": {
+       "Q_over_x2": 0.0001986606029796939,
+       "seconds": 0.0016007423400878906
+      }
+     },
+     "search_lower": {
+      "tc_float_lo": 413.6258832963974,
+      "seconds": 0.0069980621337890625,
+      "attempts": 1
+     },
+     "seconds": 0.2158522605895996,
+     "evidence": {
+      "univFires": false,
+      "cellsBelowTarget": false,
+      "rayleighAtOrAboveTarget": true
+     },
+     "classifyAlt": "CERTIFIED_CANDIDATE",
+     "checks": [
+      "R-UNIV: A_hi=3045 K, a0*T*=1299.444435 K -> False",
+      "D1 A_hi <= a0*t_end: True",
+      "no cells (bound t_end via univ_stable only)",
+      "C-RAYLEIGH at T=413.5845207: True (Q/|x|^2=0.0001986606029796939)"
+     ]
+    }
+   ],
+   "lean": {
+    "R-UNIV": [
+     "PipelineLogic.R_UNIV",
+     "PipelineLogic.univ_stable",
+     "PipelineLogic.stable_of_A_le",
+     "TcR1.stable_of_ge"
+    ],
+    "R-CELLS": [
+     "PipelineLogic.R_CELLS",
+     "PipelineLogic.cells_stable",
+     "PipelineLogic.cell_stable",
+     "PipelineLogic.envelope_form_bound",
+     "PipelineLogic.schur_row_test_inf",
+     "PipelineLogic.rows_of_eventually",
+     "PipelineLogic.lam_box",
+     "PipelineLogic.cover"
+    ],
+    "R-MU": [
+     "PipelineLogic.R_MU",
+     "PipelineLogic.stable_of_even_bound"
+    ],
+    "R-ODD": [
+     "TcR1.L6 via PipelineLogic.stable_of_even_bound"
+    ],
+    "C-RAYLEIGH": [
+     "PipelineLogic.rayleigh_cert",
+     "PipelineLogic.boxMin_le",
+     "PipelineLogic.boxMin_attained",
+     "PipelineLogic.sel_mul_eq_min",
+     "PipelineLogic.Qp_anti_mu"
+    ],
+    "CLASSIFY": [
+     "PipelineLogic.classify_rejected_sound",
+     "PipelineLogic.classify_certified_sound",
+     "PipelineLogic.classify_eq_rejected_iff",
+     "PipelineLogic.classify_eq_certified_iff",
+     "PipelineLogic.classify_cases"
+    ],
+    "R-MULTI": [
+     "MultiBand.R_UNIV_MB",
+     "MultiBand.R_UNIV_MB_eig",
+     "MultiBand.R_UNIV_MB_rowsum",
+     "MultiBand.sub_of_K",
+     "MultiBand.sub_env",
+     "MultiBand.thm1_even",
+     "MultiBand.thm3_odd"
+    ]
+   },
+   "rejection_model": "isotropic",
+   "multiband": [],
+   "status_single_band": "CERTIFIED_CANDIDATE",
+   "seconds": 0.43013548851013184
+  }
+ },
+ "verdict_origin": "rtsc.certify.classify",
+ "created_utc": "2026-10-27T18:27:59+00:00",
+ "finished_utc": "2026-10-27T18:27:59+00:00"
+}

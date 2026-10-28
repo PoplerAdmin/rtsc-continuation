@@ -1,0 +1,182 @@
+{
+ "schema": "rtsc.record/1",
+ "material_id": "SYNTHETIC-low-priority",
+ "config_hash": "199c23fdf2fd77ea",
+ "input_digest": "5833007c9ddcf072d2ad2e58052c8a9a03b007e906d48f859916b9f5d5c7e152",
+ "candidate": {
+  "material_id": "SYNTHETIC-low-priority",
+  "composition": {},
+  "source": "synthetic_demo",
+  "formula": "(synthetic)",
+  "lattice": null,
+  "species": null,
+  "frac_coords": null,
+  "spacegroup": null,
+  "pressure_GPa": null,
+  "enthalpy_eV_per_atom": null,
+  "properties": {
+   "is_metal": true,
+   "energy_above_hull": 0.0,
+   "dos_at_fermi": 0.01
+  },
+  "provenance": {
+   "source": "synthetic_demo",
+   "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+   "purpose": "lowest heuristic priority: budget should defer it (never computed)",
+   "source_entry": 0
+  },
+  "spectra_files": [],
+  "spectra": [
+   {
+    "omega_K": [
+     656.25,
+     668.75,
+     681.25,
+     693.75,
+     706.25,
+     718.75,
+     731.25,
+     743.75,
+     756.25,
+     768.75,
+     781.25,
+     793.75,
+     806.25,
+     818.75,
+     831.25,
+     843.75,
+     856.25,
+     868.75,
+     881.25,
+     893.75,
+     906.25,
+     918.75,
+     931.25,
+     943.75
+    ],
+    "weight_K": [
+     0.4811250097246145,
+     0.9568313343924854,
+     1.78759627242324,
+     3.1373291626812776,
+     5.172581323700445,
+     8.011450676296299,
+     11.656591952648299,
+     15.932672145660844,
+     20.457955990781336,
+     24.67700535740362,
+     27.962710447063696,
+     29.766150327223844,
+     29.766150327223844,
+     27.962710447063696,
+     24.67700535740362,
+     20.457955990781336,
+     15.932672145660844,
+     11.656591952648299,
+     8.011450676296299,
+     5.172581323700445,
+     3.1373291626812776,
+     1.78759627242324,
+     0.9568313343924854,
+     0.4811250097246145
+    ],
+    "rel_envelope": 0.0,
+    "label": "SYNTHETIC low-priority",
+    "provenance": {
+     "synthetic": true,
+     "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+     "shape": "gaussian(center=800.0 K, width=50.0 K, A=300.0 K, n=24)"
+    }
+   }
+  ],
+  "band_coupling_files": [],
+  "synthetic": true
+ },
+ "stages": {
+  "filters": [
+   {
+    "criterion": "X-HULL",
+    "passed": true,
+    "value": 0.0,
+    "threshold": 0.1,
+    "comparison": "e_above_hull <= 0.1 eV/atom",
+    "reason": "",
+    "data_source": "stored energy_above_hull (synthetic_demo, 0.0 GPa)",
+    "details": {}
+   },
+   {
+    "criterion": "X-METAL",
+    "passed": true,
+    "value": true,
+    "threshold": true,
+    "comparison": "band_gap <= 0.0 eV (or is_metal == True when no gap is known)",
+    "reason": "",
+    "data_source": "is_metal from synthetic_demo",
+    "details": {}
+   },
+   {
+    "criterion": "X-MAGNETIC",
+    "passed": null,
+    "value": null,
+    "threshold": 0.05,
+    "comparison": "ordering not in ['FM', 'AFM', 'FiM'] and |m| <= 0.05 mu_B/atom",
+    "reason": "no magnetic ordering / magnetisation data",
+    "data_source": "",
+    "details": {}
+   },
+   {
+    "criterion": "X-DYNAMIC",
+    "passed": null,
+    "value": null,
+    "threshold": -0.25,
+    "comparison": "min phonon frequency >= -0.25 THz (acoustic modes at Gamma ignored)",
+    "reason": "no first-principles phonon data",
+    "data_source": "",
+    "details": {}
+   }
+  ],
+  "priority": {
+   "material_id": "SYNTHETIC-low-priority",
+   "total": 0.1315793663041995,
+   "components": {
+    "dos": 0.0196078431372549,
+    "spectrum": 0.1875651278876718
+   },
+   "use": "ordering only (S2)"
+  }
+ },
+ "spectra": [],
+ "verdict": {
+  "material_id": "SYNTHETIC-low-priority",
+  "status": "DEFERRED",
+  "T_low_K": null,
+  "T_up_K": null,
+  "reasons": [
+   "budget: max_materials=4 reached at priority 0.1316; not computed (S2)"
+  ],
+  "rule_ids": [],
+  "assumptions": [],
+  "flags": [
+   "SYNTHETIC_DATA"
+  ],
+  "certificate": {
+   "kind": "budget",
+   "proved": false,
+   "budget": {
+    "max_materials": 4
+   },
+   "priority": {
+    "material_id": "SYNTHETIC-low-priority",
+    "total": 0.1315793663041995,
+    "components": {
+     "dos": 0.0196078431372549,
+     "spectrum": 0.1875651278876718
+    },
+    "use": "ordering only (S2)"
+   }
+  }
+ },
+ "verdict_origin": "pipeline.budget",
+ "created_utc": "2026-10-27T18:27:59+00:00",
+ "finished_utc": "2026-10-27T18:27:59+00:00"
+}

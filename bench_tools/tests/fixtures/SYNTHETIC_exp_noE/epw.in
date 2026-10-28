@@ -1,0 +1,34 @@
+--
+&inputepw
+  ! SYNTHETIC fixture input (protocol v3 pins)
+  prefix = 'synthetic'
+  outdir = './out/'
+  elph = .true.
+  epwread = .true.
+  epwwrite = .false.
+  wannierize = .false.
+  nbndsub = 4
+  use_ws = .true.
+  phonselfen = .true.
+  delta_approx = .true.
+  a2f = .false.
+  restart = .false.
+  nstemp = 1
+  temps(1) = 10.0
+  ngaussw = 0
+  degaussw = 0.02
+  fsthick = 1.0d0
+  efermi_read = .false.
+  selecqread = .false.
+  eps_acoustic = 0.1
+  filqf = 'qlist.txt'
+  nkf1 = 24
+  nkf2 = 24
+  nkf3 = 24
+  nk1 = 8
+  nk2 = 8
+  nk3 = 8
+  nq1 = 4
+  nq2 = 4
+  nq3 = 4
+/

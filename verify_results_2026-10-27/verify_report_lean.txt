@@ -1,0 +1,20 @@
+[verify] bundle  : /home/user/rtsc_work/rtsc_bundle
+[verify] workdir : /home/user/rtsc_work/verify_lean
+[verify] date    : 2026-10-27T18:25:55Z   host: Linux 6.6.87.2-microsoft-standard-WSL2 x86_64   cores: 16
+[verify] python  : Python 3.12.16
+[verify] versions: rtsc bundle assembled 2026-10-27T18:04:27Z on Linux 6.18.44-fc-v165 x86_64
+[verify] == pytest: SKIP  --skip-pytest
+[verify] == demo: SKIP  --skip-demo
+[verify] == recheck: SKIP  --skip-demo
+[verify] Lean: Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0); toolchain file: leanprover/lean4:v4.35.0
+[verify] == lean: PASS  lake build OK (24 s); 28 .lean files contain no sorry/admit/axiom/native_decide/implemented_by/extern; Check.lean: 34 theorems OK; CheckPipeline.lean: 82 theorems OK; CheckMultiBand.lean: 67 theorems OK; CheckDiscovery.lean: 69 theorems OK; AllAxioms: 1254 declarations, axioms used = { Classical.choice Quot.sound propext }
+[verify] == cert: SKIP  not requested (use --cert; about 6 core-minutes)
+
+================ verify_all.sh summary ================
+pytest    SKIP  --skip-pytest
+demo      SKIP  --skip-demo
+recheck   SKIP  --skip-demo
+lean      PASS  lake build OK (24 s); 28 .lean files contain no sorry/admit/axiom/native_decide/implemented_by/extern; Check.lean: 34 theorems OK; CheckPipeline.lean: 82 theorems OK; CheckMultiBand.lean: 67 theorems OK; CheckDiscovery.lean: 69 theorems OK; AllAxioms: 1254 declarations, axioms used = { Classical.choice Quot.sound propext }
+cert      SKIP  not requested (use --cert; about 6 core-minutes)
+OVERALL: PASS
+report: /home/user/rtsc_work/verify_lean/verify_report.txt   logs: /home/user/rtsc_work/verify_lean/logs

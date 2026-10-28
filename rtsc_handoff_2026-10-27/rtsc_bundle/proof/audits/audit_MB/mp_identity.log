@@ -1,0 +1,13 @@
+generic    B=2 modes=2  Q=-66.0743159552226  RHS=-66.0743159552226  rel.diff=0.0  kappa=14.7137 vmin=0.468 P=23.7
+generic    B=3 modes=3  Q=-363.423618413665  RHS=-363.423618413665  rel.diff=6.47e-41  kappa=12.134 vmin=0.425 P=113.4
+generic    B=4 modes=3  Q=-164.43450583402  RHS=-164.43450583402  rel.diff=1.25e-40  kappa=128.648 vmin=0.0167 P=91.97
+unequalDOS B=2 modes=2  Q=-9.99901965338662  RHS=-9.99901965338662  rel.diff=1.47e-40  kappa=14845.8 vmin=0.00621 P=10.57
+unequalDOS B=3 modes=3  Q=-85.7674627244746  RHS=-85.7674627244746  rel.diff=1.71e-41  kappa=285.136 vmin=0.0698 P=56.62
+unequalDOS B=4 modes=2  Q=-44.973535416653  RHS=-44.973535416653  rel.diff=0.0  kappa=238.342 vmin=0.191 P=35.95
+interband  B=2 modes=3  Q=-145.223482716194  RHS=-145.223482716194  rel.diff=0.0  kappa=2.57835 vmin=0.685 P=10.34
+interband  B=3 modes=4  Q=-241.901909869126  RHS=-241.901909869126  rel.diff=4.86e-41  kappa=6.73822 vmin=0.437 P=43.59
+interband  B=4 modes=3  Q=-118.255699072859  RHS=-118.255699072859  rel.diff=2.49e-41  kappa=39.058 vmin=0.121 P=83.05
+nearred    B=2 modes=2  Q=-133.426543655055  RHS=-133.426543655055  rel.diff=4.41e-41  kappa=0.292107 vmin=7.18e-15 P=3.108e-14
+nearred    B=3 modes=3  Q=-193.369612773024  RHS=-193.369612773024  rel.diff=0.0  kappa=8.52369 vmin=2.71e-16 P=37.65
+nearred    B=4 modes=4  Q=-156.79258966342  RHS=-156.79258966342  rel.diff=2.45e-32  kappa=14.1384 vmin=4.5e-16 P=62.35
+WORST relative difference: 2.45e-32

@@ -1,0 +1,102 @@
+[
+ {
+  "name": "wide_1K_1e5K",
+  "mode": "bracket",
+  "status": "REJECTED_PROVEN",
+  "T_low": null,
+  "T_up": 101.34547133814948,
+  "seconds": 86.36353182792664,
+  "recheck_ok": true,
+  "A_c": null,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.15,
+   "omega_c": null
+  },
+  "oracle_s": 119.67153716087341,
+  "oracle_tc_mu0": {
+   "hi": 101.33534104015816,
+   "nom": 101.33534104015816
+  },
+  "critical": []
+ },
+ {
+  "name": "tiny_low_atom",
+  "mode": "bracket",
+  "status": "REJECTED_PROVEN",
+  "T_low": 190.4924683793314,
+  "T_up": 247.58363974974424,
+  "seconds": 0.7853755950927734,
+  "recheck_ok": true,
+  "A_c": null,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.15,
+   "omega_c": null
+  },
+  "oracle_s": 0.13717985153198242,
+  "oracle_tc_mu0": {
+   "hi": 247.5588961266879,
+   "nom": 247.5588961266879
+  },
+  "oracle_tc_lo_muhi": 190.51152862094574,
+  "Nc_indep": 8,
+  "Nc_cert": 8,
+  "mp_boxminQ": 0.0002035454915316636,
+  "critical": []
+ },
+ {
+  "name": "tiny_low_atom2",
+  "mode": "bracket",
+  "status": "REJECTED_PROVEN",
+  "T_low": 199.78695099475595,
+  "T_up": 254.6518072654768,
+  "seconds": 0.7055482864379883,
+  "recheck_ok": true,
+  "A_c": null,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.15,
+   "omega_c": null
+  },
+  "oracle_s": 0.15743541717529297,
+  "oracle_tc_mu0": {
+   "hi": 254.6263632095564,
+   "nom": 254.6263632095564
+  },
+  "oracle_tc_lo_muhi": 199.80694829474282,
+  "Nc_indep": 7,
+  "Nc_cert": 7,
+  "mp_boxminQ": 0.00022244921541486612,
+  "critical": []
+ },
+ {
+  "name": "many_atoms_3000",
+  "mode": "bracket",
+  "status": "REJECTED_PROVEN",
+  "T_low": 178.4285450035191,
+  "T_up": 254.97883391077173,
+  "seconds": 41.16075086593628,
+  "recheck_ok": true,
+  "A_c": null,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.15,
+   "omega_c": null
+  },
+  "oracle_s": 2.794647455215454,
+  "oracle_tc_mu0": {
+   "hi": 253.44930228236302,
+   "nom": 244.5794177356857,
+   "rv0": 244.64308893624448,
+   "rv1": 244.638809078608,
+   "rv2": 244.28896765309915,
+   "lo": 235.45204044837797
+  },
+  "oracle_tc_lo_muhi": 178.44641079137438,
+  "Nc_indep": 18,
+  "Nc_cert": 18,
+  "mp_boxminQ": 0.00018644669744196586,
+  "critical": []
+ }
+]

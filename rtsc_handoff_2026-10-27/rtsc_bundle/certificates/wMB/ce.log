@@ -1,0 +1,15 @@
+--- CE1: decoupled bands, small-DOS band carries all coupling (average fails)
+ eps=0.20: Tc = 230.868 K | bounds Phi/a0: avg 46.174, kappa 230.868, LamA 230.868, rowmax 230.868, maxdiag 230.868
+ eps=0.05: Tc = 230.868 K | bounds Phi/a0: avg 11.543, kappa 230.868, LamA 230.868, rowmax 230.868, maxdiag 230.868
+ eps=0.01: Tc = 230.868 K | bounds Phi/a0: avg 2.309, kappa 230.868, LamA 230.868, rowmax 230.868, maxdiag 230.868
+--- CE1b: same but connected (interband b=50 K on band-1 row)
+ eps=0.05: Tc = 219.172 K | bounds Phi/a0: avg 12.698, kappa 230.898, LamA 236.647, rowmax 242.411, maxdiag 230.868
+--- CE2: pure interband, equal DOS (intraband-only functionals fail; kappa sharp)
+ : Tc = 230.868 K | bounds Phi/a0: avg 230.868, kappa 230.868, LamA 230.868, rowmax 230.868, maxdiag 0.000
+--- CE3: equal row sums, unequal DOS: kappa = rowmax = LamA, bound attained
+ : Tc = 230.868 K | bounds Phi/a0: avg 230.868, kappa 230.868, LamA 230.868, rowmax 230.868, maxdiag 213.553
+--- CE4: Coulomb matrix with nonneg entries but N_i mu_ij not PSD, NO phonons
+  mu_12=mu_21=0.20, mu_ii=0, omega_c=1000 K, alpha2F=0: unstable up to T ~ 7.76 K (A = 0)
+--- Illustrative MgB2-like two-band Einstein model (NOT fitted literature values)
+ two-band: Tc = 81.126 K | bounds Phi/a0: avg 74.316, kappa 86.526, LamA 91.534, rowmax 99.273, maxdiag 80.804
+  isotropic-average single band Tc = 71.594 K  (multiband/average = 1.133)

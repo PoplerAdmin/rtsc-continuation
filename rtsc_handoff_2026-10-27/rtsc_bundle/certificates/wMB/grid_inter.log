@@ -1,0 +1,5 @@
+0.5 [(1, np.float64(3.5364), np.float64(3.536)), (3, np.float64(1.3858), np.float64(1.386)), (7.57, np.float64(1.0), np.float64(1.0)), (15, np.float64(1.1528), np.float64(1.153)), (40, np.float64(1.8948), np.float64(1.895))]
+0.2 [(1, np.float64(4.3863), np.float64(8.773)), (3, np.float64(1.6556), np.float64(3.311)), (7.57, np.float64(1.1304), np.float64(2.261)), (15, np.float64(1.2662), np.float64(2.532)), (40, np.float64(2.0313), np.float64(4.063))]
+0.05 [(1, np.float64(7.9699), np.float64(34.74)), (3, np.float64(2.8401), np.float64(12.38)), (7.57, np.float64(1.7291), np.float64(7.537)), (15, np.float64(1.7925), np.float64(7.813)), (40, np.float64(2.6631), np.float64(11.608))]
+0.01 [(1, np.float64(17.3976), np.float64(173.104)), (3, np.float64(6.0587), np.float64(60.283)), (7.57, np.float64(3.4596), np.float64(34.423)), (15, np.float64(3.37), np.float64(33.531)), (40, np.float64(4.6062), np.float64(45.831))]
+0.001 [(1, np.float64(54.7227), np.float64(1729.619)), (3, np.float64(18.9466), np.float64(598.844)), (7.57, np.float64(10.6144), np.float64(335.49)), (15, np.float64(10.1023), np.float64(319.304)), (40, np.float64(13.2599), np.float64(419.104))]

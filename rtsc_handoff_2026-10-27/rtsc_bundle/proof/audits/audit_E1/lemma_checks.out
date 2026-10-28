@@ -1,0 +1,7 @@
+PD mid, exact: True
+ball containing indefinite member (diag in [-1e-7,1e-6]): False
+ball with off-diag in [1e-3,2e-3], diag 1,1e-6 (indefinite members): False
+badly scaled PD (1e8,1;1,1e-7): det=1e1-1>0 -> True
+badly scaled indefinite (1e8,1;1,1e-9): det<0 -> False
+min over samples of Tbar(j)-T(j) (must be >=0): 1.4529361151931382e-05
+max |E_nm|/(h^2/2 U_nm) over samples (must be <=1): 0.9944673477778677

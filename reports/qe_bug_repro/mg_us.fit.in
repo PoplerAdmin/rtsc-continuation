@@ -1,0 +1,17 @@
+&control
+ calculation='scf', prefix='t', outdir='./tmp/', pseudo_dir='SSSP_DIR'
+/
+&system
+ ibrav=4, celldm(1)=6.05, celldm(3)=1.624, nat=2, ntyp=1, ecutwfc=30, ecutrho=240,
+ occupations='smearing', smearing='mv', degauss=0.02, la2F=.true.
+/
+&electrons
+ conv_thr=1e-10
+/
+ATOMIC_SPECIES
+ Mg 24.305 mg_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+ Mg 0.333333333 0.666666667 0.25
+ Mg 0.666666667 0.333333333 0.75
+K_POINTS automatic
+ 12 12 8 0 0 0

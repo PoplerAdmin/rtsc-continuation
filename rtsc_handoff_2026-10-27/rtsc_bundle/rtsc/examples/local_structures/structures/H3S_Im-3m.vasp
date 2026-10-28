@@ -1,0 +1,16 @@
+H3S Im-3m conventional cell; approximate starting geometry (vc-relaxed by the DFT stage)
+1.0
+3.09 0.00 0.00
+0.00 3.09 0.00
+0.00 0.00 3.09
+S H
+2 6
+Direct
+0.0 0.0 0.0
+0.5 0.5 0.5
+0.5 0.0 0.0
+0.0 0.5 0.0
+0.0 0.0 0.5
+0.0 0.5 0.5
+0.5 0.0 0.5
+0.5 0.5 0.0

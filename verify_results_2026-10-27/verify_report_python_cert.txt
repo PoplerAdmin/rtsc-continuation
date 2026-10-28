@@ -1,0 +1,21 @@
+[verify] bundle  : /home/user/rtsc_work/rtsc_bundle
+[verify] workdir : /home/user/rtsc_work/verify_py
+[verify] date    : 2026-10-27T18:24:41Z   host: Linux 6.6.87.2-microsoft-standard-WSL2 x86_64   cores: 16
+[verify] python  : Python 3.12.16
+[verify] versions: rtsc bundle assembled 2026-10-27T18:04:27Z on Linux 6.18.44-fc-v165 x86_64
+[verify] running pytest (log: /home/user/rtsc_work/verify_py/logs/pytest.log) ...
+[verify] == pytest: PASS  435 passed, 13 skipped in 199.82s (0:03:19)
+[verify] == demo: PASS  inputs=7 REJECTED_PROVEN=2 CERTIFIED_CANDIDATE=1 UNDECIDED=1 EXCLUDED_ASSUMPTION=2 DEFERRED=1 ERROR=0 (counts add up, one verdict per input, SYNTHETIC banner present)
+[verify] == recheck: PASS  4 demo verdicts re-verified (incl. REJECTED_PROVEN and CERTIFIED_CANDIDATE); rtsc certify on QE a2F.dos5 (Al smoke test) -> REJECTED_PROVEN as expected
+[verify] == lean: SKIP  --skip-lean
+[verify] certificate wE1: running run_all.sh (a0=4.33148145, eta=1e-9, sharpness a1=4.3314815) in /home/user/rtsc_work/verify_py/cert_wE1 ...
+[verify] == cert: PASS  wE1: CERTIFIED  (126 cells, 0 failed, tiled=True, 31.2s); FINAL VERDICT CERTIFIED (32 s)
+
+================ verify_all.sh summary ================
+pytest    PASS  435 passed, 13 skipped in 199.82s (0:03:19)
+demo      PASS  inputs=7 REJECTED_PROVEN=2 CERTIFIED_CANDIDATE=1 UNDECIDED=1 EXCLUDED_ASSUMPTION=2 DEFERRED=1 ERROR=0 (counts add up, one verdict per input, SYNTHETIC banner present)
+recheck   PASS  4 demo verdicts re-verified (incl. REJECTED_PROVEN and CERTIFIED_CANDIDATE); rtsc certify on QE a2F.dos5 (Al smoke test) -> REJECTED_PROVEN as expected
+lean      SKIP  --skip-lean
+cert      PASS  wE1: CERTIFIED  (126 cells, 0 failed, tiled=True, 31.2s); FINAL VERDICT CERTIFIED (32 s)
+OVERALL: PASS
+report: /home/user/rtsc_work/verify_py/verify_report.txt   logs: /home/user/rtsc_work/verify_py/logs

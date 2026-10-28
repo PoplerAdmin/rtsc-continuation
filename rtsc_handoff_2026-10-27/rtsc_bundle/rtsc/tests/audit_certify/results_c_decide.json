@@ -1,0 +1,258 @@
+[
+ {
+  "name": "near_Tstar_Om1000_rel-0.0001",
+  "mode": "decide",
+  "status": "REJECTED_PROVEN",
+  "T_low": null,
+  "T_up": 299.9999997206032,
+  "seconds": 6.566765308380127,
+  "recheck_ok": true,
+  "A_c": 1683.350259829691,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.2281017303466797,
+  "oracle_tc_mu0": {
+   "hi": 299.98136565793016,
+   "nom": 299.98136565793016
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om1000_rel-1e-06",
+  "mode": "decide",
+  "status": "REJECTED_PROVEN",
+  "T_low": null,
+  "T_up": 299.9999997206032,
+  "seconds": 7.575735807418823,
+  "recheck_ok": true,
+  "A_c": 1683.350259829691,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.20944619178771973,
+  "oracle_tc_mu0": {
+   "hi": 299.99981350204837,
+   "nom": 299.99981350204837
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om1000_rel1e-06",
+  "mode": "decide",
+  "status": "UNDECIDED",
+  "T_low": null,
+  "T_up": 388.63191788110987,
+  "seconds": 6.546566486358643,
+  "recheck_ok": true,
+  "A_c": 1683.350259829691,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.23865032196044922,
+  "oracle_tc_mu0": {
+   "hi": 300.00018610939014,
+   "nom": 300.00018610939014
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om1000_rel0.0001",
+  "mode": "decide",
+  "status": "UNDECIDED",
+  "T_low": null,
+  "T_up": 388.6703924025056,
+  "seconds": 6.697943925857544,
+  "recheck_ok": true,
+  "A_c": 1683.350259829691,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.24836325645446777,
+  "oracle_tc_mu0": {
+   "hi": 300.0186329280469,
+   "nom": 300.0186329280469
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om2271_rel-0.0001",
+  "mode": "decide",
+  "status": "REJECTED_PROVEN",
+  "T_low": null,
+  "T_up": 299.97006541995825,
+  "seconds": 0.0005898475646972656,
+  "recheck_ok": true,
+  "A_c": 1299.4447183936747,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.17282700538635254,
+  "oracle_tc_mu0": {
+   "hi": 299.97001296433876,
+   "nom": 299.97001296433876
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om2271_rel-1e-06",
+  "mode": "decide",
+  "status": "REJECTED_PROVEN",
+  "T_low": null,
+  "T_up": 299.99976542643543,
+  "seconds": 0.008557796478271484,
+  "recheck_ok": true,
+  "A_c": 1299.4447183936747,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.2183537483215332,
+  "oracle_tc_mu0": {
+   "hi": 299.99969989396146,
+   "nom": 299.99969989396146
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om2271_rel1e-06",
+  "mode": "decide",
+  "status": "UNDECIDED",
+  "T_low": null,
+  "T_up": 300.0003654265663,
+  "seconds": 9.0965895652771,
+  "recheck_ok": true,
+  "A_c": 1299.4447183936747,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.1600019931793213,
+  "oracle_tc_mu0": {
+   "hi": 300.0002996216345,
+   "nom": 300.0002996216345
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om2271_rel0.0001",
+  "mode": "decide",
+  "status": "UNDECIDED",
+  "T_low": null,
+  "T_up": 300.0300654330435,
+  "seconds": 9.439847707748413,
+  "recheck_ok": true,
+  "A_c": 1299.4447183936747,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.32757019996643066,
+  "oracle_tc_mu0": {
+   "hi": 300.0299846421401,
+   "nom": 300.0299846421401
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om5000_rel-0.0001",
+  "mode": "decide",
+  "status": "REJECTED_PROVEN",
+  "T_low": null,
+  "T_up": 299.9999997206032,
+  "seconds": 9.04534125328064,
+  "recheck_ok": true,
+  "A_c": 1561.2089029411645,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.2350785732269287,
+  "oracle_tc_mu0": {
+   "hi": 299.9491226152147,
+   "nom": 299.9491226152147
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om5000_rel-1e-06",
+  "mode": "decide",
+  "status": "REJECTED_PROVEN",
+  "T_low": null,
+  "T_up": 299.9999997206032,
+  "seconds": 22.007333755493164,
+  "recheck_ok": true,
+  "A_c": 1561.2089029411645,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.25630664825439453,
+  "oracle_tc_mu0": {
+   "hi": 299.9994910189955,
+   "nom": 299.9994910189955
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om5000_rel1e-06",
+  "mode": "decide",
+  "status": "UNDECIDED",
+  "T_low": null,
+  "T_up": 360.43337185481136,
+  "seconds": 8.237968444824219,
+  "recheck_ok": true,
+  "A_c": 1561.2089029411645,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.30799007415771484,
+  "oracle_tc_mu0": {
+   "hi": 300.00050849557493,
+   "nom": 300.00050849557493
+  },
+  "critical": []
+ },
+ {
+  "name": "near_Tstar_Om5000_rel0.0001",
+  "mode": "decide",
+  "status": "CERTIFIED_CANDIDATE",
+  "T_low": 300.0205055830562,
+  "T_up": 360.46905472294213,
+  "seconds": 8.31667447090149,
+  "recheck_ok": true,
+  "A_c": 1561.2089029411645,
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.0,
+   "omega_c": null
+  },
+  "oracle_s": 0.22809910774230957,
+  "oracle_tc_mu0": {
+   "hi": 300.05087599108094,
+   "nom": 300.05087599108094
+  },
+  "oracle_tc_lo_muhi": 300.050876038321,
+  "Nc_indep": 27,
+  "Nc_cert": 27,
+  "mp_boxminQ": 8.699343268653547e-05,
+  "critical": []
+ }
+]

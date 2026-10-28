@@ -1,0 +1,1 @@
+cd ~/rtsc_work/bench/Nb/run/*/dfpt; python3 -c "import json;d=json.load(open('state.json')) if __import__('os').path.exists('state.json') else {};print({k:v.get('status') for k,v in d.get('steps',{}).items()})" 2>&1; ls; ls tmp | head

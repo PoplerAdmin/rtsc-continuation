@@ -1,0 +1,72 @@
+# BENCHMARK (step 2 of HANDOFF.md): fcc Al, real DFPT with QE 7.6 (conda-forge), SG15 ONCV PBE 1.2 (norm-conserving).
+# SSSP PAW pseudos are NOT used: ph.x 7.6 segfaults with PAW + electron_phonon=interpolated (bisected 2026-10-27).
+[run]
+name = "bench-Al"
+workdir = "run"
+workers = 1
+resume = true
+
+[[sources]]
+type = "local"
+path = "structures"
+recursive = false
+backend = "auto"
+
+[dedupe]
+method = "auto"
+
+[filters.hull]
+enabled = false        # single element: no hull to evaluate
+[filters.metallic]
+enabled = true
+max_band_gap_eV = 0.0
+[filters.magnetic]
+enabled = true
+[filters.dynamic]
+enabled = true
+imaginary_tol = 0.25
+imaginary_tol_unit = "THz"
+
+[budget]
+max_materials = 1
+
+[spectra]
+use_attached = false
+rel_envelope = 0.10
+
+[dfpt]
+enabled = true
+[dfpt.launcher]
+kind = "mpirun"
+nprocs = 8
+npool = 8
+mpi_args = ["--bind-to", "none", "-x", "OMP_NUM_THREADS"]
+bin_dir = "/home/user/micromamba/envs/qe/bin"
+mpirun = "/home/user/micromamba/envs/qe/bin/mpirun"
+env = { OMP_NUM_THREADS = "1" }
+[dfpt.pseudos]
+dir = "/home/user/pseudo/sg15"
+files = { Al = "Al_ONCV_PBE-1.2.upf" }
+[dfpt.settings]
+do_relax = true
+ecutwfc_Ry = 60.0      # SG15 Al (11 valence e-, semicore 2s2p); NC: ecutrho = 4*ecutwfc
+ecutrho_Ry = 240.0
+smearing = "mv"
+degauss_Ry = 0.02
+k_scf = [16, 16, 16]
+k_fit = [32, 32, 32]
+q = [8, 8, 8]
+k_matdyn = [32, 32, 32]
+el_ph_sigma_Ry = 0.005
+el_ph_nsigma = 10
+tr2_ph = 1e-16
+
+[certify]
+T_target_K = 300.0
+mu_hi = 0.15
+omega_c_factor = 10.0
+cutoff_rule = "block"
+mode = "bracket"
+
+[validity]
+enabled = true

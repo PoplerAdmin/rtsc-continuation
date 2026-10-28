@@ -1,0 +1,5 @@
+w= 0.30 symbol err 1.5e-07  min eig(B - s_pi - gam e0e0) = 4.610e-07
+w= 2.00 symbol err 1.0e-06  min eig(B - s_pi - gam e0e0) = 2.627e-06
+w= 5.00 symbol err 2.5e-06  min eig(B - s_pi - gam e0e0) = 3.198e-06
+w= 7.57 symbol err 3.8e-06  min eig(B - s_pi - gam e0e0) = 2.020e-06
+w=20.00 symbol err 1.0e-05  min eig(B - s_pi - gam e0e0) = 2.835e-08

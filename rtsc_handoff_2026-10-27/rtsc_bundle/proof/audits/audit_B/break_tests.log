@@ -1,0 +1,28 @@
++ cd /home/claude/tc/audit_B
++ nice -n 10 python3 cert_lower.py 433148149 100000000 75748661 10000000 300
+float top eigenvalue of section: 4.3464068656647387e-10
+a = 433148149/100000000  w = 75748661/10000000  N = 300
+Q(x)      = [4.346405239135975294503919180e-10 +/- 6.55e-38]
+Q(x)/|x|^2= [4.346405239135978067255459611e-10 +/- 6.71e-38]
+CERTIFIED Q(x) > 0: True
++ tail -3
++ nice -n 10 python3 cert_upper.py 43314816 10000000 15/2 153/20 80 1000
+   12.2s split [310179/40960, 155091/20480]  cholesky failed; minimal eig approx -1.035e-09
+   12.8s OK   [310179/40960, 620361/81920]  resid rowsum [5.92e-14 +/- 2.45e-17], approx min eig 2.493e-10 | resid rowsum [7.41e-14 +/- 3.76e-18], approx min eig 1.423e-09
+FAIL at minimal width 620361/81920 155091/20480 ['cholesky failed; minimal eig approx -9.046e-10']
++ nice -n 10 python3 cert_upper.py 43314815 10000000 15/2 153/20 80 1000
++ tail -3
+   11.0s split [31023/4096, 77559/10240]  cholesky failed; minimal eig approx -1.976e-09
+   11.4s split [31023/4096, 310233/40960]  cholesky failed; minimal eig approx -7.967e-10
+FAIL at minimal width 31023/4096 620463/81920 ['cholesky failed; minimal eig approx -2.032e-10']
++ nice -n 10 python3 cert_upper.py 433148149 100000000 15/2 153/20 80 1000
++ tail -3
+   13.6s split [310239/40960, 155121/20480]  cholesky failed; minimal eig approx -4.130e-10
+   14.0s OK   [310239/40960, 620481/81920]  resid rowsum [8.35e-14 +/- 3.25e-17], approx min eig 5.873e-11 | resid rowsum [1.09e-13 +/- 2.26e-17], approx min eig 4.201e-10
+FAIL at minimal width 620481/81920 155121/20480 ['cholesky failed; minimal eig approx -2.830e-10']
++ cd wrong
++ nice -n 10 python3 cert_upper.py 43314814 10000000 15/2 153/20 80 1000
++ tail -3
+    9.4s split [15507/2048, 155073/20480]  cholesky failed; minimal eig approx -5.743e-09
+    9.8s split [15507/2048, 310143/40960]  cholesky failed; minimal eig approx -2.127e-09
+FAIL at minimal width 15507/2048 620283/81920 ['cholesky failed; minimal eig approx -3.147e-10']

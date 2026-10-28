@@ -1,0 +1,23 @@
+# (c) Demo: SYNTHETIC spectra (invented; NOT data for any material), no DFT.
+# Equivalent to `rtsc demo`.  Run: rtsc run -c examples/demo/config.toml
+
+[run]
+name = "demo (SYNTHETIC)"
+workdir = "runs/demo"
+workers = 1
+
+[[sources]]
+type = "synthetic_demo"
+
+[budget]
+max_materials = 4      # the lowest-priority synthetic candidate is DEFERRED
+
+[spectra]
+rel_envelope = 0.05
+
+[certify]
+T_target_K = 300.0
+mu_hi = 0.15
+omega_c_factor = 10.0
+cutoff_rule = "block"
+mode = "decide"        # rtsc.certify: stop refining once the status is decided (faster demo)

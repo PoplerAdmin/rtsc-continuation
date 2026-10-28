@@ -1,0 +1,1 @@
+cd ~/rtsc_work; OMP_NUM_THREADS=1 .venv/bin/python -I /mnt/g/ClaudeWorkspace/RTSC_Project/run_scripts/scratchpad_2026-10-27/inputs.py 2>/dev/null > /mnt/g/ClaudeWorkspace/RTSC_Project/run_scripts/scratchpad_2026-10-27/inputs.tsv; cat /mnt/g/ClaudeWorkspace/RTSC_Project/run_scripts/scratchpad_2026-10-27/inputs.tsv

@@ -1,0 +1,3 @@
+max a0*g0 = 0.669521 at w=8.6519
+max a0*(c+2l1) = 2.389877 at w=5.8251
+max_w top eig of Q^E_{-a0,w} (trunc) = -0.729545 at w=6.967

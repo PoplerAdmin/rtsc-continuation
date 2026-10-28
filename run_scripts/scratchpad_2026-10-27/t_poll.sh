@@ -1,0 +1,1 @@
+cd ~/rtsc_work/tetra_Al/q6s; date; cat timing.txt 2>/dev/null; grep -n "Fermi\|^!\|WALL" scf.out | tail -3; grep -n "number of k points\|Calculation of q\|PHONON.*WALL\|Representation\|Convergence has been" ph.out | tail -12; cat ../stage1_q6.log

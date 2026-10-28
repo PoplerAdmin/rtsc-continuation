@@ -1,0 +1,16 @@
+&control
+ calculation='scf', prefix='t', outdir='./tmp/', pseudo_dir='SG15_DIR'
+/
+&system
+ ibrav=2, celldm(1)=7.65, nat=1, ntyp=1, ecutwfc=30, ecutrho=120,
+ occupations='smearing', smearing='mv', degauss=0.02, la2F=.true.
+/
+&electrons
+ conv_thr=1e-10
+/
+ATOMIC_SPECIES
+ Al 26.98 Al_ONCV_PBE-1.2.upf
+ATOMIC_POSITIONS crystal
+ Al 0.0 0.0 0.0
+K_POINTS automatic
+ 16 16 16 0 0 0

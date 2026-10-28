@@ -1,0 +1,700 @@
+{
+ "HEURISTIC": "ARCH S2: ordering / DEFERRED only",
+ "provenance": {
+  "prescreener": "mattersim",
+  "model": "MatterSim-v1.0.0-5M",
+  "mattersim_version": "1.2.5",
+  "relax": {
+   "fmax": 0.02,
+   "max_steps": 400,
+   "optimizer": "FIRE",
+   "cell_filter": "FrechetCellFilter",
+   "constrain_symmetry": false
+  },
+  "phonon": {
+   "supercell": "auto",
+   "min_supercell_length": 7.0,
+   "max_supercell_atoms": 160,
+   "displacement": 0.01,
+   "mesh": [
+    8,
+    8,
+    8
+   ],
+   "imaginary_tol_cm1": 15.0,
+   "projected_dos": true,
+   "light_elements": [
+    "H",
+    "Li",
+    "Be",
+    "B",
+    "C",
+    "N",
+    "O",
+    "F"
+   ],
+   "hf_threshold_cm1": 500.0,
+   "dos_bins": 200
+  }
+ },
+ "wall_s": 228.5671830177307,
+ "rows": [
+  {
+   "label": "MgB2-exp(KNOWN)",
+   "formula_in": "MgB2",
+   "sg_in": "P6/mmm",
+   "sg_relaxed": "P6/mmm",
+   "e_above_hull_ml_eV": 0.0,
+   "min_freq_cm1": 63.38080513967069,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.4111045738437631,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-5.096, volume_A3_per_atom=9.607, pressure_from_stress_GPa=0.2068, steps=11, converged=True, max_force_eV_A=1.632e-06",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 63.4 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 2]], 2 displacements"
+   ],
+   "a": 3.0712477700700367,
+   "c": 3.528322457780642,
+   "volume_per_atom": 9.607432531227673
+  },
+  {
+   "label": "cli#0",
+   "formula_in": "MgB",
+   "sg_in": "P6_3/mmc",
+   "sg_relaxed": "P6_3/mmc",
+   "e_above_hull_ml_eV": 0.0,
+   "min_freq_cm1": 7.374504946620585,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.2714834563162186,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.217, volume_A3_per_atom=12.79, pressure_from_stress_GPa=-0.1302, steps=25, converged=True, max_force_eV_A=0.01994",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 7.4 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 1]], 48 displacements"
+   ]
+  },
+  {
+   "label": "cli#1",
+   "formula_in": "Mg3B2",
+   "sg_in": "P4/mbm",
+   "sg_relaxed": "P4/mbm",
+   "e_above_hull_ml_eV": 0.28041000366210955,
+   "min_freq_cm1": 30.30431979931653,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.07127221674618979,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-3.377, volume_A3_per_atom=13.99, pressure_from_stress_GPa=-0.09494, steps=30, converged=True, max_force_eV_A=0.01614",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 30.3 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[2, 0, 0], [0, 2, 0], [0, 0, 2]], 60 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.280 eV/atom > 0.2 eV/atom"
+   ]
+  },
+  {
+   "label": "cli#2",
+   "formula_in": "Mg7B5",
+   "sg_in": "Pm",
+   "sg_relaxed": "Pm",
+   "e_above_hull_ml_eV": 0.21203231811523438,
+   "min_freq_cm1": 7.634397345643516,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.1437425954274632,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-3.535, volume_A3_per_atom=14.68, pressure_from_stress_GPa=0.07944, steps=45, converged=True, max_force_eV_A=0.01953",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 7.6 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[3, 0, 0], [0, 2, 0], [0, 0, 1]], 72 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.212 eV/atom > 0.2 eV/atom"
+   ]
+  },
+  {
+   "label": "cli#3",
+   "formula_in": "MgB",
+   "sg_in": "P-3m1",
+   "sg_relaxed": "P-3m1",
+   "e_above_hull_ml_eV": 0.32228875160217285,
+   "min_freq_cm1": 16.044821776781177,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.18742748426302153,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-3.875, volume_A3_per_atom=13.88, pressure_from_stress_GPa=0.01509, steps=39, converged=True, max_force_eV_A=0.01748",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 16.0 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 2]], 24 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.322 eV/atom > 0.2 eV/atom"
+   ]
+  },
+  {
+   "label": "cli#4",
+   "formula_in": "MgB8",
+   "sg_in": "Immm",
+   "sg_relaxed": "C2/m",
+   "e_above_hull_ml_eV": 0.0,
+   "min_freq_cm1": -137.65515604289797,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.45251718896238197,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-5.755, volume_A3_per_atom=8.139, pressure_from_stress_GPa=0.0212, steps=66, converged=True, max_force_eV_A=0.01795",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -137.7 cm^-1 at q=[-0.5, -0.125, 0.125], supercell [[3, 0, 0], [0, 2, 0], [0, 0, 2]], 54 displacements",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -137.7 cm^-1 < -15.0 cm^-1)"
+   ]
+  },
+  {
+   "label": "cli#5",
+   "formula_in": "Mg2B7",
+   "sg_in": "P3m1",
+   "sg_relaxed": "P-6m2",
+   "e_above_hull_ml_eV": 0.0,
+   "min_freq_cm1": -46.641916421063804,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.41727568207708676,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-5.477, volume_A3_per_atom=8.995, pressure_from_stress_GPa=0.1361, steps=54, converged=True, max_force_eV_A=0.0167",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -46.6 cm^-1 at q=[0.0, -0.5, 0.0], supercell [[3, 0, 0], [0, 2, 0], [0, 0, 1]], 108 displacements",
+    "supercell shortest length 6.09 A < 7.0 A (capped by max_supercell_atoms); instabilities at q not commensurate with it may be missed",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -46.6 cm^-1 < -15.0 cm^-1)"
+   ]
+  },
+  {
+   "label": "cli#6",
+   "formula_in": "Mg5B4",
+   "sg_in": "C2/m",
+   "sg_relaxed": "C2/m",
+   "e_above_hull_ml_eV": 0.11469226413302946,
+   "min_freq_cm1": 16.11375521952455,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.18508018478576072,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-3.782, volume_A3_per_atom=13.56, pressure_from_stress_GPa=-0.02716, steps=38, converged=True, max_force_eV_A=0.0146",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 16.1 cm^-1 at q=[0.0, -0.125, 0.125], supercell [[3, 0, 0], [0, 2, 0], [0, 0, 1]], 54 displacements"
+   ]
+  },
+  {
+   "label": "cli#7",
+   "formula_in": "MgB",
+   "sg_in": "P-3m1",
+   "sg_relaxed": "P-3m1",
+   "e_above_hull_ml_eV": 0.3222827911376953,
+   "min_freq_cm1": 16.050295117381932,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.1891343545446904,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-3.875, volume_A3_per_atom=13.87, pressure_from_stress_GPa=0.04549, steps=40, converged=True, max_force_eV_A=0.01152",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 16.1 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 2]], 24 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.322 eV/atom > 0.2 eV/atom"
+   ]
+  },
+  {
+   "label": "cli#8",
+   "formula_in": "Mg2B",
+   "sg_in": "P2_1/m",
+   "sg_relaxed": "P2_1/m",
+   "e_above_hull_ml_eV": 0.1084664662679038,
+   "min_freq_cm1": -33.09802355367253,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.12603072595850212,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-3.189, volume_A3_per_atom=16.06, pressure_from_stress_GPa=0.04837, steps=36, converged=True, max_force_eV_A=0.008408",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -33.1 cm^-1 at q=[0.0, -0.5, 0.0], supercell [[3, 0, 0], [0, 1, 0], [0, 0, 1]], 72 displacements",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -33.1 cm^-1 < -15.0 cm^-1)"
+   ]
+  },
+  {
+   "label": "cli#9",
+   "formula_in": "MgB2",
+   "sg_in": "Pm",
+   "sg_relaxed": "Pm",
+   "e_above_hull_ml_eV": 0.2153447469075518,
+   "min_freq_cm1": 28.982635098523886,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.38678200241752636,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.88, volume_A3_per_atom=10.21, pressure_from_stress_GPa=0.05901, steps=57, converged=True, max_force_eV_A=0.01108",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 29.0 cm^-1 at q=[0.0, 0.125, 0.0], supercell [[3, 0, 0], [0, 2, 0], [0, 0, 2]], 54 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.215 eV/atom > 0.2 eV/atom"
+   ]
+  },
+  {
+   "label": "cli#10",
+   "formula_in": "MgB",
+   "sg_in": "Cmcm",
+   "sg_relaxed": "Cmcm",
+   "e_above_hull_ml_eV": 0.08887052536010742,
+   "min_freq_cm1": 48.14274168565493,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.2076008153618322,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.108, volume_A3_per_atom=12.26, pressure_from_stress_GPa=0.1854, steps=29, converged=True, max_force_eV_A=0.002566",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 48.1 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[2, 0, 0], [0, 3, 0], [0, 0, 2]], 24 displacements"
+   ]
+  },
+  {
+   "label": "cli#11",
+   "formula_in": "MgB3",
+   "sg_in": "P3m1",
+   "sg_relaxed": "C2",
+   "e_above_hull_ml_eV": 0.0,
+   "min_freq_cm1": 9.011941743726565,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.5153760172080393,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-5.496, volume_A3_per_atom=8.914, pressure_from_stress_GPa=0.01233, steps=82, converged=True, max_force_eV_A=0.01695",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 9.0 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 1]], 96 displacements"
+   ]
+  },
+  {
+   "label": "cli#12",
+   "formula_in": "Mg3B5",
+   "sg_in": "P3m1",
+   "sg_relaxed": "Cm",
+   "e_above_hull_ml_eV": 0.21796321868896484,
+   "min_freq_cm1": 10.961746875827997,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.3336358788263386,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.653, volume_A3_per_atom=11.26, pressure_from_stress_GPa=0.04133, steps=110, converged=True, max_force_eV_A=0.01831",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 11.0 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 1]], 48 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.218 eV/atom > 0.2 eV/atom"
+   ]
+  },
+  {
+   "label": "cli#13",
+   "formula_in": "Mg3B2",
+   "sg_in": "Cmmm",
+   "sg_relaxed": "Cmmm",
+   "e_above_hull_ml_eV": 0.08246040344238326,
+   "min_freq_cm1": -84.86778128263634,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.17543690920087143,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-3.575, volume_A3_per_atom=15.07, pressure_from_stress_GPa=0.07441, steps=42, converged=True, max_force_eV_A=0.01487",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -84.9 cm^-1 at q=[0.0, -0.5, 0.0], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 1]], 30 displacements",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -84.9 cm^-1 < -15.0 cm^-1)"
+   ]
+  },
+  {
+   "label": "cli#14",
+   "formula_in": "MgB",
+   "sg_in": "Pnma",
+   "sg_relaxed": "Pnma",
+   "e_above_hull_ml_eV": 0.09375667572021484,
+   "min_freq_cm1": 19.677693260541982,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.17742565136230634,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.103, volume_A3_per_atom=12.45, pressure_from_stress_GPa=0.06602, steps=35, converged=True, max_force_eV_A=0.006914",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 19.7 cm^-1 at q=[0.0, 0.125, 0.125], supercell [[3, 0, 0], [0, 2, 0], [0, 0, 2]], 48 displacements"
+   ]
+  },
+  {
+   "label": "cli#15",
+   "formula_in": "Mg3B5",
+   "sg_in": "Amm2",
+   "sg_relaxed": "Amm2",
+   "e_above_hull_ml_eV": 0.22551870346069336,
+   "min_freq_cm1": -57.54986778429092,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.28341521747086074,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.645, volume_A3_per_atom=11.07, pressure_from_stress_GPa=-0.1244, steps=47, converged=True, max_force_eV_A=0.007841",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -57.5 cm^-1 at q=[-0.5, -0.5, 0.0], supercell [[2, 0, 0], [0, 3, 0], [0, 0, 1]], 48 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.226 eV/atom > 0.2 eV/atom",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -57.5 cm^-1 < -15.0 cm^-1)"
+   ]
+  },
+  {
+   "label": "s7#0",
+   "formula_in": "MgB2",
+   "sg_in": "P6/mmm",
+   "sg_relaxed": "P6/mmm",
+   "e_above_hull_ml_eV": 4.132588704131024e-06,
+   "min_freq_cm1": 42.075281842935865,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.41533050505372293,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-5.096, volume_A3_per_atom=9.634, pressure_from_stress_GPa=-0.067, steps=7, converged=True, max_force_eV_A=0.0187",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 42.1 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[3, 0, 0], [0, 2, 0], [0, 0, 2]], 36 displacements"
+   ]
+  },
+  {
+   "label": "s7#1",
+   "formula_in": "Mg3B",
+   "sg_in": "P-3m1",
+   "sg_relaxed": "P-3m1",
+   "e_above_hull_ml_eV": 0.3350517749786377,
+   "min_freq_cm1": -38.88951094344514,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.0,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-2.513, volume_A3_per_atom=18.28, pressure_from_stress_GPa=-0.09129, steps=29, converged=True, max_force_eV_A=0.01453",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -38.9 cm^-1 at q=[-0.5, -0.5, 0.0], supercell [[2, 0, 0], [0, 2, 0], [0, 0, 2]], 24 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.335 eV/atom > 0.2 eV/atom",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -38.9 cm^-1 < -15.0 cm^-1)"
+   ]
+  },
+  {
+   "label": "s7#2",
+   "formula_in": "MgB2",
+   "sg_in": "C2/m",
+   "sg_relaxed": "C2/m",
+   "e_above_hull_ml_eV": 0.2447179158528643,
+   "min_freq_cm1": -171.9763986996441,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.35062244189494973,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.851, volume_A3_per_atom=9.632, pressure_from_stress_GPa=0.02589, steps=46, converged=True, max_force_eV_A=0.01963",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -172.0 cm^-1 at q=[0.0, -0.5, 0.0], supercell [[3, 0, 0], [0, 2, 0], [0, 0, 2]], 36 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.245 eV/atom > 0.2 eV/atom",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -172.0 cm^-1 < -15.0 cm^-1)"
+   ]
+  },
+  {
+   "label": "s7#3",
+   "formula_in": "MgB2",
+   "sg_in": "P6/mmm",
+   "sg_relaxed": "P6/mmm",
+   "e_above_hull_ml_eV": 2.86102294921875e-06,
+   "min_freq_cm1": 36.764365700467124,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.427649956164088,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-5.096, volume_A3_per_atom=9.624, pressure_from_stress_GPa=-0.1057, steps=21, converged=True, max_force_eV_A=0.003249",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 36.8 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[2, 0, 0], [0, 2, 0], [0, 0, 2]], 72 displacements"
+   ]
+  },
+  {
+   "label": "s7#4",
+   "formula_in": "MgB2",
+   "sg_in": "C2/m",
+   "sg_relaxed": "C2/m",
+   "e_above_hull_ml_eV": 0.22939512464735223,
+   "min_freq_cm1": -43.54822220109767,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.3046661348041794,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.866, volume_A3_per_atom=11.16, pressure_from_stress_GPa=-0.0726, steps=57, converged=True, max_force_eV_A=0.01214",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -43.5 cm^-1 at q=[-0.5, 0.0, 0.0], supercell [[3, 0, 0], [0, 2, 0], [0, 0, 2]], 54 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.229 eV/atom > 0.2 eV/atom",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -43.5 cm^-1 < -15.0 cm^-1)"
+   ]
+  },
+  {
+   "label": "s7#5",
+   "formula_in": "Mg3B2",
+   "sg_in": "P-3m1",
+   "sg_relaxed": "P-3m1",
+   "e_above_hull_ml_eV": 0.2645858764648441,
+   "min_freq_cm1": 5.844942011572937,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.12012484255016045,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-3.393, volume_A3_per_atom=15.55, pressure_from_stress_GPa=-0.02151, steps=42, converged=True, max_force_eV_A=0.01887",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 5.8 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 1]], 60 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.265 eV/atom > 0.2 eV/atom"
+   ]
+  },
+  {
+   "label": "s7#6",
+   "formula_in": "MgB",
+   "sg_in": "Cmcm",
+   "sg_relaxed": "Cmcm",
+   "e_above_hull_ml_eV": 0.08886098861694336,
+   "min_freq_cm1": 39.39294746982484,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.1980927278885436,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.108, volume_A3_per_atom=12.3, pressure_from_stress_GPa=0.1344, steps=35, converged=True, max_force_eV_A=0.004341",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 39.4 cm^-1 at q=[0.125, 0.125, 0.0], supercell [[2, 0, 0], [0, 2, 0], [0, 0, 2]], 48 displacements"
+   ]
+  },
+  {
+   "label": "s7#7",
+   "formula_in": "MgB9",
+   "sg_in": "P-1",
+   "sg_relaxed": "P-1",
+   "e_above_hull_ml_eV": 0.0,
+   "min_freq_cm1": 27.925709507186326,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.5237814661686067,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-5.866, volume_A3_per_atom=9.294, pressure_from_stress_GPa=0.03034, steps=62, converged=True, max_force_eV_A=0.01138",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 27.9 cm^-1 at q=[0.125, 0.0, 0.0], supercell [[2, 0, 0], [0, 2, 0], [0, 0, 2]], 120 displacements"
+   ]
+  },
+  {
+   "label": "s7#8",
+   "formula_in": "Mg4B5",
+   "sg_in": "C2/m",
+   "sg_relaxed": "P-1",
+   "e_above_hull_ml_eV": 0.23954264322916696,
+   "min_freq_cm1": 19.202368143775274,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.25336060321275383,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.257, volume_A3_per_atom=13.22, pressure_from_stress_GPa=0.06807, steps=149, converged=True, max_force_eV_A=0.02129",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 19.2 cm^-1 at q=[0.0, 0.125, 0.0], supercell [[3, 0, 0], [0, 2, 0], [0, 0, 1]], 54 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.240 eV/atom > 0.2 eV/atom"
+   ]
+  },
+  {
+   "label": "s7#9",
+   "formula_in": "Mg3B5",
+   "sg_in": "P3m1",
+   "sg_relaxed": "P3m1",
+   "e_above_hull_ml_eV": 0.4201011657714844,
+   "min_freq_cm1": -308.34905663808416,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.36501523224600624,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.451, volume_A3_per_atom=11.42, pressure_from_stress_GPa=0.1127, steps=40, converged=True, max_force_eV_A=0.01248",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -308.3 cm^-1 at q=[-0.5, -0.5, -0.5], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 1]], 48 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.420 eV/atom > 0.2 eV/atom",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -308.3 cm^-1 < -15.0 cm^-1)"
+   ]
+  },
+  {
+   "label": "s7#10",
+   "formula_in": "MgB",
+   "sg_in": "R-3m",
+   "sg_relaxed": "R-3m",
+   "e_above_hull_ml_eV": 0.0,
+   "min_freq_cm1": 15.947642092372543,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.26864193249631346,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.217, volume_A3_per_atom=12.74, pressure_from_stress_GPa=0.1173, steps=15, converged=True, max_force_eV_A=0.002581",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 15.9 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 2]], 24 displacements"
+   ]
+  },
+  {
+   "label": "s7#11",
+   "formula_in": "Mg6B11",
+   "sg_in": "P1",
+   "sg_relaxed": "P1",
+   "e_above_hull_ml_eV": 0.2986925910500924,
+   "min_freq_cm1": 23.49238991803095,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.32794641879109987,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.691, volume_A3_per_atom=10.54, pressure_from_stress_GPa=-0.007918, steps=216, converged=True, max_force_eV_A=0.007785",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 23.5 cm^-1 at q=[-0.125, 0.125, 0.0], supercell [[2, 0, 0], [0, 2, 0], [0, 0, 1]], 102 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.299 eV/atom > 0.2 eV/atom"
+   ]
+  },
+  {
+   "label": "s7#12",
+   "formula_in": "MgB5",
+   "sg_in": "Imma",
+   "sg_relaxed": "P1",
+   "e_above_hull_ml_eV": 0.0,
+   "min_freq_cm1": 41.13833331354836,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.5424498011678612,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-5.791, volume_A3_per_atom=8.907, pressure_from_stress_GPa=0.01905, steps=195, converged=True, max_force_eV_A=0.018",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 41.1 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[2, 0, 0], [0, 2, 0], [0, 0, 2]], 72 displacements"
+   ]
+  },
+  {
+   "label": "s7#13",
+   "formula_in": "MgB",
+   "sg_in": "Cmcm",
+   "sg_relaxed": "Cmcm",
+   "e_above_hull_ml_eV": 0.08893140157063772,
+   "min_freq_cm1": 19.155572760808976,
+   "dynamically_stable_ml": true,
+   "light_hf_fraction": 0.1961663303375507,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.108, volume_A3_per_atom=12.28, pressure_from_stress_GPa=-0.07291, steps=35, converged=True, max_force_eV_A=0.0107",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min 19.2 cm^-1 at q=[0.0, 0.0, 0.125], supercell [[2, 0, 0], [0, 2, 0], [0, 0, 1]], 72 displacements"
+   ]
+  },
+  {
+   "label": "s7#14",
+   "formula_in": "Mg7B5",
+   "sg_in": "P4mm",
+   "sg_relaxed": "Pmm2",
+   "e_above_hull_ml_eV": 0.324742635091146,
+   "min_freq_cm1": -81.67365722083504,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.08236885842925003,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-3.423, volume_A3_per_atom=15.56, pressure_from_stress_GPa=-0.02152, steps=252, converged=True, max_force_eV_A=0.01249",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -81.7 cm^-1 at q=[-0.5, -0.5, 0.0], supercell [[2, 0, 0], [0, 3, 0], [0, 0, 1]], 72 displacements",
+    "ML_SUGGEST_DEFER: e_above_hull_ml 0.325 eV/atom > 0.2 eV/atom",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -81.7 cm^-1 < -15.0 cm^-1)"
+   ]
+  },
+  {
+   "label": "s7#15",
+   "formula_in": "MgB",
+   "sg_in": "P3m1",
+   "sg_relaxed": "P3m1",
+   "e_above_hull_ml_eV": 0.15604925155639648,
+   "min_freq_cm1": -44.44767720472803,
+   "dynamically_stable_ml": false,
+   "light_hf_fraction": 0.3002674557586998,
+   "ok": true,
+   "notes": [
+    "HEURISTIC (ARCH S2): may reorder / DEFER only; never EXCLUDED or proven",
+    "model=MatterSim-v1.0.0-5M",
+    "pressure_GPa=0",
+    "relax: energy_eV_per_atom=-4.041, volume_A3_per_atom=13.57, pressure_from_stress_GPa=-0.07273, steps=25, converged=True, max_force_eV_A=0.01611",
+    "ml_hull: pymatgen.PhaseDiagram; references=['fallback:fcc(covalent radius)', 'dir:Mg_hcp.cif#0', 'dir:MgB2_P6mmm_exp.cif#0']",
+    "ml_phonons: min -44.4 cm^-1 at q=[0.0, 0.0, -0.5], supercell [[3, 0, 0], [0, 3, 0], [0, 0, 2]], 24 displacements",
+    "ML_SUGGEST_DEFER: ML imaginary modes (min -44.4 cm^-1 < -15.0 cm^-1)"
+   ]
+  }
+ ]
+}

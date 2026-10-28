@@ -1,0 +1,64 @@
+# (a) Offline run on local structure files (no Materials Project access).
+# alpha^2F spectra are computed by the DFT stage (Quantum ESPRESSO; team DFT, rtsc.dfpt).
+# Relative paths are resolved against this file's directory.
+
+[run]
+name = "local-structures"
+workdir = "runs/local"
+workers = 1            # concurrent materials; each DFPT job gets its own MPI launch
+resume = true
+
+[[sources]]
+type = "local"
+path = "structures"
+recursive = false
+backend = "auto"       # pymatgen -> ASE -> built-in readers
+
+[dedupe]
+method = "auto"        # structure_matcher if pymatgen is installed, else composition+spacegroup
+
+[filters.hull]
+enabled = true         # needs enthalpies of all elements at the same pressure; else not evaluated
+max_e_above_hull_eV_per_atom = 0.1
+[filters.metallic]
+enabled = true
+max_band_gap_eV = 0.0
+[filters.magnetic]
+enabled = true
+[filters.dynamic]
+enabled = true         # applied to the DFPT phonons (matdyn grid minimum)
+imaginary_tol = 0.25
+imaginary_tol_unit = "THz"
+
+[budget]
+max_materials = 10
+
+[spectra]
+use_attached = true
+rel_envelope = 0.10
+
+[dfpt]
+enabled = true
+[dfpt.launcher]
+kind = "mpirun"
+nprocs = 16
+npool = 4
+mpi_args = ["--bind-to", "core"]
+[dfpt.pseudos]
+dir = "/path/to/SSSP_efficiency_pseudos"
+sssp_json = "/path/to/SSSP_efficiency.json"
+[dfpt.settings]
+do_relax = true        # vc-relax at the candidate's pressure (200 GPa from the manifest)
+k_spacing = 0.25
+q_spacing = 0.8
+el_ph_sigma_Ry = 0.005
+el_ph_nsigma = 10      # every smearing is an alternative spectrum (S5)
+
+[certify]
+T_target_K = 300.0
+mu_hi = 0.15
+omega_c_factor = 10.0  # omega_c = 10 * max phonon frequency (or set omega_c_K)
+cutoff_rule = "block"
+
+[validity]
+anharmonic_h_fraction = 0.25

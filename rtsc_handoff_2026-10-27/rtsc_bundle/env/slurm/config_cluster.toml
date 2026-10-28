@@ -1,0 +1,80 @@
+# Cluster configuration template for `rtsc run --shard K/N` (see env/slurm/rtsc_array.sbatch).
+# Every key is documented in rtsc/README.md section 5. Edit the lines marked EDIT.
+# Relative paths are resolved against the directory of this file.
+
+[run]
+name = "cluster-screen"
+workdir = "/scratch/USER/rtsc_run"   # EDIT: parallel file system; QE scratch lives below it
+workers = 2                          # materials at once per array task; ntasks = workers * nprocs
+resume = true
+
+[[sources]]                          # EDIT: any source type; here a local directory of structures
+type = "local"
+path = "structures"
+pressure_GPa = 150.0
+# [[sources]]
+# type = "materials_project"         # needs MP_API_KEY in the environment (never in this file)
+# elements = ["H"]
+# num_elements = [2, 3]
+# energy_above_hull_max = 0.1
+# pressure_GPa = 150.0
+# api_key_env = "MP_API_KEY"
+
+[dedupe]
+method = "auto"
+
+[filters.hull]
+enabled = true
+max_e_above_hull_eV_per_atom = 0.1
+[filters.metallic]
+enabled = true
+[filters.magnetic]
+enabled = true
+[filters.dynamic]
+enabled = true
+imaginary_tol = 0.25
+imaginary_tol_unit = "THz"
+
+[budget]
+max_materials = 200                  # the rest are DEFERRED (listed, never dropped)
+
+[spectra]
+rel_envelope = 0.10
+
+[dfpt]
+enabled = true
+
+[dfpt.launcher]
+kind = "srun"                        # one `srun -n nprocs` job step per pw.x / ph.x call
+nprocs = 32
+npool = 8                            # k-point pools for pw.x / ph.x (nprocs divisible by npool)
+mpi_args = ["--exact", "--cpu-bind=cores"]   # Slurm >= 21.08; concurrent steps share the allocation
+# bin_dir = "/opt/qe-7.4/bin"        # EDIT if pw.x etc. are not on PATH
+# With kind = "mpirun" (no Slurm, one node) use e.g.:
+#   kind = "mpirun"; mpi_args = ["--bind-to", "core"]
+# Ubuntu 24.04 apt QE 6.7 only (NOT needed for conda-forge QE 7.x): preload the FORTIFY shim
+# built from rtsc/rtsc/dfpt/contrib/snprintf_chk_shim.c, and export it to all MPI ranks:
+#   env = { LD_PRELOAD = "/opt/rtsc/lib/libsnprintf_chk_shim.so" }
+#   mpi_args = ["-x", "LD_PRELOAD"]   # OpenMPI mpirun; srun exports the environment by default
+
+[dfpt.pseudos]
+dir = "/path/to/SSSP_1.3.0_PBE_efficiency"            # EDIT (README section 3.4)
+sssp_json = "/path/to/SSSP_1.3.0_PBE_efficiency.json" # EDIT: file names and cutoffs per element
+
+[dfpt.settings]
+do_relax = true                      # vc-relax at the candidate's target pressure
+k_spacing = 0.25                     # 1/angstrom incl. 2 pi
+q_spacing = 0.8
+el_ph_sigma_Ry = 0.005
+el_ph_nsigma = 10                    # every smearing is an alternative spectrum (S5)
+# timeouts_s = { ph = 172800 }       # per-step wall-clock limits in seconds
+
+[certify]
+T_target_K = 300.0
+mu_hi = 0.15
+omega_c_factor = 10.0
+cutoff_rule = "block"
+mode = "decide"                      # stop refining once the status is decided (faster)
+
+[report]
+top_n = 50

@@ -1,0 +1,5 @@
+ph
+&inputph
+ prefix='t', outdir='./tmp/', tr2_ph=1e-14, fildyn='dyn', fildvscf='dvscf',
+ trans=.true., ldisp=.true., nq1=1, nq2=1, nq3=1
+/

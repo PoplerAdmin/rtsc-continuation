@@ -1,0 +1,34 @@
+ &control
+    calculation = 'scf'
+    prefix = 'pwscf'
+    outdir = './tmp/'
+    pseudo_dir = '/home/user/pseudo/sg15/'
+    tprnfor = .true.
+    tstress = .true.
+    verbosity = 'high'
+ /
+ &system
+    ibrav = 0
+    nat = 1
+    ntyp = 1
+    ecutwfc = 60.0
+    ecutrho = 240.0
+    occupations = 'smearing'
+    smearing = 'mv'
+    degauss = 0.02
+    la2F = .true.
+ /
+ &electrons
+    conv_thr = 1.0d-10
+    mixing_beta = 0.5
+ /
+ATOMIC_SPECIES
+ Al  26.98153860 Al_ONCV_PBE-1.2.upf
+CELL_PARAMETERS angstrom
+     -0.00000000000000     2.01105392100000     2.01105392100000
+      2.01105392100000    -0.00000000000000     2.01105392100000
+      2.01105392100000     2.01105392100000    -0.00000000000000
+ATOMIC_POSITIONS crystal
+ Al      0.00000000000000     0.00000000000000     0.00000000000000
+K_POINTS automatic
+ 32 32 32 0 0 0

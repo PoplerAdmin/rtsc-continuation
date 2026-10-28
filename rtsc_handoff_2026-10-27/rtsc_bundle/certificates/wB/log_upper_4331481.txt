@@ -1,0 +1,566 @@
+    0.2s split [13/10, 31/20]  resid rowsum [1.63e-8 +/- 1.57e-11], approx min eig 6.166e-01
+    0.3s split [13/10, 57/40]  resid rowsum [3.92e-9 +/- 2.98e-12], approx min eig 6.484e-01
+    0.5s OK   [13/10, 109/80]  resid rowsum [9.48e-10 +/- 4.65e-13], approx min eig 6.642e-01 | resid rowsum [9.48e-10 +/- 4.81e-13], approx min eig 6.799e-01
+    0.7s OK   [109/80, 57/40]  resid rowsum [9.78e-10 +/- 7.97e-14], approx min eig 6.486e-01 | resid rowsum [9.78e-10 +/- 7.49e-14], approx min eig 6.642e-01
+    1.0s split [57/40, 31/20]  resid rowsum [4.15e-9 +/- 3.84e-12], approx min eig 6.175e-01
+    1.2s split [57/40, 119/80]  resid rowsum [1.01e-9 +/- 4.17e-12], approx min eig 6.331e-01
+    1.5s OK   [57/40, 233/160]  resid rowsum [2.48e-10 +/- 2.81e-13], approx min eig 6.409e-01 | resid rowsum [2.48e-10 +/- 2.77e-13], approx min eig 6.487e-01
+    1.7s OK   [233/160, 119/80]  resid rowsum [2.51e-10 +/- 1.90e-13], approx min eig 6.332e-01 | resid rowsum [2.51e-10 +/- 1.87e-13], approx min eig 6.409e-01
+    1.8s split [119/80, 31/20]  resid rowsum [1.03e-9 +/- 2.05e-12], approx min eig 6.177e-01
+    1.9s OK   [119/80, 243/160]  resid rowsum [2.54e-10 +/- 4.77e-13], approx min eig 6.255e-01 | resid rowsum [2.54e-10 +/- 4.74e-13], approx min eig 6.332e-01
+    2.1s OK   [243/160, 31/20]  resid rowsum [2.58e-10 +/- 3.75e-13], approx min eig 6.178e-01 | resid rowsum [2.58e-10 +/- 3.63e-13], approx min eig 6.255e-01
+    2.2s split [31/20, 9/5]  resid rowsum [1.78e-8 +/- 1.44e-11], approx min eig 5.562e-01
+    2.3s split [31/20, 67/40]  resid rowsum [4.34e-9 +/- 1.99e-12], approx min eig 5.871e-01
+    2.5s split [31/20, 129/80]  resid rowsum [1.06e-9 +/- 3.34e-12], approx min eig 6.025e-01
+    2.6s OK   [31/20, 253/160]  resid rowsum [2.61e-10 +/- 4.61e-13], approx min eig 6.101e-01 | resid rowsum [2.61e-10 +/- 4.58e-13], approx min eig 6.178e-01
+    2.7s OK   [253/160, 129/80]  resid rowsum [2.63e-10 +/- 2.24e-13], approx min eig 6.025e-01 | resid rowsum [2.63e-10 +/- 2.34e-13], approx min eig 6.101e-01
+    2.9s split [129/80, 67/40]  resid rowsum [1.08e-9 +/- 5.28e-13], approx min eig 5.873e-01
+    3.0s OK   [129/80, 263/160]  resid rowsum [2.66e-10 +/- 3.47e-13], approx min eig 5.949e-01 | resid rowsum [2.66e-10 +/- 3.57e-13], approx min eig 6.025e-01
+    3.2s OK   [263/160, 67/40]  resid rowsum [2.69e-10 +/- 1.52e-13], approx min eig 5.874e-01 | resid rowsum [2.69e-10 +/- 1.42e-13], approx min eig 5.949e-01
+    3.3s split [67/40, 9/5]  resid rowsum [4.51e-9 +/- 6.26e-13], approx min eig 5.572e-01
+    3.5s split [67/40, 139/80]  resid rowsum [1.10e-9 +/- 9.52e-13], approx min eig 5.723e-01
+    3.7s OK   [67/40, 273/160]  resid rowsum [2.72e-10 +/- 1.20e-13], approx min eig 5.799e-01 | resid rowsum [2.72e-10 +/- 1.17e-13], approx min eig 5.874e-01
+    3.9s OK   [273/160, 139/80]  resid rowsum [2.74e-10 +/- 2.26e-13], approx min eig 5.724e-01 | resid rowsum [2.74e-10 +/- 2.20e-13], approx min eig 5.799e-01
+    4.0s split [139/80, 9/5]  resid rowsum [1.12e-9 +/- 1.40e-13], approx min eig 5.575e-01
+    4.2s OK   [139/80, 283/160]  resid rowsum [2.77e-10 +/- 1.28e-13], approx min eig 5.649e-01 | resid rowsum [2.77e-10 +/- 1.28e-13], approx min eig 5.724e-01
+    4.4s OK   [283/160, 9/5]  resid rowsum [2.79e-10 +/- 1.07e-13], approx min eig 5.575e-01 | resid rowsum [2.79e-10 +/- 1.14e-13], approx min eig 5.649e-01
+    4.5s split [9/5, 41/20]  resid rowsum [1.89e-8 +/- 2.15e-11], approx min eig 4.984e-01
+    4.7s split [9/5, 77/40]  resid rowsum [4.65e-9 +/- 2.87e-12], approx min eig 5.280e-01
+    4.9s split [9/5, 149/80]  resid rowsum [1.14e-9 +/- 1.85e-12], approx min eig 5.428e-01
+    5.1s OK   [9/5, 293/160]  resid rowsum [2.82e-10 +/- 4.96e-13], approx min eig 5.502e-01 | resid rowsum [2.81e-10 +/- 4.91e-13], approx min eig 5.575e-01
+    5.3s OK   [293/160, 149/80]  resid rowsum [2.84e-10 +/- 2.55e-13], approx min eig 5.428e-01 | resid rowsum [2.84e-10 +/- 2.66e-13], approx min eig 5.502e-01
+    5.4s split [149/80, 77/40]  resid rowsum [1.15e-9 +/- 3.91e-12], approx min eig 5.282e-01
+    5.6s OK   [149/80, 303/160]  resid rowsum [2.85e-10 +/- 3.69e-13], approx min eig 5.355e-01 | resid rowsum [2.85e-10 +/- 3.76e-13], approx min eig 5.428e-01
+    5.7s OK   [303/160, 77/40]  resid rowsum [2.88e-10 +/- 4.97e-13], approx min eig 5.283e-01 | resid rowsum [2.87e-10 +/- 4.98e-13], approx min eig 5.355e-01
+    5.8s split [77/40, 41/20]  resid rowsum [4.77e-9 +/- 1.13e-12], approx min eig 4.994e-01
+    5.9s split [77/40, 159/80]  resid rowsum [1.17e-9 +/- 1.14e-12], approx min eig 5.139e-01
+    6.1s OK   [77/40, 313/160]  resid rowsum [2.89e-10 +/- 1.92e-13], approx min eig 5.211e-01 | resid rowsum [2.89e-10 +/- 2.00e-13], approx min eig 5.283e-01
+    6.3s OK   [313/160, 159/80]  resid rowsum [2.91e-10 +/- 1.72e-13], approx min eig 5.139e-01 | resid rowsum [2.91e-10 +/- 1.69e-13], approx min eig 5.211e-01
+    6.4s split [159/80, 41/20]  resid rowsum [1.18e-9 +/- 1.97e-12], approx min eig 4.997e-01
+    6.6s OK   [159/80, 323/160]  resid rowsum [2.93e-10 +/- 3.79e-13], approx min eig 5.068e-01 | resid rowsum [2.93e-10 +/- 3.67e-13], approx min eig 5.139e-01
+    6.8s OK   [323/160, 41/20]  resid rowsum [2.95e-10 +/- 4.09e-13], approx min eig 4.998e-01 | resid rowsum [2.95e-10 +/- 4.00e-13], approx min eig 5.068e-01
+    6.9s split [41/20, 23/10]  resid rowsum [1.96e-8 +/- 2.91e-11], approx min eig 4.435e-01
+    7.1s split [41/20, 87/40]  resid rowsum [4.86e-9 +/- 2.45e-13], approx min eig 4.716e-01
+    7.3s split [41/20, 169/80]  resid rowsum [1.19e-9 +/- 3.38e-12], approx min eig 4.857e-01
+    7.5s OK   [41/20, 333/160]  resid rowsum [2.95e-10 +/- 4.64e-13], approx min eig 4.927e-01 | resid rowsum [2.95e-10 +/- 4.67e-13], approx min eig 4.998e-01
+    7.7s OK   [333/160, 169/80]  resid rowsum [2.97e-10 +/- 2.18e-14], approx min eig 4.858e-01 | resid rowsum [2.97e-10 +/- 2.05e-14], approx min eig 4.927e-01
+    7.9s split [169/80, 87/40]  resid rowsum [1.20e-9 +/- 3.30e-12], approx min eig 4.719e-01
+    8.2s OK   [169/80, 343/160]  resid rowsum [2.98e-10 +/- 3.65e-13], approx min eig 4.789e-01 | resid rowsum [2.98e-10 +/- 3.42e-13], approx min eig 4.858e-01
+    8.4s OK   [343/160, 87/40]  resid rowsum [2.99e-10 +/- 4.53e-13], approx min eig 4.720e-01 | resid rowsum [2.99e-10 +/- 4.50e-13], approx min eig 4.789e-01
+    8.6s split [87/40, 23/10]  resid rowsum [4.93e-9 +/- 3.00e-12], approx min eig 4.446e-01
+    8.8s split [87/40, 179/80]  resid rowsum [1.21e-9 +/- 1.81e-12], approx min eig 4.583e-01
+    9.0s OK   [87/40, 353/160]  resid rowsum [3.01e-10 +/- 3.81e-13], approx min eig 4.651e-01 | resid rowsum [3.01e-10 +/- 3.78e-13], approx min eig 4.720e-01
+    9.2s OK   [353/160, 179/80]  resid rowsum [3.01e-10 +/- 1.85e-13], approx min eig 4.584e-01 | resid rowsum [3.01e-10 +/- 1.71e-13], approx min eig 4.651e-01
+    9.3s split [179/80, 23/10]  resid rowsum [1.22e-9 +/- 7.29e-13], approx min eig 4.449e-01
+    9.5s OK   [179/80, 363/160]  resid rowsum [3.02e-10 +/- 3.54e-13], approx min eig 4.516e-01 | resid rowsum [3.02e-10 +/- 3.39e-13], approx min eig 4.584e-01
+    9.7s OK   [363/160, 23/10]  resid rowsum [3.03e-10 +/- 1.07e-13], approx min eig 4.450e-01 | resid rowsum [3.03e-10 +/- 9.50e-14], approx min eig 4.516e-01
+   10.0s split [23/10, 51/20]  resid rowsum [2.00e-8 +/- 2.47e-11], approx min eig 3.919e-01
+   10.1s split [23/10, 97/40]  resid rowsum [4.97e-9 +/- 2.60e-12], approx min eig 4.184e-01
+   10.4s split [23/10, 189/80]  resid rowsum [1.23e-9 +/- 4.91e-12], approx min eig 4.317e-01
+   10.8s OK   [23/10, 373/160]  resid rowsum [3.04e-10 +/- 1.25e-13], approx min eig 4.383e-01 | resid rowsum [3.04e-10 +/- 1.17e-13], approx min eig 4.450e-01
+   11.1s OK   [373/160, 189/80]  resid rowsum [3.05e-10 +/- 7.01e-14], approx min eig 4.318e-01 | resid rowsum [3.05e-10 +/- 8.91e-14], approx min eig 4.383e-01
+   11.2s split [189/80, 97/40]  resid rowsum [1.23e-9 +/- 4.50e-13], approx min eig 4.187e-01
+   11.5s OK   [189/80, 383/160]  resid rowsum [3.05e-10 +/- 2.06e-13], approx min eig 4.252e-01 | resid rowsum [3.05e-10 +/- 1.93e-13], approx min eig 4.318e-01
+   11.8s OK   [383/160, 97/40]  resid rowsum [3.06e-10 +/- 3.99e-13], approx min eig 4.188e-01 | resid rowsum [3.06e-10 +/- 4.07e-13], approx min eig 4.252e-01
+   11.9s split [97/40, 51/20]  resid rowsum [5.00e-9 +/- 3.08e-12], approx min eig 3.931e-01
+   12.1s split [97/40, 199/80]  resid rowsum [1.23e-9 +/- 2.79e-12], approx min eig 4.059e-01
+   12.2s OK   [97/40, 393/160]  resid rowsum [3.07e-10 +/- 4.44e-13], approx min eig 4.124e-01 | resid rowsum [3.07e-10 +/- 4.42e-13], approx min eig 4.188e-01
+   12.4s OK   [393/160, 199/80]  resid rowsum [3.07e-10 +/- 1.41e-13], approx min eig 4.060e-01 | resid rowsum [3.07e-10 +/- 1.41e-13], approx min eig 4.124e-01
+   12.5s split [199/80, 51/20]  resid rowsum [1.23e-9 +/- 4.60e-12], approx min eig 3.934e-01
+   12.7s OK   [199/80, 403/160]  resid rowsum [3.07e-10 +/- 1.25e-13], approx min eig 3.997e-01 | resid rowsum [3.07e-10 +/- 1.06e-13], approx min eig 4.060e-01
+   13.0s OK   [403/160, 51/20]  resid rowsum [3.08e-10 +/- 5.00e-13], approx min eig 3.934e-01 | resid rowsum [3.07e-10 +/- 4.95e-13], approx min eig 3.997e-01
+   13.2s split [51/20, 14/5]  resid rowsum [2.00e-8 +/- 9.95e-12], approx min eig 3.439e-01
+   13.4s split [51/20, 107/40]  resid rowsum [5.00e-9 +/- 1.93e-12], approx min eig 3.686e-01
+   13.5s split [51/20, 209/80]  resid rowsum [1.24e-9 +/- 3.82e-12], approx min eig 3.810e-01
+   13.7s OK   [51/20, 413/160]  resid rowsum [3.08e-10 +/- 3.76e-13], approx min eig 3.872e-01 | resid rowsum [3.08e-10 +/- 3.91e-13], approx min eig 3.934e-01
+   13.9s OK   [413/160, 209/80]  resid rowsum [3.08e-10 +/- 4.57e-13], approx min eig 3.811e-01 | resid rowsum [3.08e-10 +/- 4.47e-13], approx min eig 3.872e-01
+   14.1s split [209/80, 107/40]  resid rowsum [1.24e-9 +/- 3.39e-12], approx min eig 3.689e-01
+   14.3s OK   [209/80, 423/160]  resid rowsum [3.08e-10 +/- 2.44e-13], approx min eig 3.750e-01 | resid rowsum [3.08e-10 +/- 2.40e-13], approx min eig 3.811e-01
+   14.5s OK   [423/160, 107/40]  resid rowsum [3.07e-10 +/- 2.46e-13], approx min eig 3.690e-01 | resid rowsum [3.07e-10 +/- 2.58e-13], approx min eig 3.750e-01
+   14.7s split [107/40, 14/5]  resid rowsum [4.99e-9 +/- 9.10e-14], approx min eig 3.451e-01
+   14.9s split [107/40, 219/80]  resid rowsum [1.23e-9 +/- 4.76e-12], approx min eig 3.570e-01
+   15.0s OK   [107/40, 433/160]  resid rowsum [3.07e-10 +/- 2.29e-14], approx min eig 3.630e-01 | resid rowsum [3.07e-10 +/- 6.05e-14], approx min eig 3.690e-01
+   15.4s OK   [433/160, 219/80]  resid rowsum [3.07e-10 +/- 1.76e-13], approx min eig 3.571e-01 | resid rowsum [3.07e-10 +/- 1.89e-13], approx min eig 3.630e-01
+   15.5s split [219/80, 14/5]  resid rowsum [1.23e-9 +/- 2.33e-12], approx min eig 3.454e-01
+   15.7s OK   [219/80, 443/160]  resid rowsum [3.07e-10 +/- 8.81e-14], approx min eig 3.512e-01 | resid rowsum [3.07e-10 +/- 1.09e-13], approx min eig 3.571e-01
+   15.9s OK   [443/160, 14/5]  resid rowsum [3.07e-10 +/- 4.14e-13], approx min eig 3.454e-01 | resid rowsum [3.07e-10 +/- 4.10e-13], approx min eig 3.512e-01
+   16.3s split [14/5, 61/20]  resid rowsum [1.98e-8 +/- 1.58e-11], approx min eig 2.995e-01
+   16.4s split [14/5, 117/40]  resid rowsum [4.96e-9 +/- 2.53e-12], approx min eig 3.224e-01
+   16.6s split [14/5, 229/80]  resid rowsum [1.23e-9 +/- 5.75e-13], approx min eig 3.339e-01
+   16.9s OK   [14/5, 453/160]  resid rowsum [3.05e-10 +/- 1.20e-13], approx min eig 3.397e-01 | resid rowsum [3.05e-10 +/- 1.12e-13], approx min eig 3.454e-01
+   17.1s OK   [453/160, 229/80]  resid rowsum [3.05e-10 +/- 9.91e-14], approx min eig 3.340e-01 | resid rowsum [3.05e-10 +/- 9.39e-14], approx min eig 3.397e-01
+   17.3s split [229/80, 117/40]  resid rowsum [1.22e-9 +/- 4.63e-12], approx min eig 3.227e-01
+   17.5s OK   [229/80, 463/160]  resid rowsum [3.05e-10 +/- 1.70e-13], approx min eig 3.284e-01 | resid rowsum [3.05e-10 +/- 1.77e-13], approx min eig 3.340e-01
+   17.8s OK   [463/160, 117/40]  resid rowsum [3.04e-10 +/- 4.19e-13], approx min eig 3.228e-01 | resid rowsum [3.04e-10 +/- 4.14e-13], approx min eig 3.284e-01
+   18.0s split [117/40, 61/20]  resid rowsum [4.92e-9 +/- 1.56e-12], approx min eig 3.007e-01
+   18.2s split [117/40, 239/80]  resid rowsum [1.22e-9 +/- 1.05e-12], approx min eig 3.117e-01
+   18.4s OK   [117/40, 473/160]  resid rowsum [3.03e-10 +/- 3.92e-13], approx min eig 3.173e-01 | resid rowsum [3.03e-10 +/- 3.86e-13], approx min eig 3.228e-01
+   18.8s OK   [473/160, 239/80]  resid rowsum [3.03e-10 +/- 2.94e-13], approx min eig 3.118e-01 | resid rowsum [3.03e-10 +/- 2.99e-13], approx min eig 3.173e-01
+   18.9s split [239/80, 61/20]  resid rowsum [1.22e-9 +/- 4.64e-12], approx min eig 3.010e-01
+   19.1s OK   [239/80, 483/160]  resid rowsum [3.03e-10 +/- 4.17e-13], approx min eig 3.064e-01 | resid rowsum [3.03e-10 +/- 4.11e-13], approx min eig 3.118e-01
+   19.4s OK   [483/160, 61/20]  resid rowsum [3.01e-10 +/- 3.07e-13], approx min eig 3.010e-01 | resid rowsum [3.01e-10 +/- 3.00e-13], approx min eig 3.064e-01
+   19.5s split [61/20, 33/10]  resid rowsum [1.94e-8 +/- 4.48e-11], approx min eig 2.588e-01
+   19.7s split [61/20, 127/40]  resid rowsum [4.87e-9 +/- 2.01e-12], approx min eig 2.799e-01
+   19.9s split [61/20, 249/80]  resid rowsum [1.21e-9 +/- 2.05e-12], approx min eig 2.904e-01
+   20.1s OK   [61/20, 493/160]  resid rowsum [3.01e-10 +/- 4.04e-13], approx min eig 2.958e-01 | resid rowsum [3.01e-10 +/- 3.83e-13], approx min eig 3.010e-01
+   20.3s OK   [493/160, 249/80]  resid rowsum [3.01e-10 +/- 2.77e-13], approx min eig 2.905e-01 | resid rowsum [3.01e-10 +/- 2.74e-13], approx min eig 2.958e-01
+   20.5s split [249/80, 127/40]  resid rowsum [1.20e-9 +/- 2.17e-12], approx min eig 2.802e-01
+   20.7s OK   [249/80, 503/160]  resid rowsum [2.99e-10 +/- 3.11e-14], approx min eig 2.853e-01 | resid rowsum [2.99e-10 +/- 4.14e-14], approx min eig 2.905e-01
+   20.9s OK   [503/160, 127/40]  resid rowsum [2.98e-10 +/- 4.37e-13], approx min eig 2.802e-01 | resid rowsum [2.98e-10 +/- 4.22e-13], approx min eig 2.853e-01
+   21.2s split [127/40, 33/10]  resid rowsum [4.80e-9 +/- 3.80e-12], approx min eig 2.600e-01
+   21.5s split [127/40, 259/80]  resid rowsum [1.19e-9 +/- 3.00e-12], approx min eig 2.701e-01
+   21.7s OK   [127/40, 513/160]  resid rowsum [2.97e-10 +/- 1.06e-13], approx min eig 2.752e-01 | resid rowsum [2.97e-10 +/- 1.17e-13], approx min eig 2.802e-01
+   21.9s OK   [513/160, 259/80]  resid rowsum [2.97e-10 +/- 2.48e-13], approx min eig 2.702e-01 | resid rowsum [2.97e-10 +/- 2.50e-13], approx min eig 2.752e-01
+   22.1s split [259/80, 33/10]  resid rowsum [1.19e-9 +/- 4.07e-12], approx min eig 2.603e-01
+   22.3s OK   [259/80, 523/160]  resid rowsum [2.96e-10 +/- 2.84e-14], approx min eig 2.652e-01 | resid rowsum [2.96e-10 +/- 2.54e-14], approx min eig 2.702e-01
+   22.5s OK   [523/160, 33/10]  resid rowsum [2.95e-10 +/- 5.97e-14], approx min eig 2.603e-01 | resid rowsum [2.95e-10 +/- 7.87e-14], approx min eig 2.652e-01
+   22.7s split [33/10, 71/20]  resid rowsum [1.88e-8 +/- 2.77e-11], approx min eig 2.218e-01
+   22.9s split [33/10, 137/40]  resid rowsum [4.73e-9 +/- 6.93e-13], approx min eig 2.410e-01
+   23.1s split [33/10, 269/80]  resid rowsum [1.18e-9 +/- 3.23e-12], approx min eig 2.507e-01
+   23.4s OK   [33/10, 533/160]  resid rowsum [2.93e-10 +/- 1.82e-13], approx min eig 2.555e-01 | resid rowsum [2.93e-10 +/- 1.74e-13], approx min eig 2.603e-01
+   23.7s OK   [533/160, 269/80]  resid rowsum [2.93e-10 +/- 4.05e-13], approx min eig 2.507e-01 | resid rowsum [2.93e-10 +/- 4.26e-13], approx min eig 2.555e-01
+   24.0s split [269/80, 137/40]  resid rowsum [1.17e-9 +/- 4.61e-12], approx min eig 2.413e-01
+   24.4s OK   [269/80, 543/160]  resid rowsum [2.91e-10 +/- 3.76e-13], approx min eig 2.460e-01 | resid rowsum [2.91e-10 +/- 3.92e-13], approx min eig 2.507e-01
+   24.6s OK   [543/160, 137/40]  resid rowsum [2.90e-10 +/- 1.79e-13], approx min eig 2.413e-01 | resid rowsum [2.90e-10 +/- 1.85e-13], approx min eig 2.460e-01
+   24.9s split [137/40, 71/20]  resid rowsum [4.65e-9 +/- 3.04e-13], approx min eig 2.229e-01
+   25.1s split [137/40, 279/80]  resid rowsum [1.16e-9 +/- 3.67e-12], approx min eig 2.321e-01
+   25.3s OK   [137/40, 553/160]  resid rowsum [2.89e-10 +/- 3.91e-13], approx min eig 2.367e-01 | resid rowsum [2.89e-10 +/- 3.99e-13], approx min eig 2.413e-01
+   25.5s OK   [553/160, 279/80]  resid rowsum [2.87e-10 +/- 2.90e-13], approx min eig 2.322e-01 | resid rowsum [2.87e-10 +/- 2.86e-13], approx min eig 2.367e-01
+   25.7s split [279/80, 71/20]  resid rowsum [1.15e-9 +/- 3.78e-12], approx min eig 2.232e-01
+   25.9s OK   [279/80, 563/160]  resid rowsum [2.86e-10 +/- 1.75e-13], approx min eig 2.277e-01 | resid rowsum [2.86e-10 +/- 1.75e-13], approx min eig 2.322e-01
+   26.1s OK   [563/160, 71/20]  resid rowsum [2.86e-10 +/- 3.71e-13], approx min eig 2.233e-01 | resid rowsum [2.86e-10 +/- 3.72e-13], approx min eig 2.277e-01
+   26.3s split [71/20, 19/5]  resid rowsum [1.81e-8 +/- 2.18e-11], approx min eig 1.884e-01
+   26.5s split [71/20, 147/40]  resid rowsum [4.56e-9 +/- 1.59e-12], approx min eig 2.058e-01
+   26.8s split [71/20, 289/80]  resid rowsum [1.14e-9 +/- 3.39e-12], approx min eig 2.145e-01
+   27.2s OK   [71/20, 573/160]  resid rowsum [2.84e-10 +/- 2.81e-13], approx min eig 2.189e-01 | resid rowsum [2.84e-10 +/- 2.74e-13], approx min eig 2.233e-01
+   27.5s OK   [573/160, 289/80]  resid rowsum [2.83e-10 +/- 2.27e-13], approx min eig 2.146e-01 | resid rowsum [2.83e-10 +/- 2.29e-13], approx min eig 2.189e-01
+   27.8s split [289/80, 147/40]  resid rowsum [1.13e-9 +/- 4.57e-12], approx min eig 2.060e-01
+   27.9s OK   [289/80, 583/160]  resid rowsum [2.81e-10 +/- 3.83e-13], approx min eig 2.103e-01 | resid rowsum [2.81e-10 +/- 4.03e-13], approx min eig 2.146e-01
+   28.1s OK   [583/160, 147/40]  resid rowsum [2.79e-10 +/- 1.09e-13], approx min eig 2.061e-01 | resid rowsum [2.79e-10 +/- 1.33e-13], approx min eig 2.103e-01
+   28.2s split [147/40, 19/5]  resid rowsum [4.47e-9 +/- 1.32e-12], approx min eig 1.895e-01
+   28.3s split [147/40, 299/80]  resid rowsum [1.11e-9 +/- 3.95e-12], approx min eig 1.978e-01
+   28.4s OK   [147/40, 593/160]  resid rowsum [2.79e-10 +/- 3.37e-14], approx min eig 2.019e-01 | resid rowsum [2.79e-10 +/- 4.31e-14], approx min eig 2.061e-01
+   28.6s OK   [593/160, 299/80]  resid rowsum [2.77e-10 +/- 1.45e-13], approx min eig 1.978e-01 | resid rowsum [2.77e-10 +/- 1.24e-13], approx min eig 2.019e-01
+   28.7s split [299/80, 19/5]  resid rowsum [1.10e-9 +/- 2.44e-12], approx min eig 1.897e-01
+   28.9s OK   [299/80, 603/160]  resid rowsum [2.75e-10 +/- 5.00e-14], approx min eig 1.938e-01 | resid rowsum [2.75e-10 +/- 4.76e-14], approx min eig 1.978e-01
+   29.0s OK   [603/160, 19/5]  resid rowsum [2.74e-10 +/- 4.95e-13], approx min eig 1.898e-01 | resid rowsum [2.75e-10 +/- 4.99e-13], approx min eig 1.938e-01
+   29.1s split [19/5, 81/20]  resid rowsum [1.73e-8 +/- 1.43e-11], approx min eig 1.584e-01
+   29.3s split [19/5, 157/40]  resid rowsum [4.37e-9 +/- 3.85e-12], approx min eig 1.740e-01
+   29.4s split [19/5, 309/80]  resid rowsum [1.09e-9 +/- 1.52e-12], approx min eig 1.819e-01
+   29.6s OK   [19/5, 613/160]  resid rowsum [2.71e-10 +/- 3.98e-13], approx min eig 1.858e-01 | resid rowsum [2.71e-10 +/- 4.00e-13], approx min eig 1.898e-01
+   29.7s OK   [613/160, 309/80]  resid rowsum [2.72e-10 +/- 3.55e-13], approx min eig 1.819e-01 | resid rowsum [2.72e-10 +/- 3.49e-13], approx min eig 1.858e-01
+   29.8s split [309/80, 157/40]  resid rowsum [1.08e-9 +/- 1.21e-12], approx min eig 1.743e-01
+   30.0s OK   [309/80, 623/160]  resid rowsum [2.68e-10 +/- 1.59e-13], approx min eig 1.781e-01 | resid rowsum [2.68e-10 +/- 1.71e-13], approx min eig 1.819e-01
+   30.2s OK   [623/160, 157/40]  resid rowsum [2.68e-10 +/- 1.75e-13], approx min eig 1.743e-01 | resid rowsum [2.68e-10 +/- 1.77e-13], approx min eig 1.781e-01
+   30.3s split [157/40, 81/20]  resid rowsum [4.28e-9 +/- 4.95e-12], approx min eig 1.594e-01
+   30.5s split [157/40, 319/80]  resid rowsum [1.07e-9 +/- 1.03e-12], approx min eig 1.669e-01
+   30.6s OK   [157/40, 633/160]  resid rowsum [2.66e-10 +/- 4.67e-13], approx min eig 1.706e-01 | resid rowsum [2.66e-10 +/- 4.71e-13], approx min eig 1.743e-01
+   30.8s OK   [633/160, 319/80]  resid rowsum [2.66e-10 +/- 9.22e-14], approx min eig 1.669e-01 | resid rowsum [2.66e-10 +/- 9.17e-14], approx min eig 1.706e-01
+   30.9s split [319/80, 81/20]  resid rowsum [1.05e-9 +/- 4.23e-13], approx min eig 1.597e-01
+   31.1s OK   [319/80, 643/160]  resid rowsum [2.63e-10 +/- 9.51e-14], approx min eig 1.633e-01 | resid rowsum [2.63e-10 +/- 9.41e-14], approx min eig 1.669e-01
+   31.3s OK   [643/160, 81/20]  resid rowsum [2.60e-10 +/- 4.50e-13], approx min eig 1.597e-01 | resid rowsum [2.60e-10 +/- 4.48e-13], approx min eig 1.633e-01
+   31.4s split [81/20, 43/10]  resid rowsum [1.65e-8 +/- 8.48e-12], approx min eig 1.317e-01
+   31.5s split [81/20, 167/40]  resid rowsum [4.14e-9 +/- 4.94e-12], approx min eig 1.457e-01
+   31.6s split [81/20, 329/80]  resid rowsum [1.04e-9 +/- 6.99e-13], approx min eig 1.527e-01
+   31.8s OK   [81/20, 653/160]  resid rowsum [2.59e-10 +/- 3.68e-13], approx min eig 1.562e-01 | resid rowsum [2.59e-10 +/- 3.70e-13], approx min eig 1.597e-01
+   31.9s OK   [653/160, 329/80]  resid rowsum [2.59e-10 +/- 4.13e-13], approx min eig 1.527e-01 | resid rowsum [2.59e-10 +/- 4.05e-13], approx min eig 1.562e-01
+   32.1s split [329/80, 167/40]  resid rowsum [1.03e-9 +/- 3.99e-12], approx min eig 1.459e-01
+   32.2s OK   [329/80, 663/160]  resid rowsum [2.57e-10 +/- 3.97e-13], approx min eig 1.493e-01 | resid rowsum [2.57e-10 +/- 4.09e-13], approx min eig 1.527e-01
+   32.4s OK   [663/160, 167/40]  resid rowsum [2.55e-10 +/- 4.37e-13], approx min eig 1.460e-01 | resid rowsum [2.55e-10 +/- 4.42e-13], approx min eig 1.493e-01
+   32.5s split [167/40, 43/10]  resid rowsum [4.04e-9 +/- 4.79e-12], approx min eig 1.327e-01
+   32.7s split [167/40, 339/80]  resid rowsum [1.01e-9 +/- 4.39e-12], approx min eig 1.393e-01
+   32.8s OK   [167/40, 673/160]  resid rowsum [2.54e-10 +/- 2.56e-13], approx min eig 1.426e-01 | resid rowsum [2.54e-10 +/- 2.59e-13], approx min eig 1.460e-01
+   32.9s OK   [673/160, 339/80]  resid rowsum [2.52e-10 +/- 1.69e-13], approx min eig 1.394e-01 | resid rowsum [2.52e-10 +/- 1.74e-13], approx min eig 1.426e-01
+   33.1s split [339/80, 43/10]  resid rowsum [1.00e-9 +/- 1.58e-12], approx min eig 1.329e-01
+   33.2s OK   [339/80, 683/160]  resid rowsum [2.51e-10 +/- 3.71e-13], approx min eig 1.361e-01 | resid rowsum [2.51e-10 +/- 3.86e-13], approx min eig 1.394e-01
+   33.3s OK   [683/160, 43/10]  resid rowsum [2.48e-10 +/- 3.66e-13], approx min eig 1.330e-01 | resid rowsum [2.48e-10 +/- 3.74e-13], approx min eig 1.361e-01
+   33.5s split [43/10, 91/20]  resid rowsum [1.57e-8 +/- 1.08e-11], approx min eig 1.081e-01
+   33.6s split [43/10, 177/40]  resid rowsum [3.94e-9 +/- 4.64e-12], approx min eig 1.205e-01
+   33.8s OK   [43/10, 349/80]  resid rowsum [9.89e-10 +/- 3.92e-13], approx min eig 1.267e-01 | resid rowsum [9.89e-10 +/- 3.90e-13], approx min eig 1.329e-01
+   33.9s OK   [349/80, 177/40]  resid rowsum [9.75e-10 +/- 3.24e-13], approx min eig 1.207e-01 | resid rowsum [9.75e-10 +/- 3.31e-13], approx min eig 1.267e-01
+   34.0s split [177/40, 91/20]  resid rowsum [3.84e-9 +/- 4.24e-12], approx min eig 1.091e-01
+   34.2s OK   [177/40, 359/80]  resid rowsum [9.62e-10 +/- 4.48e-13], approx min eig 1.149e-01 | resid rowsum [9.62e-10 +/- 4.25e-13], approx min eig 1.207e-01
+   34.4s OK   [359/80, 91/20]  resid rowsum [9.51e-10 +/- 4.09e-13], approx min eig 1.093e-01 | resid rowsum [9.51e-10 +/- 4.03e-13], approx min eig 1.149e-01
+   34.5s split [91/20, 24/5]  resid rowsum [1.49e-8 +/- 2.74e-11], approx min eig 8.752e-02
+   34.6s split [91/20, 187/40]  resid rowsum [3.74e-9 +/- 3.10e-12], approx min eig 9.838e-02
+   34.8s OK   [91/20, 369/80]  resid rowsum [9.39e-10 +/- 2.24e-13], approx min eig 1.039e-01 | resid rowsum [9.39e-10 +/- 2.40e-13], approx min eig 1.093e-01
+   35.0s OK   [369/80, 187/40]  resid rowsum [9.25e-10 +/- 4.45e-13], approx min eig 9.859e-02 | resid rowsum [9.25e-10 +/- 4.55e-13], approx min eig 1.039e-01
+   35.2s split [187/40, 24/5]  resid rowsum [3.64e-9 +/- 1.56e-12], approx min eig 8.839e-02
+   35.3s OK   [187/40, 379/80]  resid rowsum [9.14e-10 +/- 3.35e-13], approx min eig 9.350e-02 | resid rowsum [9.14e-10 +/- 3.45e-13], approx min eig 9.859e-02
+   35.5s OK   [379/80, 24/5]  resid rowsum [9.00e-10 +/- 3.77e-13], approx min eig 8.859e-02 | resid rowsum [9.00e-10 +/- 3.81e-13], approx min eig 9.351e-02
+   35.7s split [24/5, 101/20]  resid rowsum [1.41e-8 +/- 2.82e-11], approx min eig 6.962e-02
+   35.8s split [24/5, 197/40]  resid rowsum [3.54e-9 +/- 3.42e-12], approx min eig 7.908e-02
+   36.0s OK   [24/5, 389/80]  resid rowsum [8.89e-10 +/- 4.86e-13], approx min eig 8.385e-02 | resid rowsum [8.89e-10 +/- 4.59e-13], approx min eig 8.859e-02
+   36.2s OK   [389/80, 197/40]  resid rowsum [8.78e-10 +/- 4.95e-13], approx min eig 7.928e-02 | resid rowsum [8.77e-10 +/- 4.97e-13], approx min eig 8.385e-02
+   36.5s split [197/40, 101/20]  resid rowsum [3.44e-9 +/- 4.54e-12], approx min eig 7.043e-02
+   36.7s OK   [197/40, 399/80]  resid rowsum [8.65e-10 +/- 3.87e-13], approx min eig 7.487e-02 | resid rowsum [8.65e-10 +/- 3.91e-13], approx min eig 7.928e-02
+   36.9s OK   [399/80, 101/20]  resid rowsum [8.53e-10 +/- 2.58e-13], approx min eig 7.062e-02 | resid rowsum [8.53e-10 +/- 2.62e-13], approx min eig 7.487e-02
+   37.0s split [101/20, 53/10]  resid rowsum [1.33e-8 +/- 2.29e-13], approx min eig 5.425e-02
+   37.1s split [101/20, 207/40]  resid rowsum [3.35e-9 +/- 4.83e-13], approx min eig 6.241e-02
+   37.3s OK   [101/20, 409/80]  resid rowsum [8.41e-10 +/- 1.94e-13], approx min eig 6.653e-02 | resid rowsum [8.41e-10 +/- 1.94e-13], approx min eig 7.062e-02
+   37.4s OK   [409/80, 207/40]  resid rowsum [8.30e-10 +/- 1.45e-13], approx min eig 6.260e-02 | resid rowsum [8.30e-10 +/- 1.43e-13], approx min eig 6.653e-02
+   37.6s split [207/40, 53/10]  resid rowsum [3.26e-9 +/- 4.21e-12], approx min eig 5.500e-02
+   37.8s OK   [207/40, 419/80]  resid rowsum [8.18e-10 +/- 4.50e-13], approx min eig 5.881e-02 | resid rowsum [8.18e-10 +/- 4.39e-13], approx min eig 6.260e-02
+   37.9s OK   [419/80, 53/10]  resid rowsum [8.07e-10 +/- 2.04e-13], approx min eig 5.518e-02 | resid rowsum [8.07e-10 +/- 1.87e-13], approx min eig 5.882e-02
+   38.0s split [53/10, 111/20]  resid rowsum [1.26e-8 +/- 4.50e-11], approx min eig 4.121e-02
+   38.2s split [53/10, 217/40]  resid rowsum [3.16e-9 +/- 3.50e-12], approx min eig 4.817e-02
+   38.4s OK   [53/10, 429/80]  resid rowsum [7.95e-10 +/- 1.06e-13], approx min eig 5.169e-02 | resid rowsum [7.95e-10 +/- 9.50e-14], approx min eig 5.518e-02
+   38.5s OK   [429/80, 217/40]  resid rowsum [7.84e-10 +/- 3.27e-13], approx min eig 4.835e-02 | resid rowsum [7.84e-10 +/- 3.24e-13], approx min eig 5.169e-02
+   38.7s split [217/40, 111/20]  resid rowsum [3.07e-9 +/- 2.74e-12], approx min eig 4.191e-02
+   38.9s OK   [217/40, 439/80]  resid rowsum [7.74e-10 +/- 1.91e-13], approx min eig 4.514e-02 | resid rowsum [7.74e-10 +/- 2.15e-13], approx min eig 4.835e-02
+   39.2s OK   [439/80, 111/20]  resid rowsum [7.62e-10 +/- 1.62e-13], approx min eig 4.207e-02 | resid rowsum [7.62e-10 +/- 1.90e-13], approx min eig 4.514e-02
+   39.4s split [111/20, 29/5]  resid rowsum [1.19e-8 +/- 4.88e-11], approx min eig 3.030e-02
+   39.6s split [111/20, 227/40]  resid rowsum [2.99e-9 +/- 1.86e-12], approx min eig 3.617e-02
+   39.8s OK   [111/20, 449/80]  resid rowsum [7.50e-10 +/- 3.19e-14], approx min eig 3.913e-02 | resid rowsum [7.50e-10 +/- 3.80e-14], approx min eig 4.207e-02
+   40.0s OK   [449/80, 227/40]  resid rowsum [7.39e-10 +/- 1.96e-13], approx min eig 3.633e-02 | resid rowsum [7.39e-10 +/- 1.93e-13], approx min eig 3.914e-02
+   40.3s split [227/40, 29/5]  resid rowsum [2.90e-9 +/- 1.95e-12], approx min eig 3.095e-02
+   40.5s OK   [227/40, 459/80]  resid rowsum [7.29e-10 +/- 3.50e-13], approx min eig 3.365e-02 | resid rowsum [7.29e-10 +/- 3.63e-13], approx min eig 3.633e-02
+   40.7s OK   [459/80, 29/5]  resid rowsum [7.18e-10 +/- 1.27e-13], approx min eig 3.110e-02 | resid rowsum [7.18e-10 +/- 1.46e-13], approx min eig 3.365e-02
+   40.9s split [29/5, 121/20]  resid rowsum [1.12e-8 +/- 1.62e-11], approx min eig 2.135e-02
+   41.0s split [29/5, 237/40]  resid rowsum [2.82e-9 +/- 9.72e-13], approx min eig 2.621e-02
+   41.2s OK   [29/5, 469/80]  resid rowsum [7.08e-10 +/- 1.94e-13], approx min eig 2.867e-02 | resid rowsum [7.08e-10 +/- 1.84e-13], approx min eig 3.110e-02
+   41.4s OK   [469/80, 237/40]  resid rowsum [6.97e-10 +/- 1.32e-13], approx min eig 2.636e-02 | resid rowsum [6.97e-10 +/- 1.18e-13], approx min eig 2.867e-02
+   41.6s split [237/40, 121/20]  resid rowsum [2.74e-9 +/- 6.36e-14], approx min eig 2.194e-02
+   41.7s OK   [237/40, 479/80]  resid rowsum [6.88e-10 +/- 1.32e-14], approx min eig 2.416e-02 | resid rowsum [6.88e-10 +/- 5.23e-15], approx min eig 2.636e-02
+   41.9s OK   [479/80, 121/20]  resid rowsum [6.78e-10 +/- 7.13e-14], approx min eig 2.208e-02 | resid rowsum [6.78e-10 +/- 7.01e-14], approx min eig 2.416e-02
+   42.0s split [121/20, 63/10]  resid rowsum [1.05e-8 +/- 4.75e-11], approx min eig 1.417e-02
+   42.1s split [121/20, 247/40]  resid rowsum [2.66e-9 +/- 9.62e-13], approx min eig 1.812e-02
+   42.3s OK   [121/20, 489/80]  resid rowsum [6.70e-10 +/- 3.49e-13], approx min eig 2.011e-02 | resid rowsum [6.70e-10 +/- 3.57e-13], approx min eig 2.208e-02
+   42.4s OK   [489/80, 247/40]  resid rowsum [6.59e-10 +/- 2.41e-13], approx min eig 1.825e-02 | resid rowsum [6.59e-10 +/- 2.40e-13], approx min eig 2.011e-02
+   42.7s split [247/40, 63/10]  resid rowsum [2.58e-9 +/- 4.07e-12], approx min eig 1.472e-02
+   42.8s OK   [247/40, 499/80]  resid rowsum [6.50e-10 +/- 1.59e-14], approx min eig 1.650e-02 | resid rowsum [6.50e-10 +/- 1.28e-14], approx min eig 1.825e-02
+   43.0s OK   [499/80, 63/10]  resid rowsum [6.41e-10 +/- 9.44e-15], approx min eig 1.485e-02 | resid rowsum [6.41e-10 +/- 1.54e-14], approx min eig 1.650e-02
+   43.2s split [63/10, 131/20]  resid rowsum [9.95e-9 +/- 3.74e-12], approx min eig 8.607e-03
+   43.3s split [63/10, 257/40]  resid rowsum [2.51e-9 +/- 2.48e-12], approx min eig 1.172e-02
+   43.4s OK   [63/10, 509/80]  resid rowsum [6.31e-10 +/- 4.53e-13], approx min eig 1.330e-02 | resid rowsum [6.31e-10 +/- 4.62e-13], approx min eig 1.485e-02
+   43.6s OK   [509/80, 257/40]  resid rowsum [6.24e-10 +/- 4.62e-13], approx min eig 1.184e-02 | resid rowsum [6.24e-10 +/- 4.75e-13], approx min eig 1.330e-02
+   43.7s split [257/40, 131/20]  resid rowsum [2.44e-9 +/- 2.20e-12], approx min eig 9.106e-03
+   43.9s OK   [257/40, 519/80]  resid rowsum [6.13e-10 +/- 4.53e-14], approx min eig 1.049e-02 | resid rowsum [6.13e-10 +/- 5.31e-14], approx min eig 1.184e-02
+   44.0s OK   [519/80, 131/20]  resid rowsum [6.04e-10 +/- 1.02e-14], approx min eig 9.224e-03 | resid rowsum [6.04e-10 +/- 2.78e-14], approx min eig 1.049e-02
+   44.1s split [131/20, 34/5]  resid rowsum [9.39e-9 +/- 3.55e-12], approx min eig 4.498e-03
+   44.2s split [131/20, 267/40]  resid rowsum [2.37e-9 +/- 1.05e-12], approx min eig 6.857e-03
+   44.4s OK   [131/20, 529/80]  resid rowsum [5.97e-10 +/- 9.93e-14], approx min eig 8.053e-03 | resid rowsum [5.97e-10 +/- 1.11e-13], approx min eig 9.225e-03
+   44.5s OK   [529/80, 267/40]  resid rowsum [5.87e-10 +/- 3.13e-13], approx min eig 6.970e-03 | resid rowsum [5.87e-10 +/- 3.10e-13], approx min eig 8.053e-03
+   44.7s split [267/40, 34/5]  resid rowsum [2.30e-9 +/- 3.73e-12], approx min eig 4.955e-03
+   44.8s OK   [267/40, 539/80]  resid rowsum [5.78e-10 +/- 1.04e-13], approx min eig 5.974e-03 | resid rowsum [5.78e-10 +/- 8.10e-14], approx min eig 6.971e-03
+   45.0s OK   [539/80, 34/5]  resid rowsum [5.71e-10 +/- 3.29e-13], approx min eig 5.063e-03 | resid rowsum [5.71e-10 +/- 3.36e-13], approx min eig 5.975e-03
+   45.1s split [34/5, 141/20]  resid rowsum [8.87e-9 +/- 4.28e-12], approx min eig 1.703e-03
+   45.2s split [34/5, 277/40]  resid rowsum [2.24e-9 +/- 9.60e-13], approx min eig 3.382e-03
+   45.4s OK   [34/5, 549/80]  resid rowsum [5.62e-10 +/- 1.82e-13], approx min eig 4.234e-03 | resid rowsum [5.62e-10 +/- 1.98e-13], approx min eig 5.064e-03
+   45.6s OK   [549/80, 277/40]  resid rowsum [5.54e-10 +/- 4.14e-13], approx min eig 3.486e-03 | resid rowsum [5.54e-10 +/- 4.21e-13], approx min eig 4.235e-03
+   45.7s split [277/40, 141/20]  resid rowsum [2.17e-9 +/- 3.56e-12], approx min eig 2.122e-03
+   45.9s OK   [277/40, 559/80]  resid rowsum [5.46e-10 +/- 3.82e-13], approx min eig 2.815e-03 | resid rowsum [5.46e-10 +/- 3.95e-13], approx min eig 3.486e-03
+   46.0s OK   [559/80, 141/20]  resid rowsum [5.38e-10 +/- 4.21e-13], approx min eig 2.221e-03 | resid rowsum [5.38e-10 +/- 4.23e-13], approx min eig 2.816e-03
+   46.2s split [141/20, 73/10]  resid rowsum [8.37e-9 +/- 5.78e-13], approx min eig 9.275e-05
+   46.4s split [141/20, 287/40]  resid rowsum [2.11e-9 +/- 2.85e-12], approx min eig 1.158e-03
+   46.5s OK   [141/20, 569/80]  resid rowsum [5.30e-10 +/- 2.44e-13], approx min eig 1.701e-03 | resid rowsum [5.30e-10 +/- 2.36e-13], approx min eig 2.221e-03
+   46.7s OK   [569/80, 287/40]  resid rowsum [5.23e-10 +/- 4.93e-13], approx min eig 1.253e-03 | resid rowsum [5.23e-10 +/- 4.96e-13], approx min eig 1.701e-03
+   46.9s split [287/40, 73/10]  resid rowsum [2.05e-9 +/- 3.92e-12], approx min eig 4.752e-04
+   47.1s OK   [287/40, 579/80]  resid rowsum [5.15e-10 +/- 8.36e-14], approx min eig 8.750e-04 | resid rowsum [5.15e-10 +/- 7.88e-14], approx min eig 1.253e-03
+   47.3s OK   [579/80, 73/10]  resid rowsum [5.06e-10 +/- 3.28e-14], approx min eig 5.658e-04 | resid rowsum [5.06e-10 +/- 2.36e-14], approx min eig 8.756e-04
+   47.4s split [73/10, 151/20]  cholesky failed; minimal eig approx -4.545e-04
+   47.6s split [73/10, 297/40]  resid rowsum [2.00e-9 +/- 4.28e-12], approx min eig 5.893e-05
+   47.9s OK   [73/10, 589/80]  resid rowsum [5.01e-10 +/- 2.68e-14], approx min eig 3.233e-04 | resid rowsum [5.01e-10 +/- 5.56e-14], approx min eig 5.664e-04
+   48.0s OK   [589/80, 297/40]  resid rowsum [4.93e-10 +/- 4.30e-13], approx min eig 1.456e-04 | resid rowsum [4.93e-10 +/- 4.17e-13], approx min eig 3.238e-04
+   48.2s split [297/40, 151/20]  cholesky failed; minimal eig approx -1.051e-04
+   48.4s OK   [297/40, 599/80]  resid rowsum [4.87e-10 +/- 3.41e-14], approx min eig 3.096e-05 | resid rowsum [4.87e-10 +/- 2.49e-14], approx min eig 1.461e-04
+   48.5s split [599/80, 151/20]  cholesky failed; minimal eig approx -2.223e-05
+   48.7s OK   [599/80, 1203/160]  resid rowsum [1.22e-10 +/- 3.95e-13], approx min eig 1.727e-05 | resid rowsum [1.22e-10 +/- 4.04e-13], approx min eig 5.173e-05
+   48.8s split [1203/160, 151/20]  cholesky failed; minimal eig approx -1.982e-06
+   48.9s OK   [1203/160, 2411/320]  resid rowsum [3.15e-11 +/- 1.13e-14], approx min eig 1.083e-05 | resid rowsum [3.15e-11 +/- 3.33e-15], approx min eig 2.237e-05
+   49.1s OK   [2411/320, 151/20]  resid rowsum [3.22e-11 +/- 4.75e-14], approx min eig 3.061e-06 | resid rowsum [3.22e-11 +/- 4.71e-14], approx min eig 1.084e-05
+   49.2s split [151/20, 39/5]  cholesky failed; minimal eig approx -4.860e-05
+   49.3s split [151/20, 307/40]  cholesky failed; minimal eig approx -3.019e-05
+   49.5s split [151/20, 609/80]  cholesky failed; minimal eig approx -1.568e-05
+   49.6s split [151/20, 1213/160]  cholesky failed; minimal eig approx -6.296e-06
+   49.8s split [151/20, 2421/320]  cholesky failed; minimal eig approx -9.778e-07
+   49.9s OK   [151/20, 4837/640]  resid rowsum [6.51e-12 +/- 1.26e-15], approx min eig 1.850e-06 | resid rowsum [6.50e-12 +/- 2.69e-15], approx min eig 4.338e-06
+   50.1s OK   [4837/640, 2421/320]  resid rowsum [5.87e-12 +/- 7.59e-16], approx min eig 2.922e-07 | resid rowsum [5.88e-12 +/- 5.00e-15], approx min eig 1.850e-06
+   50.3s split [2421/320, 1213/160]  cholesky failed; minimal eig approx -1.308e-06
+   50.4s split [2421/320, 4847/640]  cholesky failed; minimal eig approx -3.382e-07
+   50.6s OK   [2421/320, 9689/1280]  resid rowsum [1.09e-12 +/- 2.50e-15], approx min eig 1.895e-07 | resid rowsum [1.08e-12 +/- 2.90e-16], approx min eig 6.207e-07
+   50.7s split [9689/1280, 4847/640]  cholesky failed; minimal eig approx -1.038e-08
+   50.9s OK   [9689/1280, 19383/2560]  resid rowsum [1.78e-12 +/- 2.78e-15], approx min eig 1.486e-07 | resid rowsum [1.76e-12 +/- 3.76e-15], approx min eig 2.774e-07
+   51.2s OK   [19383/2560, 4847/640]  resid rowsum [2.50e-12 +/- 2.14e-15], approx min eig 7.754e-08 | resid rowsum [2.49e-12 +/- 2.49e-15], approx min eig 1.485e-07
+   51.3s split [4847/640, 1213/160]  cholesky failed; minimal eig approx -4.457e-08
+   51.5s split [4847/640, 9699/1280]  cholesky failed; minimal eig approx -1.053e-08
+   51.6s OK   [4847/640, 19393/2560]  resid rowsum [1.56e-12 +/- 7.65e-16], approx min eig 6.418e-08 | resid rowsum [1.55e-12 +/- 1.23e-15], approx min eig 7.742e-08
+   51.8s OK   [19393/2560, 9699/1280]  resid rowsum [1.06e-12 +/- 3.43e-15], approx min eig 1.085e-07 | resid rowsum [1.07e-12 +/- 4.27e-15], approx min eig 6.406e-08
+   52.0s OK   [9699/1280, 1213/160]  resid rowsum [1.21e-12 +/- 3.43e-16], approx min eig 2.824e-07 | resid rowsum [1.20e-12 +/- 4.22e-15], approx min eig 2.056e-08
+   52.3s split [1213/160, 609/80]  cholesky failed; minimal eig approx -6.234e-06
+   52.5s split [1213/160, 2431/320]  cholesky failed; minimal eig approx -1.301e-06
+   52.7s split [1213/160, 4857/640]  cholesky failed; minimal eig approx -4.413e-08
+   52.9s OK   [1213/160, 9709/1280]  resid rowsum [2.32e-12 +/- 1.18e-15], approx min eig 7.743e-07 | resid rowsum [2.33e-12 +/- 2.44e-15], approx min eig 2.823e-07
+   53.1s OK   [9709/1280, 4857/640]  resid rowsum [1.88e-12 +/- 9.53e-16], approx min eig 1.496e-06 | resid rowsum [1.88e-12 +/- 6.49e-16], approx min eig 7.742e-07
+   53.4s OK   [4857/640, 2431/320]  resid rowsum [6.75e-12 +/- 1.19e-15], approx min eig 3.302e-06 | resid rowsum [6.76e-12 +/- 3.81e-15], approx min eig 1.170e-06
+   53.5s OK   [2431/320, 609/80]  resid rowsum [2.84e-11 +/- 2.20e-14], approx min eig 9.057e-06 | resid rowsum [2.84e-11 +/- 4.63e-15], approx min eig 2.052e-06
+   53.7s split [609/80, 307/40]  cholesky failed; minimal eig approx -1.517e-05
+   53.9s OK   [609/80, 1223/160]  resid rowsum [1.19e-10 +/- 3.10e-14], approx min eig 2.907e-05 | resid rowsum [1.19e-10 +/- 2.91e-14], approx min eig 4.185e-06
+   54.1s OK   [1223/160, 307/40]  resid rowsum [1.16e-10 +/- 3.65e-13], approx min eig 6.835e-05 | resid rowsum [1.16e-10 +/- 3.64e-13], approx min eig 2.913e-05
+   54.3s split [307/40, 39/5]  resid rowsum [1.83e-9 +/- 1.45e-12], approx min eig 2.707e-04
+   54.5s OK   [307/40, 619/80]  resid rowsum [4.61e-10 +/- 4.98e-13], approx min eig 1.702e-04 | resid rowsum [4.60e-10 +/- 4.98e-13], approx min eig 4.949e-05
+   54.7s OK   [619/80, 39/5]  resid rowsum [4.55e-10 +/- 4.73e-14], approx min eig 3.464e-04 | resid rowsum [4.55e-10 +/- 4.87e-14], approx min eig 1.707e-04
+   55.0s split [39/5, 161/20]  resid rowsum [7.06e-9 +/- 5.0e-15], approx min eig 1.210e-03
+   55.2s split [39/5, 317/40]  resid rowsum [1.78e-9 +/- 4.39e-12], approx min eig 7.852e-04
+   55.4s OK   [39/5, 629/80]  resid rowsum [4.47e-10 +/- 4.28e-13], approx min eig 5.760e-04 | resid rowsum [4.47e-10 +/- 4.31e-13], approx min eig 3.468e-04
+   55.6s OK   [629/80, 317/40]  resid rowsum [4.42e-10 +/- 9.30e-14], approx min eig 8.576e-04 | resid rowsum [4.42e-10 +/- 1.02e-13], approx min eig 5.765e-04
+   55.8s split [317/40, 161/20]  resid rowsum [1.73e-9 +/- 2.35e-12], approx min eig 1.502e-03
+   56.0s OK   [317/40, 639/80]  resid rowsum [4.35e-10 +/- 3.09e-13], approx min eig 1.190e-03 | resid rowsum [4.35e-10 +/- 3.02e-13], approx min eig 8.581e-04
+   56.3s OK   [639/80, 161/20]  resid rowsum [4.30e-10 +/- 2.84e-13], approx min eig 1.571e-03 | resid rowsum [4.30e-10 +/- 2.84e-13], approx min eig 1.190e-03
+   56.5s split [161/20, 83/10]  resid rowsum [6.68e-9 +/- 4.18e-12], approx min eig 3.231e-03
+   56.7s split [161/20, 327/40]  resid rowsum [1.69e-9 +/- 4.39e-12], approx min eig 2.409e-03
+   57.0s OK   [161/20, 649/80]  resid rowsum [4.26e-10 +/- 2.28e-13], approx min eig 2.000e-03 | resid rowsum [4.26e-10 +/- 2.55e-13], approx min eig 1.571e-03
+   57.4s OK   [649/80, 327/40]  resid rowsum [4.16e-10 +/- 4.83e-13], approx min eig 2.476e-03 | resid rowsum [4.15e-10 +/- 4.96e-13], approx min eig 2.001e-03
+   57.9s split [327/40, 83/10]  resid rowsum [1.64e-9 +/- 5.55e-13], approx min eig 3.497e-03
+   58.2s OK   [327/40, 659/80]  resid rowsum [4.12e-10 +/- 3.61e-13], approx min eig 2.996e-03 | resid rowsum [4.12e-10 +/- 3.36e-13], approx min eig 2.476e-03
+   58.4s OK   [659/80, 83/10]  resid rowsum [4.04e-10 +/- 4.78e-14], approx min eig 3.560e-03 | resid rowsum [4.04e-10 +/- 4.92e-14], approx min eig 2.996e-03
+   58.5s split [83/10, 171/20]  resid rowsum [6.32e-9 +/- 2.22e-12], approx min eig 5.930e-03
+   58.7s split [83/10, 337/40]  resid rowsum [1.60e-9 +/- 4.79e-12], approx min eig 4.755e-03
+   58.8s OK   [83/10, 669/80]  resid rowsum [4.01e-10 +/- 2.86e-13], approx min eig 4.167e-03 | resid rowsum [4.01e-10 +/- 2.92e-13], approx min eig 3.561e-03
+   58.9s OK   [669/80, 337/40]  resid rowsum [3.93e-10 +/- 3.65e-13], approx min eig 4.816e-03 | resid rowsum [3.93e-10 +/- 3.74e-13], approx min eig 4.168e-03
+   59.1s split [337/40, 171/20]  resid rowsum [1.55e-9 +/- 1.24e-12], approx min eig 6.174e-03
+   59.2s OK   [337/40, 679/80]  resid rowsum [3.88e-10 +/- 1.71e-13], approx min eig 5.504e-03 | resid rowsum [3.88e-10 +/- 1.63e-13], approx min eig 4.816e-03
+   59.3s OK   [679/80, 171/20]  resid rowsum [3.83e-10 +/- 1.98e-13], approx min eig 6.232e-03 | resid rowsum [3.83e-10 +/- 2.01e-13], approx min eig 5.505e-03
+   59.5s split [171/20, 44/5]  resid rowsum [5.98e-9 +/- 1.12e-12], approx min eig 9.234e-03
+   59.6s split [171/20, 347/40]  resid rowsum [1.51e-9 +/- 2.63e-14], approx min eig 7.744e-03
+   59.8s OK   [171/20, 689/80]  resid rowsum [3.79e-10 +/- 4.34e-13], approx min eig 6.997e-03 | resid rowsum [3.79e-10 +/- 4.30e-13], approx min eig 6.232e-03
+   60.0s OK   [689/80, 347/40]  resid rowsum [3.73e-10 +/- 1.61e-13], approx min eig 7.799e-03 | resid rowsum [3.73e-10 +/- 1.70e-13], approx min eig 6.997e-03
+   60.1s split [347/40, 44/5]  resid rowsum [1.47e-9 +/- 7.24e-13], approx min eig 9.457e-03
+   60.3s OK   [347/40, 699/80]  resid rowsum [3.68e-10 +/- 3.50e-14], approx min eig 8.637e-03 | resid rowsum [3.68e-10 +/- 5.82e-14], approx min eig 7.800e-03
+   60.5s OK   [699/80, 44/5]  resid rowsum [3.64e-10 +/- 4.24e-13], approx min eig 9.510e-03 | resid rowsum [3.64e-10 +/- 4.20e-13], approx min eig 8.637e-03
+   60.6s split [44/5, 181/20]  resid rowsum [5.66e-9 +/- 2.33e-12], approx min eig 1.307e-02
+   60.8s split [44/5, 357/40]  resid rowsum [1.43e-9 +/- 8.68e-13], approx min eig 1.130e-02
+   61.1s OK   [44/5, 709/80]  resid rowsum [3.60e-10 +/- 5.78e-14], approx min eig 1.042e-02 | resid rowsum [3.60e-10 +/- 5.13e-14], approx min eig 9.510e-03
+   61.4s OK   [709/80, 357/40]  resid rowsum [3.52e-10 +/- 5.71e-14], approx min eig 1.135e-02 | resid rowsum [3.52e-10 +/- 7.86e-14], approx min eig 1.042e-02
+   61.6s split [357/40, 181/20]  resid rowsum [1.39e-9 +/- 1.72e-12], approx min eig 1.328e-02
+   61.9s OK   [357/40, 719/80]  resid rowsum [3.49e-10 +/- 3.08e-13], approx min eig 1.233e-02 | resid rowsum [3.49e-10 +/- 3.03e-13], approx min eig 1.135e-02
+   62.0s OK   [719/80, 181/20]  resid rowsum [3.45e-10 +/- 2.82e-13], approx min eig 1.333e-02 | resid rowsum [3.45e-10 +/- 3.06e-13], approx min eig 1.233e-02
+   62.1s split [181/20, 93/10]  resid rowsum [5.36e-9 +/- 2.30e-12], approx min eig 1.739e-02
+   62.3s split [181/20, 367/40]  resid rowsum [1.35e-9 +/- 3.62e-12], approx min eig 1.537e-02
+   62.4s OK   [181/20, 729/80]  resid rowsum [3.40e-10 +/- 3.71e-13], approx min eig 1.436e-02 | resid rowsum [3.40e-10 +/- 3.71e-13], approx min eig 1.333e-02
+   62.7s OK   [729/80, 367/40]  resid rowsum [3.35e-10 +/- 2.33e-13], approx min eig 1.542e-02 | resid rowsum [3.35e-10 +/- 2.39e-13], approx min eig 1.436e-02
+   62.9s split [367/40, 93/10]  resid rowsum [1.32e-9 +/- 4.75e-12], approx min eig 1.758e-02
+   63.1s OK   [367/40, 739/80]  resid rowsum [3.35e-10 +/- 1.69e-13], approx min eig 1.651e-02 | resid rowsum [3.35e-10 +/- 1.70e-13], approx min eig 1.542e-02
+   63.3s OK   [739/80, 93/10]  resid rowsum [3.27e-10 +/- 2.29e-13], approx min eig 1.762e-02 | resid rowsum [3.27e-10 +/- 2.06e-13], approx min eig 1.651e-02
+   63.5s split [93/10, 191/20]  resid rowsum [5.08e-9 +/- 2.09e-12], approx min eig 2.213e-02
+   64.2s split [93/10, 377/40]  resid rowsum [1.28e-9 +/- 1.86e-12], approx min eig 1.989e-02
+   64.7s OK   [93/10, 749/80]  resid rowsum [3.24e-10 +/- 1.57e-13], approx min eig 1.876e-02 | resid rowsum [3.24e-10 +/- 1.55e-13], approx min eig 1.762e-02
+   64.9s OK   [749/80, 377/40]  resid rowsum [3.18e-10 +/- 3.22e-13], approx min eig 1.993e-02 | resid rowsum [3.18e-10 +/- 3.26e-13], approx min eig 1.876e-02
+   65.1s split [377/40, 191/20]  resid rowsum [1.25e-9 +/- 1.48e-12], approx min eig 2.230e-02
+   65.3s OK   [377/40, 759/80]  resid rowsum [3.14e-10 +/- 3.99e-13], approx min eig 2.112e-02 | resid rowsum [3.14e-10 +/- 3.92e-13], approx min eig 1.993e-02
+   65.5s OK   [759/80, 191/20]  resid rowsum [3.12e-10 +/- 1.73e-14], approx min eig 2.234e-02 | resid rowsum [3.12e-10 +/- 4.3e-16], approx min eig 2.112e-02
+   65.7s split [191/20, 49/5]  resid rowsum [4.82e-9 +/- 8.44e-13], approx min eig 2.723e-02
+   65.8s split [191/20, 387/40]  resid rowsum [1.22e-9 +/- 1.67e-12], approx min eig 2.480e-02
+   66.0s OK   [191/20, 769/80]  resid rowsum [3.05e-10 +/- 3.52e-14], approx min eig 2.358e-02 | resid rowsum [3.05e-10 +/- 2.64e-14], approx min eig 2.234e-02
+   66.2s OK   [769/80, 387/40]  resid rowsum [3.01e-10 +/- 4.47e-13], approx min eig 2.484e-02 | resid rowsum [3.01e-10 +/- 4.56e-13], approx min eig 2.358e-02
+   66.3s split [387/40, 49/5]  resid rowsum [1.19e-9 +/- 4.32e-12], approx min eig 2.739e-02
+   66.6s OK   [387/40, 779/80]  resid rowsum [2.98e-10 +/- 4.10e-13], approx min eig 2.612e-02 | resid rowsum [2.98e-10 +/- 4.06e-13], approx min eig 2.484e-02
+   66.8s OK   [779/80, 49/5]  resid rowsum [2.95e-10 +/- 2.19e-13], approx min eig 2.743e-02 | resid rowsum [2.95e-10 +/- 2.15e-13], approx min eig 2.612e-02
+   67.2s split [49/5, 201/20]  resid rowsum [4.57e-9 +/- 2.46e-12], approx min eig 3.267e-02
+   67.6s split [49/5, 397/40]  resid rowsum [1.15e-9 +/- 4.99e-12], approx min eig 3.006e-02
+   67.9s OK   [49/5, 789/80]  resid rowsum [2.91e-10 +/- 5.01e-14], approx min eig 2.875e-02 | resid rowsum [2.91e-10 +/- 5.33e-14], approx min eig 2.743e-02
+   68.1s OK   [789/80, 397/40]  resid rowsum [2.86e-10 +/- 2.01e-13], approx min eig 3.010e-02 | resid rowsum [2.86e-10 +/- 1.96e-13], approx min eig 2.875e-02
+   68.3s split [397/40, 201/20]  resid rowsum [1.13e-9 +/- 4.99e-12], approx min eig 3.281e-02
+   68.6s OK   [397/40, 799/80]  resid rowsum [2.85e-10 +/- 7.72e-14], approx min eig 3.146e-02 | resid rowsum [2.85e-10 +/- 7.59e-14], approx min eig 3.010e-02
+   68.9s OK   [799/80, 201/20]  resid rowsum [2.80e-10 +/- 3.61e-13], approx min eig 3.284e-02 | resid rowsum [2.80e-10 +/- 3.43e-13], approx min eig 3.146e-02
+   69.2s split [201/20, 103/10]  resid rowsum [4.34e-9 +/- 9.96e-13], approx min eig 3.838e-02
+   69.5s split [201/20, 407/40]  resid rowsum [1.10e-9 +/- 4.74e-12], approx min eig 3.563e-02
+   69.9s OK   [201/20, 809/80]  resid rowsum [2.74e-10 +/- 3.43e-14], approx min eig 3.424e-02 | resid rowsum [2.74e-10 +/- 5.40e-14], approx min eig 3.284e-02
+   70.1s OK   [809/80, 407/40]  resid rowsum [2.70e-10 +/- 1.81e-13], approx min eig 3.566e-02 | resid rowsum [2.70e-10 +/- 1.76e-13], approx min eig 3.424e-02
+   70.3s split [407/40, 103/10]  resid rowsum [1.07e-9 +/- 2.11e-13], approx min eig 3.851e-02
+   70.5s OK   [407/40, 819/80]  resid rowsum [2.70e-10 +/- 3.81e-13], approx min eig 3.710e-02 | resid rowsum [2.70e-10 +/- 3.66e-13], approx min eig 3.566e-02
+   70.8s OK   [819/80, 103/10]  resid rowsum [2.66e-10 +/- 3.43e-13], approx min eig 3.855e-02 | resid rowsum [2.66e-10 +/- 3.29e-13], approx min eig 3.710e-02
+   71.1s split [103/10, 211/20]  resid rowsum [4.12e-9 +/- 1.94e-13], approx min eig 4.435e-02
+   71.3s split [103/10, 417/40]  resid rowsum [1.04e-9 +/- 7.82e-13], approx min eig 4.146e-02
+   71.6s OK   [103/10, 829/80]  resid rowsum [2.63e-10 +/- 9.31e-14], approx min eig 4.001e-02 | resid rowsum [2.63e-10 +/- 8.15e-14], approx min eig 3.855e-02
+   71.9s OK   [829/80, 417/40]  resid rowsum [2.59e-10 +/- 2.43e-13], approx min eig 4.149e-02 | resid rowsum [2.59e-10 +/- 2.37e-13], approx min eig 4.001e-02
+   72.2s split [417/40, 211/20]  resid rowsum [1.01e-9 +/- 3.82e-12], approx min eig 4.447e-02
+   72.5s OK   [417/40, 839/80]  resid rowsum [2.54e-10 +/- 1.99e-13], approx min eig 4.299e-02 | resid rowsum [2.54e-10 +/- 1.84e-13], approx min eig 4.149e-02
+   72.9s OK   [839/80, 211/20]  resid rowsum [2.48e-10 +/- 1.27e-14], approx min eig 4.450e-02 | resid rowsum [2.48e-10 +/- 1.54e-14], approx min eig 4.299e-02
+   73.1s split [211/20, 54/5]  resid rowsum [3.91e-9 +/- 4.17e-12], approx min eig 5.053e-02
+   73.4s OK   [211/20, 427/40]  resid rowsum [9.86e-10 +/- 1.72e-13], approx min eig 4.753e-02 | resid rowsum [9.86e-10 +/- 1.78e-13], approx min eig 4.447e-02
+   73.7s OK   [427/40, 54/5]  resid rowsum [9.61e-10 +/- 6.71e-14], approx min eig 5.065e-02 | resid rowsum [9.61e-10 +/- 7.43e-14], approx min eig 4.753e-02
+   74.0s split [54/5, 221/20]  resid rowsum [3.72e-9 +/- 2.57e-12], approx min eig 5.691e-02
+   74.3s OK   [54/5, 437/40]  resid rowsum [9.38e-10 +/- 3.34e-13], approx min eig 5.381e-02 | resid rowsum [9.38e-10 +/- 3.56e-13], approx min eig 5.065e-02
+   74.5s OK   [437/40, 221/20]  resid rowsum [9.14e-10 +/- 3.20e-14], approx min eig 5.701e-02 | resid rowsum [9.14e-10 +/- 3.89e-14], approx min eig 5.381e-02
+   74.7s split [221/20, 113/10]  resid rowsum [3.54e-9 +/- 1.71e-12], approx min eig 6.343e-02
+   74.9s OK   [221/20, 447/40]  resid rowsum [8.93e-10 +/- 3.89e-13], approx min eig 6.025e-02 | resid rowsum [8.93e-10 +/- 3.95e-13], approx min eig 5.701e-02
+   75.2s OK   [447/40, 113/10]  resid rowsum [8.71e-10 +/- 4.65e-13], approx min eig 6.353e-02 | resid rowsum [8.71e-10 +/- 4.34e-13], approx min eig 6.025e-02
+   75.4s split [113/10, 231/20]  resid rowsum [3.37e-9 +/- 2.25e-12], approx min eig 7.010e-02
+   75.6s OK   [113/10, 457/40]  resid rowsum [8.48e-10 +/- 4.55e-13], approx min eig 6.685e-02 | resid rowsum [8.48e-10 +/- 4.68e-13], approx min eig 6.353e-02
+   75.9s OK   [457/40, 231/20]  resid rowsum [8.28e-10 +/- 1.77e-13], approx min eig 7.019e-02 | resid rowsum [8.28e-10 +/- 1.89e-13], approx min eig 6.685e-02
+   76.1s split [231/20, 59/5]  resid rowsum [3.21e-9 +/- 4.55e-12], approx min eig 7.688e-02
+   76.4s OK   [231/20, 467/40]  resid rowsum [8.08e-10 +/- 9.80e-14], approx min eig 7.357e-02 | resid rowsum [8.08e-10 +/- 9.15e-14], approx min eig 7.020e-02
+   76.6s OK   [467/40, 59/5]  resid rowsum [7.87e-10 +/- 3.37e-13], approx min eig 7.697e-02 | resid rowsum [7.87e-10 +/- 3.36e-13], approx min eig 7.357e-02
+   76.9s split [59/5, 241/20]  resid rowsum [3.05e-9 +/- 2.19e-12], approx min eig 8.376e-02
+   77.2s OK   [59/5, 477/40]  resid rowsum [7.69e-10 +/- 3.77e-13], approx min eig 8.040e-02 | resid rowsum [7.69e-10 +/- 3.78e-13], approx min eig 7.697e-02
+   77.4s OK   [477/40, 241/20]  resid rowsum [7.52e-10 +/- 3.28e-13], approx min eig 8.385e-02 | resid rowsum [7.52e-10 +/- 3.41e-13], approx min eig 8.040e-02
+   77.7s split [241/20, 123/10]  resid rowsum [2.91e-9 +/- 4.21e-12], approx min eig 9.072e-02
+   78.0s OK   [241/20, 487/40]  resid rowsum [7.37e-10 +/- 6.03e-14], approx min eig 8.732e-02 | resid rowsum [7.37e-10 +/- 5.37e-14], approx min eig 8.385e-02
+   78.3s OK   [487/40, 123/10]  resid rowsum [7.18e-10 +/- 3.91e-13], approx min eig 9.081e-02 | resid rowsum [7.18e-10 +/- 3.63e-13], approx min eig 8.732e-02
+   78.5s split [123/10, 251/20]  resid rowsum [2.78e-9 +/- 4.43e-12], approx min eig 9.775e-02
+   78.7s OK   [123/10, 497/40]  resid rowsum [6.96e-10 +/- 3.70e-13], approx min eig 9.431e-02 | resid rowsum [6.96e-10 +/- 3.63e-13], approx min eig 9.081e-02
+   79.0s OK   [497/40, 251/20]  resid rowsum [6.85e-10 +/- 1.45e-13], approx min eig 9.783e-02 | resid rowsum [6.85e-10 +/- 1.27e-13], approx min eig 9.431e-02
+   79.2s split [251/20, 64/5]  resid rowsum [2.65e-9 +/- 3.50e-12], approx min eig 1.048e-01
+   79.5s OK   [251/20, 507/40]  resid rowsum [6.69e-10 +/- 3.40e-13], approx min eig 1.014e-01 | resid rowsum [6.69e-10 +/- 3.34e-13], approx min eig 9.783e-02
+   79.9s OK   [507/40, 64/5]  resid rowsum [6.52e-10 +/- 8.20e-15], approx min eig 1.049e-01 | resid rowsum [6.52e-10 +/- 8.50e-15], approx min eig 1.014e-01
+   80.2s split [64/5, 261/20]  resid rowsum [2.52e-9 +/- 1.77e-12], approx min eig 1.119e-01
+   80.7s OK   [64/5, 517/40]  resid rowsum [6.38e-10 +/- 3.78e-13], approx min eig 1.085e-01 | resid rowsum [6.38e-10 +/- 3.85e-13], approx min eig 1.049e-01
+   81.0s OK   [517/40, 261/20]  resid rowsum [6.24e-10 +/- 1.55e-13], approx min eig 1.120e-01 | resid rowsum [6.24e-10 +/- 1.65e-13], approx min eig 1.085e-01
+   81.3s split [261/20, 133/10]  resid rowsum [2.41e-9 +/- 3.25e-12], approx min eig 1.191e-01
+   81.7s OK   [261/20, 527/40]  resid rowsum [6.06e-10 +/- 1.02e-13], approx min eig 1.156e-01 | resid rowsum [6.06e-10 +/- 1.16e-13], approx min eig 1.120e-01
+   82.1s OK   [527/40, 133/10]  resid rowsum [5.97e-10 +/- 7.81e-15], approx min eig 1.191e-01 | resid rowsum [5.97e-10 +/- 2.00e-15], approx min eig 1.156e-01
+   82.4s split [133/10, 271/20]  resid rowsum [2.31e-9 +/- 3.54e-12], approx min eig 1.262e-01
+   82.7s OK   [133/10, 537/40]  resid rowsum [5.82e-10 +/- 4.86e-13], approx min eig 1.227e-01 | resid rowsum [5.82e-10 +/- 4.76e-13], approx min eig 1.191e-01
+   83.3s OK   [537/40, 271/20]  resid rowsum [5.66e-10 +/- 2.13e-13], approx min eig 1.263e-01 | resid rowsum [5.66e-10 +/- 2.35e-13], approx min eig 1.227e-01
+   83.7s split [271/20, 69/5]  resid rowsum [2.20e-9 +/- 3.82e-12], approx min eig 1.334e-01
+   84.2s OK   [271/20, 547/40]  resid rowsum [5.56e-10 +/- 3.66e-14], approx min eig 1.299e-01 | resid rowsum [5.56e-10 +/- 4.20e-14], approx min eig 1.263e-01
+   84.6s OK   [547/40, 69/5]  resid rowsum [5.45e-10 +/- 4.43e-13], approx min eig 1.335e-01 | resid rowsum [5.45e-10 +/- 4.49e-13], approx min eig 1.299e-01
+   85.0s split [69/5, 281/20]  resid rowsum [2.10e-9 +/- 3.96e-12], approx min eig 1.406e-01
+   85.5s OK   [69/5, 557/40]  resid rowsum [5.32e-10 +/- 4.63e-13], approx min eig 1.370e-01 | resid rowsum [5.32e-10 +/- 4.51e-13], approx min eig 1.335e-01
+   86.1s OK   [557/40, 281/20]  resid rowsum [5.16e-10 +/- 3.16e-13], approx min eig 1.406e-01 | resid rowsum [5.16e-10 +/- 2.98e-13], approx min eig 1.370e-01
+   86.5s split [281/20, 143/10]  resid rowsum [2.02e-9 +/- 2.32e-12], approx min eig 1.477e-01
+   86.8s OK   [281/20, 567/40]  resid rowsum [5.05e-10 +/- 3.68e-13], approx min eig 1.442e-01 | resid rowsum [5.05e-10 +/- 3.46e-13], approx min eig 1.406e-01
+   87.4s OK   [567/40, 143/10]  resid rowsum [4.98e-10 +/- 4.82e-13], approx min eig 1.478e-01 | resid rowsum [4.98e-10 +/- 4.92e-13], approx min eig 1.442e-01
+   87.8s split [143/10, 291/20]  resid rowsum [1.93e-9 +/- 3.21e-12], approx min eig 1.549e-01
+   88.2s OK   [143/10, 577/40]  resid rowsum [4.87e-10 +/- 1.32e-14], approx min eig 1.513e-01 | resid rowsum [4.87e-10 +/- 1.39e-14], approx min eig 1.478e-01
+   88.5s OK   [577/40, 291/20]  resid rowsum [4.77e-10 +/- 3.93e-13], approx min eig 1.549e-01 | resid rowsum [4.77e-10 +/- 4.03e-13], approx min eig 1.513e-01
+   89.1s split [291/20, 74/5]  resid rowsum [1.85e-9 +/- 1.46e-12], approx min eig 1.620e-01
+   89.5s OK   [291/20, 587/40]  resid rowsum [4.67e-10 +/- 3.49e-13], approx min eig 1.585e-01 | resid rowsum [4.67e-10 +/- 3.59e-13], approx min eig 1.549e-01
+   89.7s OK   [587/40, 74/5]  resid rowsum [4.58e-10 +/- 2.84e-13], approx min eig 1.620e-01 | resid rowsum [4.58e-10 +/- 2.91e-13], approx min eig 1.585e-01
+   89.9s split [74/5, 301/20]  resid rowsum [1.77e-9 +/- 1.25e-12], approx min eig 1.691e-01
+   90.2s OK   [74/5, 597/40]  resid rowsum [4.45e-10 +/- 4.92e-13], approx min eig 1.656e-01 | resid rowsum [4.44e-10 +/- 4.99e-13], approx min eig 1.620e-01
+   90.5s OK   [597/40, 301/20]  resid rowsum [4.39e-10 +/- 2.51e-13], approx min eig 1.691e-01 | resid rowsum [4.39e-10 +/- 2.53e-13], approx min eig 1.656e-01
+   90.7s split [301/20, 153/10]  resid rowsum [1.70e-9 +/- 1.88e-12], approx min eig 1.761e-01
+   91.3s OK   [301/20, 607/40]  resid rowsum [4.27e-10 +/- 3.11e-13], approx min eig 1.727e-01 | resid rowsum [4.27e-10 +/- 3.31e-13], approx min eig 1.691e-01
+   91.7s OK   [607/40, 153/10]  resid rowsum [4.21e-10 +/- 4.06e-13], approx min eig 1.762e-01 | resid rowsum [4.21e-10 +/- 4.21e-13], approx min eig 1.727e-01
+   92.0s split [153/10, 311/20]  resid rowsum [1.63e-9 +/- 2.42e-12], approx min eig 1.831e-01
+   92.4s OK   [153/10, 617/40]  resid rowsum [4.12e-10 +/- 1.28e-13], approx min eig 1.797e-01 | resid rowsum [4.12e-10 +/- 1.35e-13], approx min eig 1.762e-01
+   92.8s OK   [617/40, 311/20]  resid rowsum [4.03e-10 +/- 4.68e-15], approx min eig 1.832e-01 | resid rowsum [4.03e-10 +/- 1.48e-14], approx min eig 1.797e-01
+   93.0s split [311/20, 79/5]  resid rowsum [1.56e-9 +/- 2.32e-12], approx min eig 1.901e-01
+   93.4s OK   [311/20, 627/40]  resid rowsum [3.98e-10 +/- 4.11e-13], approx min eig 1.867e-01 | resid rowsum [3.98e-10 +/- 4.24e-13], approx min eig 1.832e-01
+   93.9s OK   [627/40, 79/5]  resid rowsum [3.86e-10 +/- 1.36e-13], approx min eig 1.902e-01 | resid rowsum [3.86e-10 +/- 1.30e-13], approx min eig 1.867e-01
+   94.3s split [79/5, 321/20]  resid rowsum [1.50e-9 +/- 5.96e-13], approx min eig 1.971e-01
+   94.6s OK   [79/5, 637/40]  resid rowsum [3.77e-10 +/- 7.75e-14], approx min eig 1.937e-01 | resid rowsum [3.77e-10 +/- 9.36e-14], approx min eig 1.902e-01
+   94.8s OK   [637/40, 321/20]  resid rowsum [3.71e-10 +/- 4.88e-13], approx min eig 1.971e-01 | resid rowsum [3.71e-10 +/- 4.91e-13], approx min eig 1.937e-01
+   95.1s split [321/20, 163/10]  resid rowsum [1.44e-9 +/- 1.89e-13], approx min eig 2.040e-01
+   95.3s OK   [321/20, 647/40]  resid rowsum [3.64e-10 +/- 3.71e-14], approx min eig 2.006e-01 | resid rowsum [3.64e-10 +/- 3.39e-14], approx min eig 1.971e-01
+   95.6s OK   [647/40, 163/10]  resid rowsum [3.56e-10 +/- 3.08e-13], approx min eig 2.040e-01 | resid rowsum [3.56e-10 +/- 3.17e-13], approx min eig 2.006e-01
+   95.9s split [163/10, 331/20]  resid rowsum [1.38e-9 +/- 3.53e-12], approx min eig 2.108e-01
+   96.1s OK   [163/10, 657/40]  resid rowsum [3.48e-10 +/- 4.64e-13], approx min eig 2.075e-01 | resid rowsum [3.48e-10 +/- 4.87e-13], approx min eig 2.040e-01
+   96.6s OK   [657/40, 331/20]  resid rowsum [3.44e-10 +/- 4.81e-14], approx min eig 2.109e-01 | resid rowsum [3.44e-10 +/- 3.51e-14], approx min eig 2.075e-01
+   96.9s split [331/20, 84/5]  resid rowsum [1.33e-9 +/- 3.81e-13], approx min eig 2.176e-01
+   97.2s OK   [331/20, 667/40]  resid rowsum [3.37e-10 +/- 4.50e-13], approx min eig 2.143e-01 | resid rowsum [3.37e-10 +/- 4.57e-13], approx min eig 2.109e-01
+   97.5s OK   [667/40, 84/5]  resid rowsum [3.31e-10 +/- 1.98e-13], approx min eig 2.177e-01 | resid rowsum [3.31e-10 +/- 2.14e-13], approx min eig 2.143e-01
+   97.7s split [84/5, 341/20]  resid rowsum [1.28e-9 +/- 2.50e-12], approx min eig 2.244e-01
+   98.3s OK   [84/5, 677/40]  resid rowsum [3.24e-10 +/- 4.14e-13], approx min eig 2.211e-01 | resid rowsum [3.24e-10 +/- 3.94e-13], approx min eig 2.177e-01
+   99.3s OK   [677/40, 341/20]  resid rowsum [3.14e-10 +/- 1.66e-15], approx min eig 2.244e-01 | resid rowsum [3.14e-10 +/- 1.86e-14], approx min eig 2.211e-01
+   99.5s split [341/20, 173/10]  resid rowsum [1.23e-9 +/- 1.29e-12], approx min eig 2.311e-01
+   99.8s OK   [341/20, 687/40]  resid rowsum [3.09e-10 +/- 3.25e-13], approx min eig 2.278e-01 | resid rowsum [3.09e-10 +/- 3.10e-13], approx min eig 2.244e-01
+  100.3s OK   [687/40, 173/10]  resid rowsum [3.05e-10 +/- 2.07e-13], approx min eig 2.311e-01 | resid rowsum [3.05e-10 +/- 1.83e-13], approx min eig 2.278e-01
+  100.6s split [173/10, 351/20]  resid rowsum [1.18e-9 +/- 2.51e-12], approx min eig 2.377e-01
+  100.8s OK   [173/10, 697/40]  resid rowsum [2.99e-10 +/- 4.88e-13], approx min eig 2.344e-01 | resid rowsum [2.99e-10 +/- 4.55e-13], approx min eig 2.311e-01
+  101.2s OK   [697/40, 351/20]  resid rowsum [2.89e-10 +/- 3.73e-13], approx min eig 2.378e-01 | resid rowsum [2.89e-10 +/- 3.70e-13], approx min eig 2.344e-01
+  101.4s split [351/20, 89/5]  resid rowsum [1.14e-9 +/- 3.90e-13], approx min eig 2.443e-01
+  101.7s OK   [351/20, 707/40]  resid rowsum [2.86e-10 +/- 4.84e-13], approx min eig 2.411e-01 | resid rowsum [2.86e-10 +/- 4.72e-13], approx min eig 2.378e-01
+  101.9s OK   [707/40, 89/5]  resid rowsum [2.80e-10 +/- 2.97e-13], approx min eig 2.443e-01 | resid rowsum [2.80e-10 +/- 2.97e-13], approx min eig 2.411e-01
+  102.2s split [89/5, 361/20]  resid rowsum [1.09e-9 +/- 2.74e-12], approx min eig 2.508e-01
+  102.5s OK   [89/5, 717/40]  resid rowsum [2.75e-10 +/- 1.85e-13], approx min eig 2.476e-01 | resid rowsum [2.75e-10 +/- 2.06e-13], approx min eig 2.443e-01
+  102.8s OK   [717/40, 361/20]  resid rowsum [2.70e-10 +/- 4.47e-13], approx min eig 2.509e-01 | resid rowsum [2.70e-10 +/- 4.46e-13], approx min eig 2.476e-01
+  103.1s split [361/20, 183/10]  resid rowsum [1.06e-9 +/- 1.10e-12], approx min eig 2.573e-01
+  103.4s OK   [361/20, 727/40]  resid rowsum [2.67e-10 +/- 4.57e-13], approx min eig 2.541e-01 | resid rowsum [2.67e-10 +/- 4.65e-13], approx min eig 2.509e-01
+  103.8s OK   [727/40, 183/10]  resid rowsum [2.60e-10 +/- 2.66e-13], approx min eig 2.573e-01 | resid rowsum [2.60e-10 +/- 2.64e-13], approx min eig 2.541e-01
+  104.0s split [183/10, 371/20]  resid rowsum [1.02e-9 +/- 7.80e-13], approx min eig 2.637e-01
+  104.2s OK   [183/10, 737/40]  resid rowsum [2.59e-10 +/- 2.47e-13], approx min eig 2.605e-01 | resid rowsum [2.59e-10 +/- 2.54e-13], approx min eig 2.573e-01
+  104.5s OK   [737/40, 371/20]  resid rowsum [2.54e-10 +/- 4.04e-13], approx min eig 2.637e-01 | resid rowsum [2.54e-10 +/- 4.21e-13], approx min eig 2.605e-01
+  104.9s OK   [371/20, 94/5]  resid rowsum [9.82e-10 +/- 5.70e-14], approx min eig 2.700e-01 | resid rowsum [9.82e-10 +/- 5.69e-14], approx min eig 2.637e-01
+  105.1s OK   [94/5, 381/20]  resid rowsum [9.46e-10 +/- 2.76e-14], approx min eig 2.763e-01 | resid rowsum [9.46e-10 +/- 3.29e-14], approx min eig 2.700e-01
+  105.4s OK   [381/20, 193/10]  resid rowsum [9.14e-10 +/- 1.05e-13], approx min eig 2.825e-01 | resid rowsum [9.14e-10 +/- 1.16e-13], approx min eig 2.763e-01
+  105.8s OK   [193/10, 391/20]  resid rowsum [8.83e-10 +/- 4.34e-13], approx min eig 2.887e-01 | resid rowsum [8.83e-10 +/- 4.45e-13], approx min eig 2.825e-01
+  106.1s OK   [391/20, 99/5]  resid rowsum [8.53e-10 +/- 2.13e-13], approx min eig 2.948e-01 | resid rowsum [8.53e-10 +/- 2.24e-13], approx min eig 2.887e-01
+  106.3s OK   [99/5, 401/20]  resid rowsum [8.25e-10 +/- 4.34e-13], approx min eig 3.008e-01 | resid rowsum [8.25e-10 +/- 4.36e-13], approx min eig 2.948e-01
+  106.5s OK   [401/20, 203/10]  resid rowsum [7.99e-10 +/- 7.16e-14], approx min eig 3.068e-01 | resid rowsum [7.99e-10 +/- 7.24e-14], approx min eig 3.008e-01
+  106.8s OK   [203/10, 411/20]  resid rowsum [7.70e-10 +/- 1.18e-13], approx min eig 3.127e-01 | resid rowsum [7.70e-10 +/- 9.20e-14], approx min eig 3.068e-01
+  107.0s OK   [411/20, 104/5]  resid rowsum [7.43e-10 +/- 4.21e-13], approx min eig 3.186e-01 | resid rowsum [7.43e-10 +/- 4.37e-13], approx min eig 3.127e-01
+  107.1s OK   [104/5, 421/20]  resid rowsum [7.18e-10 +/- 4.75e-13], approx min eig 3.244e-01 | resid rowsum [7.18e-10 +/- 4.67e-13], approx min eig 3.186e-01
+  107.5s OK   [421/20, 213/10]  resid rowsum [6.94e-10 +/- 4.94e-13], approx min eig 3.301e-01 | resid rowsum [6.95e-10 +/- 4.94e-13], approx min eig 3.244e-01
+  107.8s OK   [213/10, 431/20]  resid rowsum [6.73e-10 +/- 2.69e-14], approx min eig 3.357e-01 | resid rowsum [6.73e-10 +/- 3.67e-14], approx min eig 3.301e-01
+  108.2s OK   [431/20, 109/5]  resid rowsum [6.55e-10 +/- 3.51e-13], approx min eig 3.413e-01 | resid rowsum [6.55e-10 +/- 3.40e-13], approx min eig 3.357e-01
+  108.5s OK   [109/5, 441/20]  resid rowsum [6.33e-10 +/- 2.21e-13], approx min eig 3.469e-01 | resid rowsum [6.33e-10 +/- 2.32e-13], approx min eig 3.413e-01
+  108.7s OK   [441/20, 223/10]  resid rowsum [6.13e-10 +/- 3.13e-13], approx min eig 3.524e-01 | resid rowsum [6.13e-10 +/- 3.25e-13], approx min eig 3.469e-01
+  108.9s OK   [223/10, 451/20]  resid rowsum [5.96e-10 +/- 1.18e-13], approx min eig 3.578e-01 | resid rowsum [5.96e-10 +/- 1.29e-13], approx min eig 3.524e-01
+  109.2s OK   [451/20, 114/5]  resid rowsum [5.74e-10 +/- 1.24e-13], approx min eig 3.631e-01 | resid rowsum [5.74e-10 +/- 1.01e-13], approx min eig 3.578e-01
+  109.4s OK   [114/5, 461/20]  resid rowsum [5.57e-10 +/- 4.71e-13], approx min eig 3.684e-01 | resid rowsum [5.57e-10 +/- 4.88e-13], approx min eig 3.631e-01
+  109.6s OK   [461/20, 233/10]  resid rowsum [5.43e-10 +/- 3.12e-13], approx min eig 3.737e-01 | resid rowsum [5.43e-10 +/- 3.09e-13], approx min eig 3.684e-01
+  109.8s OK   [233/10, 471/20]  resid rowsum [5.28e-10 +/- 2.43e-13], approx min eig 3.788e-01 | resid rowsum [5.28e-10 +/- 2.51e-13], approx min eig 3.737e-01
+  110.0s OK   [471/20, 119/5]  resid rowsum [5.13e-10 +/- 8.48e-14], approx min eig 3.840e-01 | resid rowsum [5.13e-10 +/- 8.66e-14], approx min eig 3.788e-01
+  110.2s OK   [119/5, 481/20]  resid rowsum [4.97e-10 +/- 3.23e-13], approx min eig 3.890e-01 | resid rowsum [4.97e-10 +/- 3.29e-13], approx min eig 3.840e-01
+  110.4s OK   [481/20, 243/10]  resid rowsum [4.80e-10 +/- 4.44e-13], approx min eig 3.940e-01 | resid rowsum [4.80e-10 +/- 4.23e-13], approx min eig 3.890e-01
+  110.6s OK   [243/10, 491/20]  resid rowsum [4.65e-10 +/- 3.19e-13], approx min eig 3.990e-01 | resid rowsum [4.65e-10 +/- 3.17e-13], approx min eig 3.940e-01
+  110.9s OK   [491/20, 124/5]  resid rowsum [4.56e-10 +/- 2.79e-13], approx min eig 4.039e-01 | resid rowsum [4.56e-10 +/- 2.84e-13], approx min eig 3.990e-01
+  111.1s OK   [124/5, 501/20]  resid rowsum [4.41e-10 +/- 2.02e-14], approx min eig 4.087e-01 | resid rowsum [4.41e-10 +/- 1.69e-15], approx min eig 4.039e-01
+  111.4s OK   [501/20, 253/10]  resid rowsum [4.27e-10 +/- 1.10e-14], approx min eig 4.135e-01 | resid rowsum [4.27e-10 +/- 1.02e-14], approx min eig 4.087e-01
+  111.6s OK   [253/10, 511/20]  resid rowsum [4.16e-10 +/- 4.80e-13], approx min eig 4.182e-01 | resid rowsum [4.16e-10 +/- 4.83e-13], approx min eig 4.135e-01
+  111.9s OK   [511/20, 129/5]  resid rowsum [4.05e-10 +/- 4.22e-13], approx min eig 4.229e-01 | resid rowsum [4.05e-10 +/- 4.37e-13], approx min eig 4.182e-01
+  112.1s OK   [129/5, 521/20]  resid rowsum [3.93e-10 +/- 4.54e-13], approx min eig 4.275e-01 | resid rowsum [3.93e-10 +/- 4.36e-13], approx min eig 4.229e-01
+  112.3s OK   [521/20, 263/10]  resid rowsum [3.84e-10 +/- 4.45e-14], approx min eig 4.321e-01 | resid rowsum [3.84e-10 +/- 5.15e-14], approx min eig 4.275e-01
+  112.4s OK   [263/10, 531/20]  resid rowsum [3.71e-10 +/- 3.77e-13], approx min eig 4.366e-01 | resid rowsum [3.71e-10 +/- 3.77e-13], approx min eig 4.321e-01
+  112.6s OK   [531/20, 134/5]  resid rowsum [3.63e-10 +/- 4.49e-13], approx min eig 4.410e-01 | resid rowsum [3.63e-10 +/- 4.67e-13], approx min eig 4.366e-01
+  113.2s OK   [134/5, 541/20]  resid rowsum [3.54e-10 +/- 4.93e-13], approx min eig 4.455e-01 | resid rowsum [3.54e-10 +/- 4.86e-13], approx min eig 4.410e-01
+  113.5s OK   [541/20, 273/10]  resid rowsum [3.44e-10 +/- 2.38e-13], approx min eig 4.498e-01 | resid rowsum [3.44e-10 +/- 2.40e-13], approx min eig 4.455e-01
+  113.7s OK   [273/10, 551/20]  resid rowsum [3.36e-10 +/- 3.37e-14], approx min eig 4.541e-01 | resid rowsum [3.36e-10 +/- 1.04e-14], approx min eig 4.498e-01
+  114.3s OK   [551/20, 139/5]  resid rowsum [3.28e-10 +/- 4.26e-13], approx min eig 4.584e-01 | resid rowsum [3.28e-10 +/- 4.42e-13], approx min eig 4.541e-01
+  114.6s OK   [139/5, 561/20]  resid rowsum [3.19e-10 +/- 4.15e-13], approx min eig 4.626e-01 | resid rowsum [3.19e-10 +/- 4.30e-13], approx min eig 4.584e-01
+  114.8s OK   [561/20, 283/10]  resid rowsum [3.11e-10 +/- 4.14e-14], approx min eig 4.668e-01 | resid rowsum [3.11e-10 +/- 3.41e-14], approx min eig 4.626e-01
+  115.0s OK   [283/10, 571/20]  resid rowsum [3.02e-10 +/- 2.58e-13], approx min eig 4.709e-01 | resid rowsum [3.02e-10 +/- 2.54e-13], approx min eig 4.668e-01
+  115.2s OK   [571/20, 144/5]  resid rowsum [2.94e-10 +/- 5.88e-14], approx min eig 4.750e-01 | resid rowsum [2.94e-10 +/- 8.04e-14], approx min eig 4.709e-01
+  115.3s OK   [144/5, 581/20]  resid rowsum [2.86e-10 +/- 6.18e-14], approx min eig 4.790e-01 | resid rowsum [2.86e-10 +/- 4.42e-14], approx min eig 4.750e-01
+  115.5s OK   [581/20, 293/10]  resid rowsum [2.81e-10 +/- 1.61e-13], approx min eig 4.830e-01 | resid rowsum [2.81e-10 +/- 1.59e-13], approx min eig 4.790e-01
+  115.6s OK   [293/10, 591/20]  resid rowsum [2.73e-10 +/- 3.86e-13], approx min eig 4.869e-01 | resid rowsum [2.73e-10 +/- 3.93e-13], approx min eig 4.830e-01
+  115.8s OK   [591/20, 149/5]  resid rowsum [2.64e-10 +/- 4.00e-13], approx min eig 4.908e-01 | resid rowsum [2.64e-10 +/- 4.00e-13], approx min eig 4.869e-01
+  115.9s OK   [149/5, 601/20]  resid rowsum [2.62e-10 +/- 2.66e-13], approx min eig 4.946e-01 | resid rowsum [2.62e-10 +/- 2.62e-13], approx min eig 4.908e-01
+  116.1s OK   [601/20, 303/10]  resid rowsum [2.55e-10 +/- 6.32e-14], approx min eig 4.984e-01 | resid rowsum [2.55e-10 +/- 5.83e-14], approx min eig 4.946e-01
+  116.2s OK   [303/10, 611/20]  resid rowsum [2.49e-10 +/- 4.31e-13], approx min eig 5.022e-01 | resid rowsum [2.49e-10 +/- 4.44e-13], approx min eig 4.984e-01
+  116.3s OK   [611/20, 154/5]  resid rowsum [2.43e-10 +/- 2.68e-13], approx min eig 5.059e-01 | resid rowsum [2.43e-10 +/- 2.65e-13], approx min eig 5.022e-01
+  116.5s OK   [154/5, 621/20]  resid rowsum [2.35e-10 +/- 2.23e-13], approx min eig 5.096e-01 | resid rowsum [2.35e-10 +/- 2.15e-13], approx min eig 5.059e-01
+  116.6s OK   [621/20, 313/10]  resid rowsum [2.31e-10 +/- 2.57e-13], approx min eig 5.132e-01 | resid rowsum [2.31e-10 +/- 2.74e-13], approx min eig 5.096e-01
+  116.8s OK   [313/10, 631/20]  resid rowsum [2.29e-10 +/- 1.26e-14], approx min eig 5.168e-01 | resid rowsum [2.29e-10 +/- 2.02e-14], approx min eig 5.132e-01
+  117.0s OK   [631/20, 159/5]  resid rowsum [2.20e-10 +/- 4.16e-13], approx min eig 5.203e-01 | resid rowsum [2.20e-10 +/- 4.04e-13], approx min eig 5.168e-01
+  117.1s OK   [159/5, 641/20]  resid rowsum [2.17e-10 +/- 7.95e-14], approx min eig 5.239e-01 | resid rowsum [2.17e-10 +/- 8.88e-14], approx min eig 5.203e-01
+  117.2s OK   [641/20, 323/10]  resid rowsum [2.10e-10 +/- 3.99e-13], approx min eig 5.273e-01 | resid rowsum [2.10e-10 +/- 3.97e-13], approx min eig 5.239e-01
+  117.4s OK   [323/10, 651/20]  resid rowsum [2.10e-10 +/- 3.31e-13], approx min eig 5.308e-01 | resid rowsum [2.10e-10 +/- 3.32e-13], approx min eig 5.273e-01
+  117.5s OK   [651/20, 164/5]  resid rowsum [2.01e-10 +/- 4.79e-15], approx min eig 5.342e-01 | resid rowsum [2.01e-10 +/- 1.82e-14], approx min eig 5.308e-01
+  117.7s OK   [164/5, 661/20]  resid rowsum [1.99e-10 +/- 1.64e-13], approx min eig 5.375e-01 | resid rowsum [1.99e-10 +/- 1.36e-13], approx min eig 5.342e-01
+  117.8s OK   [661/20, 333/10]  resid rowsum [1.90e-10 +/- 6.61e-14], approx min eig 5.408e-01 | resid rowsum [1.90e-10 +/- 5.26e-14], approx min eig 5.375e-01
+  118.0s OK   [333/10, 671/20]  resid rowsum [1.90e-10 +/- 4.92e-13], approx min eig 5.441e-01 | resid rowsum [1.90e-10 +/- 4.78e-13], approx min eig 5.408e-01
+  118.1s OK   [671/20, 169/5]  resid rowsum [1.84e-10 +/- 2.34e-13], approx min eig 5.474e-01 | resid rowsum [1.84e-10 +/- 2.03e-13], approx min eig 5.441e-01
+  118.3s OK   [169/5, 681/20]  resid rowsum [1.79e-10 +/- 4.12e-13], approx min eig 5.506e-01 | resid rowsum [1.79e-10 +/- 4.20e-13], approx min eig 5.474e-01
+  118.4s OK   [681/20, 343/10]  resid rowsum [1.76e-10 +/- 1.44e-13], approx min eig 5.538e-01 | resid rowsum [1.76e-10 +/- 1.45e-13], approx min eig 5.506e-01
+  118.5s OK   [343/10, 691/20]  resid rowsum [1.73e-10 +/- 4.24e-13], approx min eig 5.569e-01 | resid rowsum [1.73e-10 +/- 4.25e-13], approx min eig 5.538e-01
+  118.7s OK   [691/20, 174/5]  resid rowsum [1.69e-10 +/- 1.80e-13], approx min eig 5.600e-01 | resid rowsum [1.69e-10 +/- 1.87e-13], approx min eig 5.569e-01
+  118.8s OK   [174/5, 701/20]  resid rowsum [1.65e-10 +/- 9.22e-14], approx min eig 5.631e-01 | resid rowsum [1.65e-10 +/- 9.71e-14], approx min eig 5.600e-01
+  119.0s OK   [701/20, 353/10]  resid rowsum [1.63e-10 +/- 2.53e-13], approx min eig 5.661e-01 | resid rowsum [1.63e-10 +/- 2.58e-13], approx min eig 5.631e-01
+  119.2s OK   [353/10, 711/20]  resid rowsum [1.58e-10 +/- 2.13e-13], approx min eig 5.691e-01 | resid rowsum [1.58e-10 +/- 2.07e-13], approx min eig 5.661e-01
+  119.5s OK   [711/20, 179/5]  resid rowsum [1.58e-10 +/- 4.57e-13], approx min eig 5.721e-01 | resid rowsum [1.58e-10 +/- 4.59e-13], approx min eig 5.691e-01
+  119.6s OK   [179/5, 721/20]  resid rowsum [1.54e-10 +/- 2.27e-13], approx min eig 5.751e-01 | resid rowsum [1.54e-10 +/- 2.37e-13], approx min eig 5.721e-01
+  119.8s OK   [721/20, 363/10]  resid rowsum [1.50e-10 +/- 4.76e-13], approx min eig 5.780e-01 | resid rowsum [1.50e-10 +/- 4.55e-13], approx min eig 5.751e-01
+  120.0s OK   [363/10, 731/20]  resid rowsum [1.46e-10 +/- 1.66e-13], approx min eig 5.809e-01 | resid rowsum [1.46e-10 +/- 1.77e-13], approx min eig 5.780e-01
+  120.3s OK   [731/20, 184/5]  resid rowsum [1.43e-10 +/- 3.46e-13], approx min eig 5.837e-01 | resid rowsum [1.43e-10 +/- 3.36e-13], approx min eig 5.809e-01
+  120.5s OK   [184/5, 741/20]  resid rowsum [1.39e-10 +/- 4.96e-13], approx min eig 5.865e-01 | resid rowsum [1.39e-10 +/- 4.90e-13], approx min eig 5.837e-01
+  120.7s OK   [741/20, 373/10]  resid rowsum [1.37e-10 +/- 1.17e-13], approx min eig 5.893e-01 | resid rowsum [1.37e-10 +/- 1.25e-13], approx min eig 5.865e-01
+  120.9s OK   [373/10, 751/20]  resid rowsum [1.33e-10 +/- 3.49e-13], approx min eig 5.921e-01 | resid rowsum [1.33e-10 +/- 3.40e-13], approx min eig 5.893e-01
+  121.2s OK   [751/20, 189/5]  resid rowsum [1.32e-10 +/- 4.21e-13], approx min eig 5.948e-01 | resid rowsum [1.32e-10 +/- 4.33e-13], approx min eig 5.921e-01
+  121.5s OK   [189/5, 761/20]  resid rowsum [1.32e-10 +/- 4.57e-13], approx min eig 5.975e-01 | resid rowsum [1.32e-10 +/- 4.56e-13], approx min eig 5.948e-01
+  121.8s OK   [761/20, 383/10]  resid rowsum [1.25e-10 +/- 3.51e-13], approx min eig 6.002e-01 | resid rowsum [1.25e-10 +/- 3.47e-13], approx min eig 5.975e-01
+  122.1s OK   [383/10, 771/20]  resid rowsum [1.23e-10 +/- 2.18e-13], approx min eig 6.028e-01 | resid rowsum [1.23e-10 +/- 2.12e-13], approx min eig 6.002e-01
+  122.4s OK   [771/20, 194/5]  resid rowsum [1.22e-10 +/- 2.11e-13], approx min eig 6.054e-01 | resid rowsum [1.22e-10 +/- 1.92e-13], approx min eig 6.028e-01
+  122.8s OK   [194/5, 781/20]  resid rowsum [1.18e-10 +/- 8.88e-14], approx min eig 6.080e-01 | resid rowsum [1.18e-10 +/- 7.33e-14], approx min eig 6.054e-01
+  123.1s OK   [781/20, 393/10]  resid rowsum [1.15e-10 +/- 3.32e-13], approx min eig 6.106e-01 | resid rowsum [1.15e-10 +/- 3.34e-13], approx min eig 6.080e-01
+  123.5s OK   [393/10, 791/20]  resid rowsum [1.14e-10 +/- 3.78e-13], approx min eig 6.131e-01 | resid rowsum [1.14e-10 +/- 3.75e-13], approx min eig 6.106e-01
+  123.9s OK   [791/20, 199/5]  resid rowsum [1.14e-10 +/- 1.93e-13], approx min eig 6.156e-01 | resid rowsum [1.14e-10 +/- 2.01e-13], approx min eig 6.131e-01
+  124.3s OK   [199/5, 40]  resid rowsum [7.17e-11 +/- 4.31e-14], approx min eig 6.176e-01 | resid rowsum [7.17e-11 +/- 1.77e-14], approx min eig 6.156e-01
+CERTIFIED: [13/10, 40] covered by 358 intervals, a = [4.3314810000000000000000000000000000000 +/- 4.02e-38], N = 60, L = 300
+
+real	2m5.209s
+user	0m45.008s
+sys	0m0.240s

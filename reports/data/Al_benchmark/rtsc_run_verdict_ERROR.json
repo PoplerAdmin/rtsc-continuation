@@ -1,0 +1,16 @@
+{
+ "material_id": "Al-fcc@0GPa",
+ "status": "ERROR",
+ "T_low_K": null,
+ "T_up_K": null,
+ "reasons": [
+  "WorkflowError: [Al-fcc@0GPa] QE finished but some spectra are unusable: sigma1: negative alpha^2F mass 0.0316349 K at omega > 0 (0.000447 of A) -- refusing to clip (negative_policy='error')"
+ ],
+ "rule_ids": [],
+ "assumptions": [],
+ "flags": [],
+ "certificate": {
+  "kind": "error",
+  "proved": false
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "n_inputs": 7,
+ "counts": {
+  "REJECTED_PROVEN": 2,
+  "CERTIFIED_CANDIDATE": 1,
+  "UNDECIDED": 1,
+  "EXCLUDED_ASSUMPTION": 2,
+  "DEFERRED": 1,
+  "ERROR": 0
+ },
+ "by_status": {
+  "REJECTED_PROVEN": [
+   "SYNTHETIC-weak-einstein",
+   "SYNTHETIC-high-freq-moderate-coupling"
+  ],
+  "CERTIFIED_CANDIDATE": [
+   "SYNTHETIC-strong-coupling"
+  ],
+  "UNDECIDED": [
+   "SYNTHETIC-borderline"
+  ],
+  "EXCLUDED_ASSUMPTION": [
+   "SYNTHETIC-above-hull",
+   "SYNTHETIC-insulator"
+  ],
+  "DEFERRED": [
+   "SYNTHETIC-low-priority"
+  ],
+  "ERROR": []
+ },
+ "duplicate_of": {},
+ "config_hash": "199c23fdf2fd77ea",
+ "started_utc": "2026-10-27T18:27:59+00:00",
+ "finished_utc": "2026-10-27T18:27:59+00:00",
+ "shard": null,
+ "accounting": "every input has exactly one status (S4 checked)"
+}

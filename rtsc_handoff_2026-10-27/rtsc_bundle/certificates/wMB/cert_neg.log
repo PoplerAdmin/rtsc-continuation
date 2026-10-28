@@ -1,0 +1,8 @@
+P0 small-w bound a0*0.9/4 = [0.97458 +/- 3.33e-6]
+P0 large-w bound a0*2/8.7 = [0.99574 +/- 2.87e-6]
+P0 max cell upper bound on [0.9,8.7]: [0.670683 +/- 3.28e-7]
+P1 w<=3.4: a0*tanh(0.85) = [2.99335 +/- 4.59e-6]
+P1 w>=40: a0*6/40 = [0.64972 +/- 2.22e-6]
+P1 max cell upper bound on [3.4,40]: [2.39858 +/- 4.79e-6]
+P2: a0 < 5: True
+VERDICT Proposition N scalar inequalities: PASS

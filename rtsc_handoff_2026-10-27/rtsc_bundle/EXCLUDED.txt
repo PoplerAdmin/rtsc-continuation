@@ -1,0 +1,8 @@
+# Files and directories NOT copied into the bundle (assemble.sh, 2026-10-27T18:04:27Z)
+# always: .git __pycache__ *.pyc .pytest_cache *.egg-info .venv *.so .shim
+# rtsc:   build/ dist/ runs/ rtsc_demo/ rtsc_run/
+# lean:   .lake/ (rebuilt by lake; Mathlib via 'lake exe cache get' or from source)
+lean/build_mathlib.log    (toolchain/Mathlib install log, machine specific)
+lean/build_mathlib2.log    (toolchain/Mathlib install log, machine specific)
+lean/elan_install.log    (toolchain/Mathlib install log, machine specific)
+lean/lake_update.log    (toolchain/Mathlib install log, machine specific)

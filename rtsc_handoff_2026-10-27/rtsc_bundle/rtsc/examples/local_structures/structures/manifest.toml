@@ -1,0 +1,6 @@
+# Per-file metadata (key: file stem).  Only facts about the input are given here (target
+# pressure).  Unknown properties (metallicity, magnetism, enthalpy) are left out: the
+# corresponding filters then report "not evaluated" instead of using invented values.
+["H3S_Im-3m"]
+material_id = "H3S-Im-3m@200GPa"
+pressure_GPa = 200.0

@@ -1,0 +1,8 @@
+# copied to the bundle root as .dockerignore by assemble.sh
+**/.lake
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+rtsc_verify
+rtsc/build
+rtsc/*.egg-info

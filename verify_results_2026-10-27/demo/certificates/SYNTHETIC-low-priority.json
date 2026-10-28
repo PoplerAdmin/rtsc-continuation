@@ -1,0 +1,107 @@
+{
+ "material_id": "SYNTHETIC-low-priority",
+ "verdict": {
+  "material_id": "SYNTHETIC-low-priority",
+  "status": "DEFERRED",
+  "T_low_K": null,
+  "T_up_K": null,
+  "reasons": [
+   "budget: max_materials=4 reached at priority 0.1316; not computed (S2)"
+  ],
+  "rule_ids": [],
+  "assumptions": [],
+  "flags": [
+   "SYNTHETIC_DATA"
+  ],
+  "certificate": {
+   "kind": "budget",
+   "proved": false,
+   "budget": {
+    "max_materials": 4
+   },
+   "priority": {
+    "material_id": "SYNTHETIC-low-priority",
+    "total": 0.1315793663041995,
+    "components": {
+     "dos": 0.0196078431372549,
+     "spectrum": 0.1875651278876718
+    },
+    "use": "ordering only (S2)"
+   }
+  }
+ },
+ "verdict_origin": "pipeline.budget",
+ "synthetic": true,
+ "candidate": {
+  "formula": "(synthetic)",
+  "composition": {},
+  "source": "synthetic_demo",
+  "pressure_GPa": null,
+  "spacegroup": null,
+  "provenance": {
+   "source": "synthetic_demo",
+   "note": "SYNTHETIC demo spectrum invented for testing the pipeline; it is not data for any real material",
+   "purpose": "lowest heuristic priority: budget should defer it (never computed)",
+   "source_entry": 0
+  },
+  "band_coupling_files": []
+ },
+ "spectra": [],
+ "pipeline_context": {
+  "config_hash": "199c23fdf2fd77ea",
+  "stages": {
+   "filters": [
+    {
+     "criterion": "X-HULL",
+     "passed": true,
+     "value": 0.0,
+     "threshold": 0.1,
+     "comparison": "e_above_hull <= 0.1 eV/atom",
+     "reason": "",
+     "data_source": "stored energy_above_hull (synthetic_demo, 0.0 GPa)",
+     "details": {}
+    },
+    {
+     "criterion": "X-METAL",
+     "passed": true,
+     "value": true,
+     "threshold": true,
+     "comparison": "band_gap <= 0.0 eV (or is_metal == True when no gap is known)",
+     "reason": "",
+     "data_source": "is_metal from synthetic_demo",
+     "details": {}
+    },
+    {
+     "criterion": "X-MAGNETIC",
+     "passed": null,
+     "value": null,
+     "threshold": 0.05,
+     "comparison": "ordering not in ['FM', 'AFM', 'FiM'] and |m| <= 0.05 mu_B/atom",
+     "reason": "no magnetic ordering / magnetisation data",
+     "data_source": "",
+     "details": {}
+    },
+    {
+     "criterion": "X-DYNAMIC",
+     "passed": null,
+     "value": null,
+     "threshold": -0.25,
+     "comparison": "min phonon frequency >= -0.25 THz (acoustic modes at Gamma ignored)",
+     "reason": "no first-principles phonon data",
+     "data_source": "",
+     "details": {}
+    }
+   ],
+   "priority": {
+    "material_id": "SYNTHETIC-low-priority",
+    "total": 0.1315793663041995,
+    "components": {
+     "dos": 0.0196078431372549,
+     "spectrum": 0.1875651278876718
+    },
+    "use": "ordering only (S2)"
+   }
+  }
+ },
+ "recheck": "rtsc recheck /home/user/rtsc_work/verify_py/demo/SYNTHETIC-low-priority/verdict.json"
+}

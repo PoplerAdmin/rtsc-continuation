@@ -1,0 +1,74 @@
+# (b) Materials Project query: binary/ternary metallic hydrides, computed at 150 GPa.
+# Needs `pip install 'rtsc[mp,dft]'` and the API key in the environment: export MP_API_KEY=...
+# MP structures and energies are 0 GPa; the DFT stage vc-relaxes at the target pressure.
+# MP's energy_above_hull (0 GPa) is therefore NOT used by the hull filter at 150 GPa.
+
+[run]
+name = "mp-hydrides-150GPa"
+workdir = "runs/mp_hydrides"
+workers = 4            # 4 materials at a time, each with its own MPI job (see [dfpt.launcher])
+
+[[sources]]
+type = "materials_project"
+elements = ["H"]               # must contain H
+num_elements = [2, 3]
+energy_above_hull_max = 0.1    # query-side restriction (0 GPa)
+is_metal = true                # query-side restriction (0 GPa); recorded in provenance
+pressure_GPa = 150.0           # target pressure for DFT (recorded as target_pressure_GPa)
+api_key_env = "MP_API_KEY"
+
+[dedupe]
+method = "auto"
+
+[filters.hull]
+enabled = true
+max_e_above_hull_eV_per_atom = 0.1
+[filters.metallic]
+enabled = false        # 0 GPa metallicity says little at 150 GPa; rely on DFT at pressure
+[filters.magnetic]
+enabled = true
+max_abs_magnetization_muB_per_atom = 0.05
+exclude_orderings = ["FM", "AFM", "FiM"]
+[filters.dynamic]
+enabled = true
+imaginary_tol = 0.25
+imaginary_tol_unit = "THz"
+
+[priority]
+hydrogen = 1.0
+light = 0.5
+phonon_scale = 1.0
+dos = 0.5
+
+[budget]
+max_materials = 200
+
+[ml]
+enabled = false        # set true with `pip install 'rtsc[ml]'` to pre-rank by MACE phonons
+model = "mace"
+defer_if_ml_unstable = false
+
+[spectra]
+rel_envelope = 0.10
+
+[dfpt]
+enabled = true
+[dfpt.launcher]
+kind = "srun"
+nprocs = 32
+npool = 8
+[dfpt.pseudos]
+dir = "/path/to/SSSP_efficiency_pseudos"
+sssp_json = "/path/to/SSSP_efficiency.json"
+[dfpt.settings]
+do_relax = true
+el_ph_nsigma = 10
+
+[certify]
+T_target_K = 300.0
+mu_hi = 0.15
+omega_c_factor = 10.0
+cutoff_rule = "block"
+
+[report]
+top_n = 50

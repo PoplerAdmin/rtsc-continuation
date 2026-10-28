@@ -1,0 +1,335 @@
+{
+ "material_id": "Al-fcc@0GPa[sigma2-10]",
+ "status": "REJECTED_PROVEN",
+ "T_low_K": null,
+ "T_up_K": 17.149707508706445,
+ "reasons": [
+  "alt 0 (a2F.dos2): REJECTED_PROVEN; bracket [None, 17.149707508706445] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}",
+  "alt 1 (a2F.dos3): REJECTED_PROVEN; bracket [None, 17.0974958797555] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}",
+  "alt 2 (a2F.dos4): REJECTED_PROVEN; bracket [None, 17.06007159308484] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}",
+  "alt 3 (a2F.dos5): REJECTED_PROVEN; bracket [None, 17.03389975946827] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}",
+  "alt 4 (a2F.dos6): REJECTED_PROVEN; bracket [None, 17.035446270276246] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}",
+  "alt 5 (a2F.dos7): REJECTED_PROVEN; bracket [None, 17.051175919649417] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}",
+  "alt 6 (a2F.dos8): REJECTED_PROVEN; bracket [None, 17.069431908422196] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}",
+  "alt 7 (a2F.dos9): REJECTED_PROVEN; bracket [None, 17.085706339616433] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}",
+  "alt 8 (a2F.dos10): REJECTED_PROVEN; bracket [None, 17.09909887882871] K; evidence {'univFires': True, 'cellsBelowTarget': False, 'rayleighAtOrAboveTarget': False}"
+ ],
+ "rule_ids": [
+  "R-UNIV",
+  "CLASSIFY-S5"
+ ],
+ "assumptions": [
+  "M-ISO-MIGDAL (isotropic Migdal-Eliashberg, linearised gap equation, given a2F)",
+  "H(a0=4.33148145, eta=1e-09) [PROOF.md Prop. 6, wE1]",
+  "TRUST: Arb/FLINT (python-flint 0.9.0) ball arithmetic and exact conversions",
+  "TARGET(T*=300.0 K)",
+  "RUN-PARAMS(T*=300.0, mu_hi=0.15, omega_c=4715.389501642928, row_check=mhat, rejection_model=isotropic)",
+  "E-ENV(0.1) weights only (ERRATA F5) [a2F.dos2]",
+  "E-ENV(0.1) weights only (ERRATA F5) [a2F.dos3]",
+  "E-ENV(0.1) weights only (ERRATA F5) [a2F.dos4]",
+  "E-ENV(0.1) weights only (ERRATA F5) [a2F.dos5]",
+  "E-ENV(0.1) weights only (ERRATA F5) [a2F.dos6]",
+  "E-ENV(0.1) weights only (ERRATA F5) [a2F.dos7]",
+  "E-ENV(0.1) weights only (ERRATA F5) [a2F.dos8]",
+  "E-ENV(0.1) weights only (ERRATA F5) [a2F.dos9]",
+  "E-ENV(0.1) weights only (ERRATA F5) [a2F.dos10]",
+  "U-MU[0,0.15]",
+  "REJECTED holds for every mu*>=0 and every cutoff (Lean D2)",
+  "M-ISO-SINGLEBAND (rejection uses the DOS-averaged single-band A)",
+  "DISCRETISATION(bins, /home/user/rtsc_work/bench_out/Al_inputs_s2-10/a2F.dos2)",
+  "DISCRETISATION(bins, /home/user/rtsc_work/bench_out/Al_inputs_s2-10/a2F.dos3)",
+  "DISCRETISATION(bins, /home/user/rtsc_work/bench_out/Al_inputs_s2-10/a2F.dos4)",
+  "DISCRETISATION(bins, /home/user/rtsc_work/bench_out/Al_inputs_s2-10/a2F.dos5)",
+  "DISCRETISATION(bins, /home/user/rtsc_work/bench_out/Al_inputs_s2-10/a2F.dos6)",
+  "DISCRETISATION(bins, /home/user/rtsc_work/bench_out/Al_inputs_s2-10/a2F.dos7)",
+  "DISCRETISATION(bins, /home/user/rtsc_work/bench_out/Al_inputs_s2-10/a2F.dos8)",
+  "DISCRETISATION(bins, /home/user/rtsc_work/bench_out/Al_inputs_s2-10/a2F.dos9)",
+  "DISCRETISATION(bins, /home/user/rtsc_work/bench_out/Al_inputs_s2-10/a2F.dos10)",
+  "TRUST: python-flint 0.9.0 / FLINT 3.6.0"
+ ],
+ "flags": [
+  "MULTIBAND_RISK"
+ ],
+ "certificate": {
+  "version": "rtsc-certify-1",
+  "a0": "86629629/20000000",
+  "params": {
+   "T_star": 300.0,
+   "mu_hi": 0.15,
+   "omega_c": 4715.389501642928,
+   "row_check": "mhat",
+   "rel_tol": 0.0001,
+   "mode": "decide"
+  },
+  "alternatives": [
+   {
+    "index": 0,
+    "label": "a2F.dos2",
+    "spectrum_sha256": "1d984145584a5abb94d94db0474d92fe77736eea15309eceae952866388923d7",
+    "rel_envelope": 0.1,
+    "A_hi": "808877210388150883663449802938504205125585/10889035741470030830827987437816582766592",
+    "cells": {
+     "t_end": "0x1.126533b35dc1dp+4",
+     "T_up": "0x1.126533b35dc1dp+4",
+     "cells": []
+    },
+    "seconds": 0.003099203109741211,
+    "evidence": {
+     "univFires": true,
+     "cellsBelowTarget": false,
+     "rayleighAtOrAboveTarget": false
+    },
+    "classifyAlt": "REJECTED_PROVEN",
+    "checks": [
+     "R-UNIV: A_hi=74.28363995 K, a0*T*=1299.444435 K -> True",
+     "D1 A_hi <= a0*t_end: True",
+     "no cells (bound t_end via univ_stable only)"
+    ]
+   },
+   {
+    "index": 1,
+    "label": "a2F.dos3",
+    "spectrum_sha256": "a5c8e8e59ee55096a80c8d197bbd709422810311b18532c88a0ca4a94d895b6f",
+    "rel_envelope": 0.1,
+    "A_hi": "806414614641009274328757070696497977918265/10889035741470030830827987437816582766592",
+    "cells": {
+     "t_end": "0x1.118f57d6f0b6cp+4",
+     "T_up": "0x1.118f57d6f0b6cp+4",
+     "cells": []
+    },
+    "seconds": 0.0004253387451171875,
+    "evidence": {
+     "univFires": true,
+     "cellsBelowTarget": false,
+     "rayleighAtOrAboveTarget": false
+    },
+    "classifyAlt": "REJECTED_PROVEN",
+    "checks": [
+     "R-UNIV: A_hi=74.05748624 K, a0*T*=1299.444435 K -> True",
+     "D1 A_hi <= a0*t_end: True",
+     "no cells (bound t_end via univ_stable only)"
+    ]
+   },
+   {
+    "index": 2,
+    "label": "a2F.dos4",
+    "spectrum_sha256": "ddfd6f3a7d00de0743bd1a5ea200705d3eb9e488f7f4f4bfb34321ec1f7d3faa",
+    "rel_envelope": 0.1,
+    "A_hi": "402324736798891870448910149195658848954955/5444517870735015415413993718908291383296",
+    "cells": {
+     "t_end": "0x1.10f60da17b7cfp+4",
+     "T_up": "0x1.10f60da17b7cfp+4",
+     "cells": []
+    },
+    "seconds": 0.0004394054412841797,
+    "evidence": {
+     "univFires": true,
+     "cellsBelowTarget": false,
+     "rayleighAtOrAboveTarget": false
+    },
+    "classifyAlt": "REJECTED_PROVEN",
+    "checks": [
+     "R-UNIV: A_hi=73.89538364 K, a0*T*=1299.444435 K -> True",
+     "D1 A_hi <= a0*t_end: True",
+     "no cells (bound t_end via univ_stable only)"
+    ]
+   },
+   {
+    "index": 3,
+    "label": "a2F.dos5",
+    "spectrum_sha256": "52675257f6df82451287b700b6588a589cb0df6c1e8404388e42e135b53e8707",
+    "rel_envelope": 0.1,
+    "A_hi": "401707530944046622780035649889917970324055/5444517870735015415413993718908291383296",
+    "cells": {
+     "t_end": "0x1.108ada796422cp+4",
+     "T_up": "0x1.108ada796422cp+4",
+     "cells": []
+    },
+    "seconds": 0.0003311634063720703,
+    "evidence": {
+     "univFires": true,
+     "cellsBelowTarget": false,
+     "rayleighAtOrAboveTarget": false
+    },
+    "classifyAlt": "REJECTED_PROVEN",
+    "checks": [
+     "R-UNIV: A_hi=73.78202083 K, a0*T*=1299.444435 K -> True",
+     "D1 A_hi <= a0*t_end: True",
+     "no cells (bound t_end via univ_stable only)"
+    ]
+   },
+   {
+    "index": 4,
+    "label": "a2F.dos6",
+    "spectrum_sha256": "76017d6bf4ad0803a3043428f462ecfb77bd49de2c38044236d9671cfe73dfff",
+    "rel_envelope": 0.1,
+    "A_hi": "803488004085361388298960501057224480041965/10889035741470030830827987437816582766592",
+    "cells": {
+     "t_end": "0x1.1091301bb9a06p+4",
+     "T_up": "0x1.1091301bb9a06p+4",
+     "cells": []
+    },
+    "seconds": 0.0002923011779785156,
+    "evidence": {
+     "univFires": true,
+     "cellsBelowTarget": false,
+     "rayleighAtOrAboveTarget": false
+    },
+    "classifyAlt": "REJECTED_PROVEN",
+    "checks": [
+     "R-UNIV: A_hi=73.78871951 K, a0*T*=1299.444435 K -> True",
+     "D1 A_hi <= a0*t_end: True",
+     "no cells (bound t_end via univ_stable only)"
+    ]
+   },
+   {
+    "index": 5,
+    "label": "a2F.dos7",
+    "spectrum_sha256": "94fb29b518029b712e514e8a57d3a93aeed7a8493534d138b196f61c0799b8a7",
+    "rel_envelope": 0.1,
+    "A_hi": "804229903321770838714438529120900008931625/10889035741470030830827987437816582766592",
+    "cells": {
+     "t_end": "0x1.10d19dd753caap+4",
+     "T_up": "0x1.10d19dd753caap+4",
+     "cells": []
+    },
+    "seconds": 0.0002841949462890625,
+    "evidence": {
+     "univFires": true,
+     "cellsBelowTarget": false,
+     "rayleighAtOrAboveTarget": false
+    },
+    "classifyAlt": "REJECTED_PROVEN",
+    "checks": [
+     "R-UNIV: A_hi=73.8568522 K, a0*T*=1299.444435 K -> True",
+     "D1 A_hi <= a0*t_end: True",
+     "no cells (bound t_end via univ_stable only)"
+    ]
+   },
+   {
+    "index": 6,
+    "label": "a2F.dos8",
+    "spectrum_sha256": "096bc45d95f75122010983e847f9128b15a600eb89a71bb17663d85b58c92458",
+    "rel_envelope": 0.1,
+    "A_hi": "402545479507028169389115882349038941906505/5444517870735015415413993718908291383296",
+    "cells": {
+     "t_end": "0x1.111c64a1ff8e2p+4",
+     "T_up": "0x1.111c64a1ff8e2p+4",
+     "cells": []
+    },
+    "seconds": 0.0003490447998046875,
+    "evidence": {
+     "univFires": true,
+     "cellsBelowTarget": false,
+     "rayleighAtOrAboveTarget": false
+    },
+    "classifyAlt": "REJECTED_PROVEN",
+    "checks": [
+     "R-UNIV: A_hi=73.93592767 K, a0*T*=1299.444435 K -> True",
+     "D1 A_hi <= a0*t_end: True",
+     "no cells (bound t_end via univ_stable only)"
+    ]
+   },
+   {
+    "index": 7,
+    "label": "a2F.dos9",
+    "spectrum_sha256": "effdb2691717b180f41777f0f97860f03783e11733a522df7342355e858c9ce2",
+    "rel_envelope": 0.1,
+    "A_hi": "402929276621304439194183164106592491249525/5444517870735015415413993718908291383296",
+    "cells": {
+     "t_end": "0x1.115f0d9c5b663p+4",
+     "T_up": "0x1.115f0d9c5b663p+4",
+     "cells": []
+    },
+    "seconds": 0.00029921531677246094,
+    "evidence": {
+     "univFires": true,
+     "cellsBelowTarget": false,
+     "rayleighAtOrAboveTarget": false
+    },
+    "classifyAlt": "REJECTED_PROVEN",
+    "checks": [
+     "R-UNIV: A_hi=74.00642007 K, a0*T*=1299.444435 K -> True",
+     "D1 A_hi <= a0*t_end: True",
+     "no cells (bound t_end via univ_stable only)"
+    ]
+   },
+   {
+    "index": 8,
+    "label": "a2F.dos10",
+    "spectrum_sha256": "dda8b1529d6c134d7632a2cfa273b2ddf4638c002a9ba0b4018cd68d29802251",
+    "rel_envelope": 0.1,
+    "A_hi": "403245110572190797334271890726941161558675/5444517870735015415413993718908291383296",
+    "cells": {
+     "t_end": "0x1.1195e8b4ba3bbp+4",
+     "T_up": "0x1.1195e8b4ba3bbp+4",
+     "cells": []
+    },
+    "seconds": 0.000278472900390625,
+    "evidence": {
+     "univFires": true,
+     "cellsBelowTarget": false,
+     "rayleighAtOrAboveTarget": false
+    },
+    "classifyAlt": "REJECTED_PROVEN",
+    "checks": [
+     "R-UNIV: A_hi=74.06442961 K, a0*T*=1299.444435 K -> True",
+     "D1 A_hi <= a0*t_end: True",
+     "no cells (bound t_end via univ_stable only)"
+    ]
+   }
+  ],
+  "lean": {
+   "R-UNIV": [
+    "PipelineLogic.R_UNIV",
+    "PipelineLogic.univ_stable",
+    "PipelineLogic.stable_of_A_le",
+    "TcR1.stable_of_ge"
+   ],
+   "R-CELLS": [
+    "PipelineLogic.R_CELLS",
+    "PipelineLogic.cells_stable",
+    "PipelineLogic.cell_stable",
+    "PipelineLogic.envelope_form_bound",
+    "PipelineLogic.schur_row_test_inf",
+    "PipelineLogic.rows_of_eventually",
+    "PipelineLogic.lam_box",
+    "PipelineLogic.cover"
+   ],
+   "R-MU": [
+    "PipelineLogic.R_MU",
+    "PipelineLogic.stable_of_even_bound"
+   ],
+   "R-ODD": [
+    "TcR1.L6 via PipelineLogic.stable_of_even_bound"
+   ],
+   "C-RAYLEIGH": [
+    "PipelineLogic.rayleigh_cert",
+    "PipelineLogic.boxMin_le",
+    "PipelineLogic.boxMin_attained",
+    "PipelineLogic.sel_mul_eq_min",
+    "PipelineLogic.Qp_anti_mu"
+   ],
+   "CLASSIFY": [
+    "PipelineLogic.classify_rejected_sound",
+    "PipelineLogic.classify_certified_sound",
+    "PipelineLogic.classify_eq_rejected_iff",
+    "PipelineLogic.classify_eq_certified_iff",
+    "PipelineLogic.classify_cases"
+   ],
+   "R-MULTI": [
+    "MultiBand.R_UNIV_MB",
+    "MultiBand.R_UNIV_MB_eig",
+    "MultiBand.R_UNIV_MB_rowsum",
+    "MultiBand.sub_of_K",
+    "MultiBand.sub_env",
+    "MultiBand.thm1_even",
+    "MultiBand.thm3_odd"
+   ]
+  },
+  "rejection_model": "isotropic",
+  "multiband": [],
+  "status_single_band": "REJECTED_PROVEN",
+  "seconds": 0.008735895156860352
+ }
+}

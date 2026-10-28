@@ -1,0 +1,30 @@
+{
+ "material_id": "SYNTHETIC-low-priority",
+ "status": "DEFERRED",
+ "T_low_K": null,
+ "T_up_K": null,
+ "reasons": [
+  "budget: max_materials=4 reached at priority 0.1316; not computed (S2)"
+ ],
+ "rule_ids": [],
+ "assumptions": [],
+ "flags": [
+  "SYNTHETIC_DATA"
+ ],
+ "certificate": {
+  "kind": "budget",
+  "proved": false,
+  "budget": {
+   "max_materials": 4
+  },
+  "priority": {
+   "material_id": "SYNTHETIC-low-priority",
+   "total": 0.1315793663041995,
+   "components": {
+    "dos": 0.0196078431372549,
+    "spectrum": 0.1875651278876718
+   },
+   "use": "ordering only (S2)"
+  }
+ }
+}

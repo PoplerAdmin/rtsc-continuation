@@ -1,0 +1,20 @@
+{
+ "config_hash": "199c23fdf2fd77ea",
+ "inputs": [
+  "SYNTHETIC-weak-einstein",
+  "SYNTHETIC-high-freq-moderate-coupling",
+  "SYNTHETIC-strong-coupling",
+  "SYNTHETIC-borderline",
+  "SYNTHETIC-above-hull",
+  "SYNTHETIC-insulator",
+  "SYNTHETIC-low-priority"
+ ],
+ "to_compute": [
+  "SYNTHETIC-strong-coupling",
+  "SYNTHETIC-borderline",
+  "SYNTHETIC-high-freq-moderate-coupling",
+  "SYNTHETIC-weak-einstein"
+ ],
+ "duplicate_of": {},
+ "shard": null
+}
